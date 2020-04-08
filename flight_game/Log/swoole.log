@@ -1,0 +1,14 @@
+[2020-02-05 21:33:57 #6568.1]	INFO	Server is shutdown now
+[2020-02-05 21:52:59 #6802.1]	INFO	Server is shutdown now
+[41m[2020-02-05 21:53:07][DEBUG][ERROR] : [Call to a member function getObj() on null at file:/data/easyswoole/App/HttpController/Index.php line:20][0m
+[2020-02-05 21:58:19 #7158.1]	INFO	Server is shutdown now
+[2020-02-05 22:03:22 #7190.1]	INFO	Server is shutdown now
+[2020-02-06 10:49:47 #8693.1]	INFO	Server is shutdown now
+[41m[2020-02-06 10:50:03][DEBUG][ERROR] : [Class 'App\HttpController\Redis' not found at file:/data/easyswoole/App/HttpController/Index.php line:20][0m
+[2020-02-06 10:50:42 #8809.1]	INFO	Server is shutdown now
+[41m[2020-02-06 10:50:49][DEBUG][ERROR] : [Call to undefined method EasySwoole\RedisPool\Redis::invoker() at file:/data/easyswoole/App/HttpController/Index.php line:21][0m
+[41m[2020-02-06 10:51:51][DEBUG][ERROR] : [Call to undefined method EasySwoole\RedisPool\Redis::invoker() at file:/data/easyswoole/App/HttpController/Index.php line:21][0m
+[2020-02-06 10:53:08 #8823.1]	INFO	Server is shutdown now
+[2020-02-06 10:53:18 #8835.1]	INFO	Server is shutdown now
+[2020-02-06 11:21:23 #8844.1]	INFO	Server is shutdown now
+[2020-02-06 18:16:16 #10061.1]	INFO	Server is shutdown now
