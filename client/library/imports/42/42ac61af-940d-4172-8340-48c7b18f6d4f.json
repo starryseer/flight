@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "login.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "login_account": {
+      "__uuid__": "a5f816cd-f7e1-4248-a3ac-9daca09dc41f"
+    },
+    "login_bg": {
+      "__uuid__": "b5e53108-9021-434e-a58c-60a3723d7851"
+    },
+    "login_man": {
+      "__uuid__": "9331427e-5b09-42b2-a78a-aec43e1d346e"
+    },
+    "login_password": {
+      "__uuid__": "7d81ec77-44ca-4054-8b6a-920525a61620"
+    },
+    "start": {
+      "__uuid__": "7c206271-6eb4-42b4-b2e0-78db6f59a7d5"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "login_account",
+    "texture": "f0fca90b-c211-4beb-87b4-bd42baa41fe0",
+    "atlas": "42ac61af-940d-4172-8340-48c7b18f6d4f",
+    "rect": [
+      888,
+      2,
+      468,
+      92
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      468,
+      92
+    ],
+    "rotated": 1,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

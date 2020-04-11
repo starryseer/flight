@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "computer2on",
+    "texture": "0c1bf4ea-14c3-466f-ab44-46aa24382c1b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      226,
+      166
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      226,
+      166
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

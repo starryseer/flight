@@ -17,8 +17,8 @@ class Router extends AbstractRouter
 {
     function initialize(RouteCollector $routeCollector)
     {
-        $routeCollector->get('/accountLogin', '/client/account/accountLogin');
-        $routeCollector->get('/accountReg', '/client/account/accountRegister');
+        $routeCollector->post('/accountLogin', '/client/account/accountLogin');
+        $routeCollector->post('/accountReg', '/client/account/accountRegister');
         $routeCollector->post('/checkToken', '/client/user/checkToken');
 
     }

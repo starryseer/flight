@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "jumpBg",
+    "texture": "23ed605d-50a7-44d2-afa7-82ee9a7f1875",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      879,
+      632
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      879,
+      632
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

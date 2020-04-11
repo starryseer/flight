@@ -25,6 +25,8 @@ class ClientAttrDao
                 'diamond' => 0,
                 'fatigue' =>0,
                 'mood' =>0,
+                'nickname'=>null,
+                'signature'=>null
             ];
             return DbManager::getInstance()->invoke(function ($client)use($info){
 

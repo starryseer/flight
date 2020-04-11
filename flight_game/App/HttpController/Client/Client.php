@@ -52,4 +52,5 @@ class Client extends Base
             return $this->json_return(50002,'','param error');
         }
     }
+
 }

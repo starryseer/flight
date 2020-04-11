@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "gameSmallFrame",
+    "texture": "2da2ff38-f64d-4038-bc32-679d0b6e69a8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      419,
+      300
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      419,
+      300
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
