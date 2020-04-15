@@ -290,14 +290,9 @@
     "relativePath": "scene\\miniGames"
   },
   "88972f1a-18a4-48d0-8522-4beb499b435a": {
-    "asset": 1586933001142,
-    "meta": 1586933001168,
+    "asset": 1586935794506,
+    "meta": 1586935794530,
     "relativePath": "scene\\miniGames\\miniMain.fire"
-  },
-  "82a39d14-2b7d-4290-aa2a-b76af3364113": {
-    "asset": 1586423786063,
-    "meta": 1586424143880,
-    "relativePath": "script\\home\\trigger\\computer2.js"
   },
   "da8aaa86-6d53-4016-8e99-2ad85c22d144": {
     "asset": 1586424886294,
@@ -1089,24 +1084,29 @@
     "meta": 1586930168713,
     "relativePath": "script\\miniGame\\miniMain\\editFrame.js"
   },
-  "fd83be41-832a-4d98-a9bf-2130ba081baa": {
-    "asset": 1586932268788,
-    "meta": 1586932272602,
-    "relativePath": "script\\miniGame\\miniMain\\miniMain.js"
-  },
-  "7ff53c1f-43f4-4bd5-b41d-ad788aa2e8cf": {
-    "asset": 1586932737741,
-    "meta": 1586932749525,
-    "relativePath": "script\\miniGame\\miniMain\\rankList.js"
-  },
-  "7dd055b3-fb1a-4641-9644-f05179b83e87": {
-    "asset": 1586932742568,
-    "meta": 1586932749563,
-    "relativePath": "script\\miniGame\\miniMain\\title.js"
+  "82a39d14-2b7d-4290-aa2a-b76af3364113": {
+    "asset": 1586935565141,
+    "meta": 1586935576708,
+    "relativePath": "script\\home\\trigger\\computer2.js"
   },
   "49056e0e-f1c8-462f-a4d2-a02b56d93e73": {
-    "asset": 1586933000166,
-    "meta": 1586933001074,
+    "asset": 1586935620955,
+    "meta": 1586935638708,
     "relativePath": "script\\miniGame\\miniMain\\userInfo.js"
+  },
+  "7ff53c1f-43f4-4bd5-b41d-ad788aa2e8cf": {
+    "asset": 1586935675511,
+    "meta": 1586935678758,
+    "relativePath": "script\\miniGame\\miniMain\\rankList.js"
+  },
+  "fd83be41-832a-4d98-a9bf-2130ba081baa": {
+    "asset": 1586935759027,
+    "meta": 1586935791952,
+    "relativePath": "script\\miniGame\\miniMain\\miniMain.js"
+  },
+  "7dd055b3-fb1a-4641-9644-f05179b83e87": {
+    "asset": 1586935754699,
+    "meta": 1586935791954,
+    "relativePath": "script\\miniGame\\miniMain\\title.js"
   }
 }

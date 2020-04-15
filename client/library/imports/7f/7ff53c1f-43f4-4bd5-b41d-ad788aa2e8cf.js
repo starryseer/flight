@@ -30,12 +30,9 @@ cc.Class({
 
     onLoad: function onLoad() {
         //this.init();
-        this.node.on('update', this.update, this);
+        this.node.on('update', this.init, this);
     },
     init: function init() {
-        this.pointLab.string = _global2.default.miniGameData.miniGame[this.gameId]['point'];
-    },
-    update: function update() {
         this.pointLab.string = _global2.default.miniGameData.miniGame[this.gameId]['point'];
     },
     onRankClick: function onRankClick(target, data) {

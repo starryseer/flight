@@ -36,17 +36,12 @@ cc.Class({
             let newSize = this.avatar.node.width;
             this.avatar.node.scale = oldSize/newSize/2;
         });
-        this.node.on('update',this.update,this);
+        this.node.on('update',this.init,this);
         cc.systemEvent.on('updateUserInfo',this.init,this);
     },
 
     onDestroy(){
         cc.systemEvent.off('updateUserInfo',this.init,this);
-    },
-
-    update(){
-        this.nicknameLab.string = global.clientAttrData.nickname?global.clientAttrData.nickname:"";
-        this.signatureLab.string = global.clientAttrData.signature?global.clientAttrData.signature:"";
     },
 
     init()

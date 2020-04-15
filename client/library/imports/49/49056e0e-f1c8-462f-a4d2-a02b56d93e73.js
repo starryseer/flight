@@ -49,15 +49,11 @@ cc.Class({
             var newSize = _this.avatar.node.width;
             _this.avatar.node.scale = oldSize / newSize / 2;
         });
-        this.node.on('update', this.update, this);
+        this.node.on('update', this.init, this);
         cc.systemEvent.on('updateUserInfo', this.init, this);
     },
     onDestroy: function onDestroy() {
         cc.systemEvent.off('updateUserInfo', this.init, this);
-    },
-    update: function update() {
-        this.nicknameLab.string = _global2.default.clientAttrData.nickname ? _global2.default.clientAttrData.nickname : "";
-        this.signatureLab.string = _global2.default.clientAttrData.signature ? _global2.default.clientAttrData.signature : "";
     },
     init: function init() {
         this.nicknameLab.string = _global2.default.clientAttrData.nickname ? _global2.default.clientAttrData.nickname : "";

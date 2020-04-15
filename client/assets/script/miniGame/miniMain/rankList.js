@@ -19,14 +19,10 @@ cc.Class({
 
     onLoad () {
         //this.init();
-        this.node.on('update',this.update,this);
+        this.node.on('update',this.init,this);
     },
 
     init(){
-        this.pointLab.string = global.miniGameData.miniGame[this.gameId]['point'];
-    },
-
-    update(){
         this.pointLab.string = global.miniGameData.miniGame[this.gameId]['point'];
     },
 

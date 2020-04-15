@@ -1,6 +1,6 @@
 {
-  "platform": "web-mobile",
-  "actualPlatform": "web-mobile",
+  "platform": "android",
+  "actualPlatform": "android",
   "template": "link",
   "buildPath": "./build",
   "debug": false,

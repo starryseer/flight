@@ -30,13 +30,9 @@ cc.Class({
 
     onLoad: function onLoad() {
         //this.init();
-        this.node.on('update', this.update, this);
+        this.node.on('update', this.init, this);
     },
     init: function init() {
-        this.goldLab.string = _global2.default.clientAttrData.gold;
-        this.moodLab.string = Math.floor((_global2.default.clientAttrData.mood + 200) / 400 * 100) + "%";
-    },
-    update: function update() {
         this.goldLab.string = _global2.default.clientAttrData.gold;
         this.moodLab.string = Math.floor((_global2.default.clientAttrData.mood + 200) / 400 * 100) + "%";
     },

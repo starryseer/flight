@@ -19,7 +19,7 @@ cc.Class({
 
     onLoad () {
         //this.init();
-        this.node.on('update',this.update,this);
+        this.node.on('update',this.init,this);
     },
 
     init(){
@@ -27,10 +27,6 @@ cc.Class({
         this.moodLab.string = Math.floor((global.clientAttrData.mood + 200) / 400 * 100) + "%";
     },
 
-    update(){
-        this.goldLab.string = global.clientAttrData.gold;
-        this.moodLab.string = Math.floor((global.clientAttrData.mood + 200) / 400 * 100) + "%";
-    },
 
     onBackClick(target,data){
         cc.director.loadScene('home');
