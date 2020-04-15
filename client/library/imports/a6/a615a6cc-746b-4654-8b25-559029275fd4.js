@@ -4,6 +4,12 @@ cc._RF.push(module, 'a615abMdGtGVIslVZApJ1/U', 'home');
 
 "use strict";
 
+var _global = require("../global/global");
+
+var _global2 = _interopRequireDefault(_global);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 cc.Class({
     extends: cc.Component,
 
@@ -12,6 +18,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function onLoad() {
+
         this.initCollision();
         this.initPhysics();
     },

@@ -13,6 +13,7 @@ use App\HttpController\Service\ClientService;
 use App\HttpController\Service\ClientAttrService;
 use App\HttpController\Service\ClientOlService;
 use App\HttpController\Service\ItemService;
+use App\HttpController\Service\MiniGameService;
 use EasySwoole\EasySwoole\Config;
 
 class Client extends Base
@@ -42,10 +43,11 @@ class Client extends Base
             $item = ItemService::getInstance()->getAll($userId);
 
             $clientAttr = ClientAttrService::getInstance()->get($userId);
+            $miniGame = MiniGameService::getInstance()->get($userId);
 
             ClientOlService::getInstance()->addOl($userId,$token,$ip);
 
-            return $this->json_return(200,['client'=>$client,'clientAttr'=>$clientAttr,'item'=>$item]);
+            return $this->json_return(200,['client'=>$client,'clientAttr'=>$clientAttr,'item'=>$item,'miniGame'=>$miniGame]);
         }
         catch(\Exception $e)
         {

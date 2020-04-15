@@ -33,16 +33,30 @@ cc.Class({
             default: null,
             type: cc.Node,
             tooltip: '排名栏'
+        },
+        editFrame: {
+            default: null,
+            type: cc.Node,
+            tooltip: '编辑框'
+        },
+        rankFrame: {
+            default: null,
+            type: cc.Node,
+            tooltip: '排名框'
         }
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function onLoad() {
+        if (!_global2.default.clientAttrData.nickname) {
+            cc.director.loadScene('miniInit');
+            return;
+        }
+
         var ratio = _global2.default.FitHelper.fitFun(this.bg);
-        this.init();
     },
-    init: function init() {
+    start: function start() {
         var _this = this;
 
         var param = { userId: _global2.default.userData.id, token: _global2.default.userData.token };
@@ -59,14 +73,15 @@ cc.Class({
             }
         });
     },
+    onDestroy: function onDestroy() {},
     initData: function initData(rsp) {
         _global2.default.clientAttrData.initClientAttrData(rsp.data.clientAttr);
         _global2.default.miniGameData.initMiniGameData(rsp.data.miniGame);
     },
     initLab: function initLab() {
-        this.title.emit('init', {});
-        this.userInfo.emit('init', {});
-        this.rankList.emit('init', {});
+        this.title.emit('update', {});
+        this.rankList.emit('update', {});
+        this.userInfo.emit('update', {});
     }
 
     // update (dt) {},

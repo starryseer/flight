@@ -2,7 +2,7 @@
 cc._RF.push(module, 'd0d44RqjXFCiYfS0EEf0WXp', 'FitHelper');
 // script/helper/FitHelper.js
 
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -20,10 +20,26 @@ var FitHelper = function FitHelper() {
         target.scale = ratio;
         return ratio;
     };
+    that.onEnable = function (target) {
+        target.on('touchstart', function (event) {
+            event.stopPropagation();
+        });
+        target.on('touchend', function (event) {
+            event.stopPropagation();
+        });
+    };
+    that.onDisable = function () {
+        this.node.off('touchstart', function (event) {
+            event.stopPropagation();
+        });
+        this.node.off('touchend', function (event) {
+            event.stopPropagation();
+        });
+    };
 
     return that;
 };
 exports.default = FitHelper;
-module.exports = exports["default"];
+module.exports = exports['default'];
 
 cc._RF.pop();

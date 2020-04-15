@@ -100,7 +100,6 @@ cc.Class({
         if (this.gameStart) {
             this.score.string = parseInt(this.score.string) + 1;
             this.blockSpeed += 5;
-            this.gameStart = 2;
         }
     },
     getLastPos: function getLastPos() {
@@ -135,7 +134,7 @@ cc.Class({
     update: function update(dt) {
         var _this = this;
 
-        if (this.gameStart > 1) {
+        if (this.gameStart) {
             var _iteratorNormalCompletion2 = true;
             var _didIteratorError2 = false;
             var _iteratorError2 = undefined;
@@ -176,7 +175,9 @@ cc.Class({
                 if (rsp.code == 200) {
                     _global2.default.clientAttrData.initClientAttrData(rsp.data.clientAttr);
                     _global2.default.miniGameData.playData(rsp.data.miniGame);
-                    _this.tipFrame.emit('show', { now: _this.score.string, max: _global2.default.miniGameData.miniGame[1]['point'] });
+                    cc.director.preloadScene("miniMain", function () {
+                        _this.tipFrame.emit('show', { now: _this.score.string, max: _global2.default.miniGameData.miniGame[1]['point'] });
+                    });
                 } else {
                     return;
                 }

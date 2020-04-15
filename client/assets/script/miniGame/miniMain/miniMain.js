@@ -23,16 +23,31 @@ cc.Class({
             type: cc.Node,
             tooltip: '排名栏'
         },
+        editFrame: {
+            default: null,
+            type: cc.Node,
+            tooltip: '编辑框'
+        },
+        rankFrame: {
+            default: null,
+            type: cc.Node,
+            tooltip: '排名框'
+        },
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        if(!global.clientAttrData.nickname)
+        {
+            cc.director.loadScene('miniInit');
+            return;
+        }
+
         var ratio = global.FitHelper.fitFun(this.bg);
-        this.init();
     },
 
-    init(){
+    start(){
         var param = {userId:global.userData.id,token:global.userData.token};
         global.HttpHelper.httpPost(global.urlConf.mini_main,param,(rsp)=>{
             if(rsp == -1)
@@ -51,6 +66,9 @@ cc.Class({
             }
         });
     },
+
+    onDestroy(){
+    },
     
     initData(rsp)
     {
@@ -60,9 +78,9 @@ cc.Class({
 
     initLab()
     {
-        this.title.emit('init',{});
-        this.userInfo.emit('init',{});
-        this.rankList.emit('init',{});
+        this.title.emit('update',{});
+        this.rankList.emit('update',{});
+        this.userInfo.emit('update',{});
     }
 
 

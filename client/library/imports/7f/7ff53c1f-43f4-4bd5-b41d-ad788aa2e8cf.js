@@ -29,13 +29,18 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function onLoad() {
-        var _this = this;
-
-        this.node.on('init', function () {
-            _this.pointLab.string = _global2.default.miniGameData.miniGame[_this.gameId]['point'];
-        });
+        //this.init();
+        this.node.on('update', this.update, this);
     },
-    onRankClick: function onRankClick(target, data) {}
+    init: function init() {
+        this.pointLab.string = _global2.default.miniGameData.miniGame[this.gameId]['point'];
+    },
+    update: function update() {
+        this.pointLab.string = _global2.default.miniGameData.miniGame[this.gameId]['point'];
+    },
+    onRankClick: function onRankClick(target, data) {
+        cc.systemEvent.emit('rankFrameShow', {});
+    }
 }
 
 // update (dt) {},

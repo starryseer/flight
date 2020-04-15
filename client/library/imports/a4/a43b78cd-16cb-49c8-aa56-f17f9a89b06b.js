@@ -16,6 +16,7 @@ var clientAttrData = function clientAttrData() {
     that.mood = null;
     that.nickname = null;
     that.signature = null;
+    that.avatar = null;
 
     that.initClientAttrData = function (clientAttr) {
         that.client_id = clientAttr.client_id;
@@ -25,6 +26,7 @@ var clientAttrData = function clientAttrData() {
         that.mood = clientAttr.mood;
         that.nickname = clientAttr.nickname;
         that.signature = clientAttr.signature;
+        that.avatar = clientAttr.avatar;
     };
 
     return that;

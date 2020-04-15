@@ -23,6 +23,16 @@ cc.Class({
             default: null,
             type: cc.Label,
             tooltip: '签名标签'
+        },
+        editFrame: {
+            default: null,
+            type: cc.Node,
+            tooltip: '签名标签'
+        },
+        avatar: {
+            default: null,
+            type: cc.Sprite,
+            tooltip: '头像'
         }
     },
 
@@ -31,12 +41,31 @@ cc.Class({
     onLoad: function onLoad() {
         var _this = this;
 
-        this.node.on('init', function (data) {
-            _this.nicknameLab.string = _global2.default.clientAttrData.nickname ? _global2.default.clientAttrData.nickname : "";
-            _this.signatureLab.string = _global2.default.clientAttrData.signature ? _global2.default.clientAttrData.signature : "";
+        //this.init();
+        var avatarUrl = _global2.default.imageConf.avatar[_global2.default.clientAttrData.avatar];
+        cc.loader.load({ url: avatarUrl, type: 'png' }, function (error, purl) {
+            var oldSize = _this.avatar.node.width;
+            _this.avatar.spriteFrame = new cc.SpriteFrame(purl);
+            var newSize = _this.avatar.node.width;
+            _this.avatar.node.scale = oldSize / newSize / 2;
         });
+        this.node.on('update', this.update, this);
+        cc.systemEvent.on('updateUserInfo', this.init, this);
     },
-    onModifyClick: function onModifyClick(target, data) {}
+    onDestroy: function onDestroy() {
+        cc.systemEvent.off('updateUserInfo', this.init, this);
+    },
+    update: function update() {
+        this.nicknameLab.string = _global2.default.clientAttrData.nickname ? _global2.default.clientAttrData.nickname : "";
+        this.signatureLab.string = _global2.default.clientAttrData.signature ? _global2.default.clientAttrData.signature : "";
+    },
+    init: function init() {
+        this.nicknameLab.string = _global2.default.clientAttrData.nickname ? _global2.default.clientAttrData.nickname : "";
+        this.signatureLab.string = _global2.default.clientAttrData.signature ? _global2.default.clientAttrData.signature : "";
+    },
+    onModifyClick: function onModifyClick(target, data) {
+        this.editFrame.emit('show', {});
+    }
 }
 
 // update (dt) {},

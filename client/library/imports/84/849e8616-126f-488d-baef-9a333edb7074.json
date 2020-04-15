@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "editFrame",
+    "texture": "819e4996-3cfb-4fd5-99dd-002e34b90f4a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      892,
+      1100
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      892,
+      1100
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

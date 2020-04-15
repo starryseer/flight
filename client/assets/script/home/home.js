@@ -1,3 +1,4 @@
+import global from "../global/global";
 
 cc.Class({
     extends: cc.Component,
@@ -9,6 +10,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+
         this.initCollision();
         this.initPhysics();
     },

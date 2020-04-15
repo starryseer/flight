@@ -73,6 +73,7 @@ cc.Class({
                 _global2.default.clientData.initClientData(rsp.data.client);
                 _global2.default.clientAttrData.initClientAttrData(rsp.data.clientAttr);
                 _global2.default.itemData.initItemData(rsp.data.item);
+                _global2.default.miniGameData.initMiniGameData(rsp.data.miniGame);
                 cc.director.loadScene('home');
             } else {
                 return;

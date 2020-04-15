@@ -179,3 +179,55 @@ string(60) "SQLSTATE[23000] [1062] Duplicate entry '' for key 'nickname'"
 [43m[2020-04-11 17:20:39][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
 string(60) "SQLSTATE[23000] [1062] Duplicate entry '' for key 'nickname'"
 [43m[2020-04-11 17:20:39][DEBUG][NOTICE] : [Undefined index: gold at file:/data/flight/flight/flight_game/App/HttpController/Client/MiniGame.php line:56][0m
+[43m[2020-04-11 17:25:02][DEBUG][NOTICE] : [Undefined index: last_time at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:21][0m
+[43m[2020-04-11 17:25:02][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+string(60) "SQLSTATE[23000] [1062] Duplicate entry '' for key 'nickname'"
+[43m[2020-04-11 17:25:06][DEBUG][NOTICE] : [Undefined index: last_time at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:21][0m
+[43m[2020-04-11 17:25:06][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+string(60) "SQLSTATE[23000] [1062] Duplicate entry '' for key 'nickname'"
+[43m[2020-04-11 17:25:22][DEBUG][NOTICE] : [Undefined index: last_time at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:21][0m
+[43m[2020-04-11 17:25:22][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+string(60) "SQLSTATE[23000] [1062] Duplicate entry '' for key 'nickname'"
+[43m[2020-04-11 17:25:22][DEBUG][NOTICE] : [Undefined index: gold at file:/data/flight/flight/flight_game/App/HttpController/Client/MiniGame.php line:56][0m
+[43m[2020-04-11 17:32:14][DEBUG][NOTICE] : [Undefined index: last_time at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:21][0m
+[43m[2020-04-11 17:32:14][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+string(60) "SQLSTATE[23000] [1062] Duplicate entry '' for key 'nickname'"
+[43m[2020-04-11 17:32:14][DEBUG][NOTICE] : [Undefined index: gold at file:/data/flight/flight/flight_game/App/HttpController/Client/MiniGame.php line:56][0m
+[43m[2020-04-11 17:32:30][DEBUG][NOTICE] : [Undefined index: last_time at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:21][0m
+[43m[2020-04-11 17:32:30][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+string(60) "SQLSTATE[23000] [1062] Duplicate entry '' for key 'nickname'"
+[43m[2020-04-11 17:32:30][DEBUG][NOTICE] : [Undefined index: gold at file:/data/flight/flight/flight_game/App/HttpController/Client/MiniGame.php line:56][0m
+[43m[2020-04-11 17:33:01][DEBUG][NOTICE] : [Undefined index: last_time at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:21][0m
+[43m[2020-04-11 17:33:01][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+string(60) "SQLSTATE[23000] [1062] Duplicate entry '' for key 'nickname'"
+[43m[2020-04-12 06:04:12][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-13 04:45:16][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-13 17:19:19][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-13 17:21:47][DEBUG][NOTICE] : [Undefined index: last_time at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:21][0m
+[43m[2020-04-13 17:21:47][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-13 17:22:41][DEBUG][NOTICE] : [Undefined index: last_time at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:21][0m
+[43m[2020-04-13 17:22:41][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-13 17:23:49][DEBUG][NOTICE] : [Undefined index: last_time at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:21][0m
+[43m[2020-04-13 17:23:49][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-13 17:27:34][DEBUG][NOTICE] : [Undefined index: last_time at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:21][0m
+[43m[2020-04-13 17:27:34][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+string(60) "SQLSTATE[23000] [1062] Duplicate entry '' for key 'nickname'"
+[2020-04-13 17:33:47 #6223.1]	INFO	Server is shutdown now
+[43m[2020-04-13 17:42:04][DEBUG][NOTICE] : [Undefined index: last_time at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:21][0m
+[43m[2020-04-13 17:42:04][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-14 09:20:59][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[2020-04-14 14:19:59 #1522.1]	INFO	Server is shutdown now
+[43m[2020-04-14 16:31:58][DEBUG][NOTICE] : [Undefined index: last_time at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:21][0m
+[43m[2020-04-14 16:31:58][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-14 19:19:37][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-15 09:01:51][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-15 09:28:33][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-15 11:41:59][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[41m[2020-04-15 12:18:20][DEBUG][ERROR] : [Class 'App\HttpController\Service\miniGameService' not found at file:/data/flight/flight/flight_game/App/HttpController/Client/Client.php line:46][0m
+[41m[2020-04-15 12:18:51][DEBUG][ERROR] : [Class 'App\HttpController\Service\miniGameService' not found at file:/data/flight/flight/flight_game/App/HttpController/Client/Client.php line:46][0m
+[2020-04-15 12:19:18 #10914.1]	INFO	Server is shutdown now
+[2020-04-15 13:50:40 $10953.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-04-15 13:50:40 $10953.0]	WARNING	swManager_check_exit_status: worker#1[pid=10956] abnormal exit, status=0, signal=1
+[2020-04-15 13:50:40 #10952.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-04-15 13:50:40 *10955.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-04-15 15:03:47 #10952.1]	INFO	Server is shutdown now

@@ -8,6 +8,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _miniInitCache = require('./../cache/miniInitCache');
+
+var _miniInitCache2 = _interopRequireDefault(_miniInitCache);
+
 var _userData = require('./../data/userData');
 
 var _userData2 = _interopRequireDefault(_userData);
@@ -27,6 +31,10 @@ var _miniGameData2 = _interopRequireDefault(_miniGameData);
 var _itemData = require('./../data/itemData');
 
 var _itemData2 = _interopRequireDefault(_itemData);
+
+var _imageConf = require('./../config/imageConf');
+
+var _imageConf2 = _interopRequireDefault(_imageConf);
 
 var _urlConf = require('./../config/urlConf');
 
@@ -48,11 +56,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var global = {} || global;
 
+global.miniInitCache = (0, _miniInitCache2.default)();
 global.userData = (0, _userData2.default)();
 global.clientData = (0, _clientData2.default)();
 global.clientAttrData = (0, _clientAttrData2.default)();
 global.itemData = (0, _itemData2.default)();
 global.miniGameData = (0, _miniGameData2.default)();
+global.imageConf = (0, _imageConf2.default)();
 global.urlConf = (0, _urlConf2.default)();
 global.triggerConf = (0, _triggerConf2.default)();
 global.HttpHelper = _HttpHelper2.default;

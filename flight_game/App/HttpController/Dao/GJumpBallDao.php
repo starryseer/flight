@@ -85,7 +85,7 @@ class GJumpBallDao
                 $gJumpBallModel = GJumpBallModel::invoke($client);
                 $gJumpBallModel->order('point', 'DESC');
                 $gJumpBallModel->order('last_time', 'DESC');
-                $gJumpBallModel->limit(7);
+                $gJumpBallModel->limit(10);
                 $rankList = $gJumpBallModel->all();
 
                 $gJumpBallModel = GJumpBallModel::invoke($client);

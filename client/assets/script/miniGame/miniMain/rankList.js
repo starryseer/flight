@@ -18,13 +18,20 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        this.node.on('init',()=>{
-            this.pointLab.string = global.miniGameData.miniGame[this.gameId]['point'];
-        });
+        //this.init();
+        this.node.on('update',this.update,this);
+    },
+
+    init(){
+        this.pointLab.string = global.miniGameData.miniGame[this.gameId]['point'];
+    },
+
+    update(){
+        this.pointLab.string = global.miniGameData.miniGame[this.gameId]['point'];
     },
 
     onRankClick(target,data){
-        
+        cc.systemEvent.emit('rankFrameShow',{});
     },
 
     // update (dt) {},

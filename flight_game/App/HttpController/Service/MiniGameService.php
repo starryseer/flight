@@ -8,6 +8,7 @@
 
 namespace App\HttpController\Service;
 
+use App\HttpController\Dao\ClientAttrDao;
 
 class MiniGameService
 {
@@ -38,6 +39,20 @@ class MiniGameService
         $table = __CONF__['miniGame'][$gameId]['table'];
         $dao = "\\App\\HttpController\\Dao\\".$table."Dao";
         $rank= $dao::getInstance()->rank($userId);
+        $ids = [];
+        $rankList = [];
+        foreach($rank['rankList'] as $r)
+        {
+            $ids[] = $r->client_id;
+            $rankList[$r->client_id] = $r;
+        }
+        $clientAttr =ClientAttrDao::getInstance()->getMulti($ids);
+        foreach($clientAttr as $attr)
+        {
+            $rankList[$attr->client_id]->nickname =  $attr->nickname;
+            $rankList[$attr->client_id]->avatar =  $attr->avatar;
+        }
+        $rank['rankList'] = array_values($rankList);
         return $rank;
     }
 }

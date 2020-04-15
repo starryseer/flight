@@ -21,7 +21,7 @@
   "zipCompressJs": true,
   "fb-instant-games": {},
   "android": {
-    "packageName": ""
+    "packageName": "com.fat"
   },
   "ios": {
     "packageName": ""

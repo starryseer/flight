@@ -1,94 +1,76 @@
-2020-04-11T01:32:51.940Z - normal: Load ~/.CocosCreator/settings.json
-2020-04-11T01:32:52.017Z - normal: Initializing Asset Database
-2020-04-11T01:32:52.024Z - normal: checking language setting...
-2020-04-11T01:32:52.024Z - normal: Language: zh
-2020-04-11T01:32:53.224Z - success: preview server running at http://localhost:7456
-2020-04-11T01:32:53.228Z - success: protocol editor-framework registered
-2020-04-11T01:32:53.228Z - success: protocol app registered
-2020-04-11T01:32:53.228Z - success: protocol theme registered
-2020-04-11T01:32:53.228Z - success: protocol packages registered
-2020-04-11T01:32:53.228Z - success: protocol uuid registerred
-2020-04-11T01:32:53.228Z - success: protocol db registerred
-2020-04-11T01:32:53.228Z - success: protocol thumbnail registerred
-2020-04-11T01:32:53.228Z - success: protocol unpack registerred
-2020-04-11T01:32:53.228Z - success: protocol disable-commonjs registerred
-2020-04-11T01:32:53.341Z - normal: connected!
-2020-04-11T01:32:53.342Z - normal: Check project C:\Users\EDZ\Desktop\MRFit
-2020-04-11T01:32:53.343Z - normal: Initializing project C:\Users\EDZ\Desktop\MRFit
-2020-04-11T01:32:53.487Z - success: adapters loaded
-2020-04-11T01:32:53.499Z - success: asset-db-debugger loaded
-2020-04-11T01:32:53.617Z - success: fb-audience-network loaded
-2020-04-11T01:32:53.683Z - success: fb-live-stream loaded
-2020-04-11T01:32:53.718Z - success: google-play-instant loaded
-2020-04-11T01:32:53.792Z - success: huawei-runtime loaded
-2020-04-11T01:32:53.802Z - success: jkw-adapter loaded
-2020-04-11T01:32:53.809Z - success: jsb-adapter loaded
-2020-04-11T01:32:53.853Z - success: oppo-runtime loaded
-2020-04-11T01:32:53.871Z - success: package-manager loaded
-2020-04-11T01:32:53.880Z - success: qtt-adapter loaded
-2020-04-11T01:32:53.907Z - success: runtime-dev-tools loaded
-2020-04-11T01:32:53.933Z - success: sdkbox loaded
-2020-04-11T01:32:53.959Z - success: ui-kit-preview-extra loaded
-2020-04-11T01:32:53.987Z - success: ui-kit-preview loaded
-2020-04-11T01:32:54.056Z - success: vivo-runtime loaded
-2020-04-11T01:32:54.061Z - success: alipay-minigame loaded
-2020-04-11T01:32:54.102Z - success: assets loaded
-2020-04-11T01:32:54.105Z - success: baidugame-opendata loaded
-2020-04-11T01:32:54.107Z - success: baidugame loaded
-2020-04-11T01:32:54.117Z - success: builder loaded
-2020-04-11T01:32:54.385Z - success: cocos-services loaded
-2020-04-11T01:32:54.388Z - success: console loaded
-2020-04-11T01:32:54.397Z - success: fb-instant-games loaded
-2020-04-11T01:32:54.399Z - success: game-window loaded
-2020-04-11T01:32:54.400Z - success: google-instant-games loaded
-2020-04-11T01:32:54.403Z - success: hierarchy loaded
-2020-04-11T01:32:54.404Z - success: inspector loaded
-2020-04-11T01:32:55.301Z - success: cpk-publish loaded
-2020-04-11T01:32:55.310Z - success: keystore loaded
-2020-04-11T01:32:55.330Z - success: node-library loaded
-2020-04-11T01:32:55.331Z - success: open-recent-items loaded
-2020-04-11T01:32:55.334Z - success: package-asset loaded
-2020-04-11T01:32:55.335Z - success: preferences loaded
-2020-04-11T01:32:55.336Z - success: project-exporter loaded
-2020-04-11T01:32:55.338Z - success: project-importer loaded
-2020-04-11T01:32:55.339Z - success: project-settings loaded
-2020-04-11T01:32:55.351Z - success: qtt-runtime loaded
-2020-04-11T01:32:55.354Z - success: scene loaded
-2020-04-11T01:32:55.354Z - success: simulator-debugger loaded
-2020-04-11T01:32:55.355Z - success: sprite-editor loaded
-2020-04-11T01:32:55.357Z - success: store loaded
-2020-04-11T01:32:55.359Z - success: timeline loaded
-2020-04-11T01:32:55.363Z - success: wechatgame-opendata loaded
-2020-04-11T01:32:55.367Z - success: wechatgame loaded
-2020-04-11T01:32:55.370Z - success: xiaomi-runtime loaded
-2020-04-11T01:32:56.236Z - normal: Initializing Cocos2d
-2020-04-11T01:32:58.815Z - normal: Initializing engine extends
-2020-04-11T01:32:59.280Z - info: Cocos Service load base data!
-2020-04-11T01:33:01.581Z - normal: Loading packages
-2020-04-11T01:33:01.587Z - normal: Watching packages
-2020-04-11T01:33:02.210Z - normal: Run Application
-2020-04-11T03:36:26.083Z - failed: [db-task][sync-changes] Failed to import asset C:\Users\EDZ\Desktop\MRFit\assets\script\helper\FitHelper.js, message: Compile error: SyntaxError: C:/Users/EDZ/Desktop/MRFit/assets/script/helper/FitHelper.js: Unexpected token (10:13)
-   8 | 
-   9 |         // 2. 基于第一步的数据，再做缩放适配
-> 10 |         var  = Math.max(cc.view.getCanvasSize().width / realWidth, cc.view.getCanvasSize().height / realHeight);
-     |              ^
-  11 |     };
-  12 | 
-  13 |     return that;
-    at Parser.pp$5.raise (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
-    at Parser.pp.unexpected (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
-    at Parser.pp$2.parseBindingAtom (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:3090:12)
-    at Parser.pp$1.parseVarHead (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:2355:18)
-    at Parser.pp$1.parseVar (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:2338:10)
-    at Parser.pp$1.parseVarStatement (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:2169:8)
-    at Parser.pp$1.parseStatement (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:1861:19)
-    at Parser.pp$1.parseBlockBody (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:2268:21)
-    at Parser.pp$1.parseBlock (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:2247:8)
-    at Parser.pp$3.parseFunctionBody (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:4235:22)
-2020-04-11T05:37:59.898Z - normal: Start building with options : {
-  "actualPlatform": "android",
+2020-04-15T06:16:38.325Z - normal: Load ~/.CocosCreator/settings.json
+2020-04-15T06:16:38.375Z - normal: Initializing Asset Database
+2020-04-15T06:16:38.378Z - normal: checking language setting...
+2020-04-15T06:16:38.378Z - normal: Language: zh
+2020-04-15T06:16:39.229Z - success: preview server running at http://localhost:7456
+2020-04-15T06:16:39.233Z - success: protocol editor-framework registered
+2020-04-15T06:16:39.233Z - success: protocol app registered
+2020-04-15T06:16:39.233Z - success: protocol theme registered
+2020-04-15T06:16:39.233Z - success: protocol packages registered
+2020-04-15T06:16:39.233Z - success: protocol uuid registerred
+2020-04-15T06:16:39.233Z - success: protocol db registerred
+2020-04-15T06:16:39.233Z - success: protocol thumbnail registerred
+2020-04-15T06:16:39.233Z - success: protocol unpack registerred
+2020-04-15T06:16:39.233Z - success: protocol disable-commonjs registerred
+2020-04-15T06:16:39.360Z - normal: connected!
+2020-04-15T06:16:39.361Z - normal: Check project C:\Users\EDZ\Desktop\MRFit
+2020-04-15T06:16:39.362Z - normal: Initializing project C:\Users\EDZ\Desktop\MRFit
+2020-04-15T06:16:39.417Z - success: adapters loaded
+2020-04-15T06:16:39.429Z - success: asset-db-debugger loaded
+2020-04-15T06:16:39.523Z - success: fb-audience-network loaded
+2020-04-15T06:16:39.567Z - success: fb-live-stream loaded
+2020-04-15T06:16:39.589Z - success: google-play-instant loaded
+2020-04-15T06:16:39.641Z - success: huawei-runtime loaded
+2020-04-15T06:16:39.645Z - success: jkw-adapter loaded
+2020-04-15T06:16:39.646Z - success: jsb-adapter loaded
+2020-04-15T06:16:39.675Z - success: oppo-runtime loaded
+2020-04-15T06:16:39.694Z - success: package-manager loaded
+2020-04-15T06:16:39.698Z - success: qtt-adapter loaded
+2020-04-15T06:16:39.721Z - success: runtime-dev-tools loaded
+2020-04-15T06:16:39.740Z - success: sdkbox loaded
+2020-04-15T06:16:39.750Z - success: ui-kit-preview-extra loaded
+2020-04-15T06:16:39.759Z - success: ui-kit-preview loaded
+2020-04-15T06:16:39.811Z - success: vivo-runtime loaded
+2020-04-15T06:16:39.814Z - success: alipay-minigame loaded
+2020-04-15T06:16:39.853Z - success: assets loaded
+2020-04-15T06:16:39.856Z - success: baidugame-opendata loaded
+2020-04-15T06:16:39.858Z - success: baidugame loaded
+2020-04-15T06:16:39.860Z - success: builder loaded
+2020-04-15T06:16:40.042Z - success: cocos-services loaded
+2020-04-15T06:16:40.045Z - success: console loaded
+2020-04-15T06:16:40.054Z - success: fb-instant-games loaded
+2020-04-15T06:16:40.056Z - success: game-window loaded
+2020-04-15T06:16:40.057Z - success: google-instant-games loaded
+2020-04-15T06:16:40.060Z - success: hierarchy loaded
+2020-04-15T06:16:40.062Z - success: inspector loaded
+2020-04-15T06:16:40.694Z - success: cpk-publish loaded
+2020-04-15T06:16:40.699Z - success: keystore loaded
+2020-04-15T06:16:40.714Z - success: node-library loaded
+2020-04-15T06:16:40.715Z - success: open-recent-items loaded
+2020-04-15T06:16:40.717Z - success: package-asset loaded
+2020-04-15T06:16:40.718Z - success: preferences loaded
+2020-04-15T06:16:40.718Z - success: project-exporter loaded
+2020-04-15T06:16:40.720Z - success: project-importer loaded
+2020-04-15T06:16:40.721Z - success: project-settings loaded
+2020-04-15T06:16:40.732Z - success: qtt-runtime loaded
+2020-04-15T06:16:40.736Z - success: scene loaded
+2020-04-15T06:16:40.737Z - success: simulator-debugger loaded
+2020-04-15T06:16:40.738Z - success: sprite-editor loaded
+2020-04-15T06:16:40.740Z - success: store loaded
+2020-04-15T06:16:40.742Z - success: timeline loaded
+2020-04-15T06:16:40.744Z - success: wechatgame-opendata loaded
+2020-04-15T06:16:40.747Z - success: wechatgame loaded
+2020-04-15T06:16:40.750Z - success: xiaomi-runtime loaded
+2020-04-15T06:16:41.494Z - normal: Initializing Cocos2d
+2020-04-15T06:16:41.851Z - normal: Initializing engine extends
+2020-04-15T06:16:43.549Z - info: Cocos Service load base data!
+2020-04-15T06:16:44.727Z - normal: Loading packages
+2020-04-15T06:16:44.733Z - normal: Watching packages
+2020-04-15T06:16:45.264Z - normal: Run Application
+2020-04-15T06:16:52.617Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
   "android": {
-    "packageName": ""
+    "packageName": "com.fat"
   },
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -107,8 +89,8 @@
   "appBundle": false,
   "buildPath": "C:\\Users\\EDZ\\Desktop\\MRFit\\build",
   "debug": false,
-  "dest": "C:\\Users\\EDZ\\Desktop\\MRFit\\build\\jsb-link",
-  "embedWebDebugger": false,
+  "dest": "C:\\Users\\EDZ\\Desktop\\MRFit\\build\\web-mobile",
+  "embedWebDebugger": true,
   "encryptJs": true,
   "excludeScenes": [],
   "excludedModules": [],
@@ -132,13 +114,14 @@
     "upsideDown": false
   },
   "packageName": "",
-  "platform": "android",
+  "platform": "web-mobile",
   "previewHeight": "720",
   "previewWidth": "1280",
   "scenes": [
     "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9",
     "eec48f04-63f0-4220-82d5-07202ee11a4f",
     "6644e59d-b389-4b17-bdf5-9bfd77c6e37c",
+    "f0c44718-b4b4-49b7-a666-fdc84c3313c1",
     "88972f1a-18a4-48d0-8522-4beb499b435a"
   ],
   "sourceMaps": false,
@@ -155,84 +138,25 @@
   "projectName": "MrFit",
   "debugBuildWorker": false
 }
-2020-04-11T05:37:59.899Z - normal: Building C:\Users\EDZ\Desktop\MRFit
-2020-04-11T05:37:59.899Z - normal: Destination C:\Users\EDZ\Desktop\MRFit\build\jsb-link
-2020-04-11T05:38:00.109Z - normal: Delete C:\Users\EDZ\Desktop\MRFit\build\jsb-link\subpackages/**/*,C:\Users\EDZ\Desktop\MRFit\build\jsb-link\res/**/*,C:\Users\EDZ\Desktop\MRFit\build\jsb-link\src/**/*
-2020-04-11T05:38:08.320Z - normal: Start building assets
-2020-04-11T05:38:08.321Z - normal: Start spawn build-worker
-2020-04-11T05:38:08.902Z - normal: Finish spawn build-worker
-2020-04-11T05:38:08.902Z - normal: Start init build-worker
-2020-04-11T05:38:15.952Z - normal: Finish init build-worker
-2020-04-11T05:38:15.952Z - normal: Start build-assets in worker
-2020-04-11T05:38:16.606Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
-2020-04-11T05:38:17.114Z - normal: Finish build-assets in worker
-2020-04-11T05:38:17.119Z - normal: Finish building assets
-2020-04-11T05:38:17.145Z - normal: Start building plugin scripts
-2020-04-11T05:38:17.201Z - normal: Generating main.js from E:\CocosCreator_2.2.2\resources\static\build-templates\shares\main.js
-2020-04-11T05:38:19.103Z - normal: Built to "C:\Users\EDZ\Desktop\MRFit\build\jsb-link" successfully
-2020-04-11T05:38:22.221Z - normal: Start to compile native project. Please wait...
-2020-04-11T05:38:22.222Z - normal: The log file path [ C:\Users\EDZ\.CocosCreator\logs\native.log ]
-2020-04-11T05:42:17.034Z - normal: Compile native project successfully.
-2020-04-11T06:17:04.396Z - error: Load text file failed: C:/Users/EDZ/Desktop/MRFit/library/imports/ec/eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432.json?_t=1586585824375(error)
-    at E:\CocosCreator_2.2.2\resources\engine\bin\.cache\dev\cocos2d\core\load-pipeline\uuid-loader.js:127:36
-    at LoadingItems.onComplete (E:\CocosCreator_2.2.2\resources\engine\bin\.cache\dev\cocos2d\core\load-pipeline\CCLoader.js:179:17)
-    at LoadingItems.proto.allComplete (E:\CocosCreator_2.2.2\resources\engine\bin\.cache\dev\cocos2d\core\load-pipeline\loading-items.js:282:22)
-    at LoadingItems.proto.itemComplete (E:\CocosCreator_2.2.2\resources\engine\bin\.cache\dev\cocos2d\core\load-pipeline\loading-items.js:360:22)
-    at Function.LoadingItems.itemComplete (E:\CocosCreator_2.2.2\resources\engine\bin\.cache\dev\cocos2d\core\load-pipeline\loading-items.js:176:23)
-    at CCLoader.proto.flowOut (E:\CocosCreator_2.2.2\resources\engine\bin\.cache\dev\cocos2d\core\load-pipeline\pipeline.js:154:26)
-    at E:\CocosCreator_2.2.2\resources\engine\bin\.cache\dev\cocos2d\core\load-pipeline\pipeline.js:46:38
-    at E:\CocosCreator_2.2.2\resources\engine\bin\.cache\dev\cocos2d\core\load-pipeline\uuid-loader.js:153:21
-    at LoadingItems.onComplete (E:\CocosCreator_2.2.2\resources\engine\bin\.cache\dev\cocos2d\core\load-pipeline\CCLoader.js:179:17)
-2020-04-11T06:17:04.396Z - error: Error: [AssetLibrary] loading JSON or dependencies failed:Load text file failed: C:/Users/EDZ/Desktop/MRFit/library/imports/ec/eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432.json?_t=1586585824375(error)
-    at CCLoader.<anonymous> (E:\CocosCreator_2.2.2\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCAssetLibrary.js:50:33)
-    at E:\CocosCreator_2.2.2\resources\engine\bin\.cache\dev\cocos2d\core\load-pipeline\CCLoader.js:141:46
-    at E:\CocosCreator_2.2.2\resources\engine\bin\.cache\dev\cocos2d\core\platform\utils.js:49:25
-    at processTicksAndRejections (internal/process/task_queues.js:79:9)
-2020-04-11T06:19:28.629Z - info: 只有预制节点 "block" 及其子节点会被保存。
-2020-04-11T06:38:20.524Z - info: 只有预制节点 "block" 及其子节点会被保存。
-2020-04-11T06:38:39.557Z - info: 只有预制节点 "block" 及其子节点会被保存。
-2020-04-11T06:52:32.854Z - failed: [db-task][sync-changes] Failed to import asset C:\Users\EDZ\Desktop\MRFit\assets\script\miniGame\jumpBall\tipFrame.js, message: Compile error: SyntaxError: C:/Users/EDZ/Desktop/MRFit/assets/script/miniGame/jumpBall/tipFrame.js: Unexpected token (24:8)
-  22 |             this.node.setPosition(cc.v2(0,0));
-  23 |             this.nowLab.string  = data.
-> 24 |         });
-     |         ^
-  25 |     },
-  26 | 
-  27 |     onDestroy(){
-    at Parser.pp$5.raise (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
-    at Parser.pp.unexpected (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
-    at Parser.pp$3.parseIdentifier (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:4332:10)
-    at Parser.pp$3.parseSubscripts (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:3517:30)
-    at Parser.pp$3.parseExprSubscripts (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:3504:15)
-    at Parser.pp$3.parseMaybeUnary (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
-    at Parser.pp$3.parseExprOps (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
-    at Parser.pp$3.parseMaybeConditional (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
-    at Parser.pp$3.parseMaybeAssign (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
-    at Parser.pp$3.parseMaybeAssign (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:3367:23)
-2020-04-11T07:04:51.694Z - failed: [db-task][sync-changes] Failed to import asset C:\Users\EDZ\Desktop\MRFit\assets\script\miniGame\jumpBall\jumpBall.js, message: Compile error: SyntaxError: C:/Users/EDZ/Desktop/MRFit/assets/script/miniGame/jumpBall/jumpBall.js: Unexpected token (125:99)
-  123 |         if(this.ball.y <-200)
-  124 |         {
-> 125 |             var max = global.HttpHelper.httpPost(global.urlConf.mini_play, {userId:global.userData.},
-      |                                                                                                    ^
-  126 |                 ()=>{
-  127 | 
-  128 |                 });
-    at Parser.pp$5.raise (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
-    at Parser.pp.unexpected (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
-    at Parser.pp$3.parseIdentifier (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:4332:10)
-    at Parser.pp$3.parseSubscripts (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:3517:30)
-    at Parser.pp$3.parseExprSubscripts (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:3504:15)
-    at Parser.pp$3.parseMaybeUnary (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
-    at Parser.pp$3.parseExprOps (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
-    at Parser.pp$3.parseMaybeConditional (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
-    at Parser.pp$3.parseMaybeAssign (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
-    at Parser.pp$3.parseObjectProperty (E:\CocosCreator_2.2.2\resources\app.asar\node_modules\babylon\lib\index.js:4115:99)
-2020-04-11T07:26:00.499Z - warn: Can not indicate the 'type' attribute for "jumpBall.tag", which its default value is type of number.
-2020-04-11T07:29:50.386Z - warn: Use 'cc.Float' or 'cc.Integer' instead of 'cc.Number' please.
-2020-04-11T07:40:44.845Z - normal: Start building with options : {
-  "actualPlatform": "android",
+2020-04-15T06:16:52.618Z - normal: Building C:\Users\EDZ\Desktop\MRFit
+2020-04-15T06:16:52.618Z - normal: Destination C:\Users\EDZ\Desktop\MRFit\build\web-mobile
+2020-04-15T06:16:52.658Z - normal: Delete C:\Users\EDZ\Desktop\MRFit\build\web-mobile\subpackages/**/*,C:\Users\EDZ\Desktop\MRFit\build\web-mobile\**\*
+2020-04-15T06:16:55.032Z - normal: Start building assets
+2020-04-15T06:16:55.032Z - normal: Start spawn build-worker
+2020-04-15T06:16:55.595Z - normal: Finish spawn build-worker
+2020-04-15T06:16:55.595Z - normal: Start init build-worker
+2020-04-15T06:16:57.436Z - normal: Finish init build-worker
+2020-04-15T06:16:57.437Z - normal: Start build-assets in worker
+2020-04-15T06:16:58.318Z - normal: Finish build-assets in worker
+2020-04-15T06:16:58.339Z - normal: Finish building assets
+2020-04-15T06:16:58.385Z - normal: Start building plugin scripts
+2020-04-15T06:16:58.394Z - normal: Generating main.js from E:\CocosCreator_2.2.2\resources\static\build-templates\shares\main.js
+2020-04-15T06:16:58.400Z - normal: Generating html from E:\CocosCreator_2.2.2\resources\static\build-templates\web-mobile\template\index.html
+2020-04-15T06:16:58.455Z - normal: Built to "C:\Users\EDZ\Desktop\MRFit\build\web-mobile" successfully
+2020-04-15T06:22:35.538Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
   "android": {
-    "packageName": ""
+    "packageName": "com.fat"
   },
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -251,8 +175,8 @@
   "appBundle": false,
   "buildPath": "C:\\Users\\EDZ\\Desktop\\MRFit\\build",
   "debug": false,
-  "dest": "C:\\Users\\EDZ\\Desktop\\MRFit\\build\\jsb-link",
-  "embedWebDebugger": false,
+  "dest": "C:\\Users\\EDZ\\Desktop\\MRFit\\build\\web-mobile",
+  "embedWebDebugger": true,
   "encryptJs": true,
   "excludeScenes": [],
   "excludedModules": [],
@@ -276,13 +200,14 @@
     "upsideDown": false
   },
   "packageName": "",
-  "platform": "android",
+  "platform": "web-mobile",
   "previewHeight": "720",
   "previewWidth": "1280",
   "scenes": [
     "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9",
     "eec48f04-63f0-4220-82d5-07202ee11a4f",
     "6644e59d-b389-4b17-bdf5-9bfd77c6e37c",
+    "f0c44718-b4b4-49b7-a666-fdc84c3313c1",
     "88972f1a-18a4-48d0-8522-4beb499b435a"
   ],
   "sourceMaps": false,
@@ -299,29 +224,25 @@
   "projectName": "MrFit",
   "debugBuildWorker": false
 }
-2020-04-11T07:40:44.846Z - normal: Building C:\Users\EDZ\Desktop\MRFit
-2020-04-11T07:40:44.846Z - normal: Destination C:\Users\EDZ\Desktop\MRFit\build\jsb-link
-2020-04-11T07:40:44.846Z - normal: Delete C:\Users\EDZ\Desktop\MRFit\build\jsb-link\subpackages/**/*,C:\Users\EDZ\Desktop\MRFit\build\jsb-link\res/**/*,C:\Users\EDZ\Desktop\MRFit\build\jsb-link\src/**/*
-2020-04-11T07:40:53.953Z - normal: Start building assets
-2020-04-11T07:40:53.953Z - normal: Start spawn build-worker
-2020-04-11T07:40:54.538Z - normal: Finish spawn build-worker
-2020-04-11T07:40:54.538Z - normal: Start init build-worker
-2020-04-11T07:41:02.118Z - normal: Finish init build-worker
-2020-04-11T07:41:02.119Z - normal: Start build-assets in worker
-2020-04-11T07:41:02.904Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
-2020-04-11T07:41:03.621Z - normal: Finish build-assets in worker
-2020-04-11T07:41:03.628Z - normal: Finish building assets
-2020-04-11T07:41:03.661Z - normal: Start building plugin scripts
-2020-04-11T07:41:03.726Z - normal: Generating main.js from E:\CocosCreator_2.2.2\resources\static\build-templates\shares\main.js
-2020-04-11T07:41:05.598Z - normal: Built to "C:\Users\EDZ\Desktop\MRFit\build\jsb-link" successfully
-2020-04-11T07:41:06.646Z - normal: Start to compile native project. Please wait...
-2020-04-11T07:41:06.646Z - normal: The log file path [ C:\Users\EDZ\.CocosCreator\logs\native.log ]
-2020-04-11T07:45:32.421Z - normal: Compile native project successfully.
-2020-04-11T08:18:37.446Z - info: 只有预制节点 "block" 及其子节点会被保存。
-2020-04-11T08:20:50.348Z - normal: Start building with options : {
-  "actualPlatform": "android",
+2020-04-15T06:22:35.538Z - normal: Building C:\Users\EDZ\Desktop\MRFit
+2020-04-15T06:22:35.538Z - normal: Destination C:\Users\EDZ\Desktop\MRFit\build\web-mobile
+2020-04-15T06:22:35.539Z - normal: Delete C:\Users\EDZ\Desktop\MRFit\build\web-mobile\subpackages/**/*,C:\Users\EDZ\Desktop\MRFit\build\web-mobile\**\*
+2020-04-15T06:22:38.349Z - normal: Start building assets
+2020-04-15T06:22:38.349Z - normal: Start spawn build-worker
+2020-04-15T06:22:39.044Z - normal: Finish spawn build-worker
+2020-04-15T06:22:39.044Z - normal: Start init build-worker
+2020-04-15T06:22:40.705Z - normal: Finish init build-worker
+2020-04-15T06:22:40.705Z - normal: Start build-assets in worker
+2020-04-15T06:22:41.564Z - normal: Finish build-assets in worker
+2020-04-15T06:22:41.575Z - normal: Finish building assets
+2020-04-15T06:22:41.617Z - normal: Start building plugin scripts
+2020-04-15T06:22:41.624Z - normal: Generating main.js from E:\CocosCreator_2.2.2\resources\static\build-templates\shares\main.js
+2020-04-15T06:22:41.628Z - normal: Generating html from E:\CocosCreator_2.2.2\resources\static\build-templates\web-mobile\template\index.html
+2020-04-15T06:22:41.666Z - normal: Built to "C:\Users\EDZ\Desktop\MRFit\build\web-mobile" successfully
+2020-04-15T06:27:27.345Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
   "android": {
-    "packageName": ""
+    "packageName": "com.fat"
   },
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -340,8 +261,8 @@
   "appBundle": false,
   "buildPath": "C:\\Users\\EDZ\\Desktop\\MRFit\\build",
   "debug": false,
-  "dest": "C:\\Users\\EDZ\\Desktop\\MRFit\\build\\jsb-link",
-  "embedWebDebugger": false,
+  "dest": "C:\\Users\\EDZ\\Desktop\\MRFit\\build\\web-mobile",
+  "embedWebDebugger": true,
   "encryptJs": true,
   "excludeScenes": [],
   "excludedModules": [],
@@ -365,13 +286,14 @@
     "upsideDown": false
   },
   "packageName": "",
-  "platform": "android",
+  "platform": "web-mobile",
   "previewHeight": "720",
   "previewWidth": "1280",
   "scenes": [
     "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9",
     "eec48f04-63f0-4220-82d5-07202ee11a4f",
     "6644e59d-b389-4b17-bdf5-9bfd77c6e37c",
+    "f0c44718-b4b4-49b7-a666-fdc84c3313c1",
     "88972f1a-18a4-48d0-8522-4beb499b435a"
   ],
   "sourceMaps": false,
@@ -388,37 +310,25 @@
   "projectName": "MrFit",
   "debugBuildWorker": false
 }
-2020-04-11T08:20:50.348Z - normal: Building C:\Users\EDZ\Desktop\MRFit
-2020-04-11T08:20:50.348Z - normal: Destination C:\Users\EDZ\Desktop\MRFit\build\jsb-link
-2020-04-11T08:20:50.348Z - normal: Delete C:\Users\EDZ\Desktop\MRFit\build\jsb-link\subpackages/**/*,C:\Users\EDZ\Desktop\MRFit\build\jsb-link\res/**/*,C:\Users\EDZ\Desktop\MRFit\build\jsb-link\src/**/*
-2020-04-11T08:20:58.796Z - normal: Start building assets
-2020-04-11T08:20:58.797Z - normal: Start spawn build-worker
-2020-04-11T08:20:59.621Z - normal: Finish spawn build-worker
-2020-04-11T08:20:59.621Z - normal: Start init build-worker
-2020-04-11T08:21:08.331Z - normal: Finish init build-worker
-2020-04-11T08:21:08.331Z - normal: Start build-assets in worker
-2020-04-11T08:21:08.977Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
-2020-04-11T08:21:09.780Z - normal: Finish build-assets in worker
-2020-04-11T08:21:09.790Z - normal: Finish building assets
-2020-04-11T08:21:09.822Z - normal: Start building plugin scripts
-2020-04-11T08:21:09.874Z - normal: Generating main.js from E:\CocosCreator_2.2.2\resources\static\build-templates\shares\main.js
-2020-04-11T08:21:11.762Z - normal: Built to "C:\Users\EDZ\Desktop\MRFit\build\jsb-link" successfully
-2020-04-11T08:21:15.895Z - normal: Start to compile native project. Please wait...
-2020-04-11T08:21:15.895Z - normal: The log file path [ C:\Users\EDZ\.CocosCreator\logs\native.log ]
-2020-04-11T08:21:27.875Z - failed: Error: Compile failed. The log file path [ C:\Users\EDZ\.CocosCreator\logs\native.log ]
-    at ChildProcess.<anonymous> (E:\CocosCreator_2.2.2\resources\app.asar\editor\core\native-utils.js:1:18784)
-    at ChildProcess.<anonymous> (E:\CocosCreator_2.2.2\resources\app.asar\editor\core\native-utils.js:1:6424)
-    at ChildProcess.emit (events.js:194:13)
-    at ChildProcess.EventEmitter.emit (domain.js:469:20)
-    at maybeClose (internal/child_process.js:998:16)
-    at Socket.<anonymous> (internal/child_process.js:403:11)
-    at Socket.emit (events.js:194:13)
-    at Socket.EventEmitter.emit (domain.js:469:20)
-    at Pipe.<anonymous> (net.js:593:12)
-2020-04-11T08:22:15.623Z - normal: Start building with options : {
-  "actualPlatform": "android",
+2020-04-15T06:27:27.345Z - normal: Building C:\Users\EDZ\Desktop\MRFit
+2020-04-15T06:27:27.345Z - normal: Destination C:\Users\EDZ\Desktop\MRFit\build\web-mobile
+2020-04-15T06:27:27.345Z - normal: Delete C:\Users\EDZ\Desktop\MRFit\build\web-mobile\subpackages/**/*,C:\Users\EDZ\Desktop\MRFit\build\web-mobile\**\*
+2020-04-15T06:27:29.825Z - normal: Start building assets
+2020-04-15T06:27:29.825Z - normal: Start spawn build-worker
+2020-04-15T06:27:30.357Z - normal: Finish spawn build-worker
+2020-04-15T06:27:30.357Z - normal: Start init build-worker
+2020-04-15T06:27:32.109Z - normal: Finish init build-worker
+2020-04-15T06:27:32.109Z - normal: Start build-assets in worker
+2020-04-15T06:27:32.945Z - normal: Finish build-assets in worker
+2020-04-15T06:27:32.955Z - normal: Finish building assets
+2020-04-15T06:27:33.008Z - normal: Start building plugin scripts
+2020-04-15T06:27:33.019Z - normal: Generating main.js from E:\CocosCreator_2.2.2\resources\static\build-templates\shares\main.js
+2020-04-15T06:27:33.023Z - normal: Generating html from E:\CocosCreator_2.2.2\resources\static\build-templates\web-mobile\template\index.html
+2020-04-15T06:27:33.078Z - normal: Built to "C:\Users\EDZ\Desktop\MRFit\build\web-mobile" successfully
+2020-04-15T06:31:22.815Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
   "android": {
-    "packageName": ""
+    "packageName": "com.fat"
   },
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -437,8 +347,8 @@
   "appBundle": false,
   "buildPath": "C:\\Users\\EDZ\\Desktop\\MRFit\\build",
   "debug": false,
-  "dest": "C:\\Users\\EDZ\\Desktop\\MRFit\\build\\jsb-link",
-  "embedWebDebugger": false,
+  "dest": "C:\\Users\\EDZ\\Desktop\\MRFit\\build\\web-mobile",
+  "embedWebDebugger": true,
   "encryptJs": true,
   "excludeScenes": [],
   "excludedModules": [],
@@ -462,13 +372,14 @@
     "upsideDown": false
   },
   "packageName": "",
-  "platform": "android",
+  "platform": "web-mobile",
   "previewHeight": "720",
   "previewWidth": "1280",
   "scenes": [
     "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9",
     "eec48f04-63f0-4220-82d5-07202ee11a4f",
     "6644e59d-b389-4b17-bdf5-9bfd77c6e37c",
+    "f0c44718-b4b4-49b7-a666-fdc84c3313c1",
     "88972f1a-18a4-48d0-8522-4beb499b435a"
   ],
   "sourceMaps": false,
@@ -485,37 +396,25 @@
   "projectName": "MrFit",
   "debugBuildWorker": false
 }
-2020-04-11T08:22:15.624Z - normal: Building C:\Users\EDZ\Desktop\MRFit
-2020-04-11T08:22:15.624Z - normal: Destination C:\Users\EDZ\Desktop\MRFit\build\jsb-link
-2020-04-11T08:22:15.624Z - normal: Delete C:\Users\EDZ\Desktop\MRFit\build\jsb-link\subpackages/**/*,C:\Users\EDZ\Desktop\MRFit\build\jsb-link\res/**/*,C:\Users\EDZ\Desktop\MRFit\build\jsb-link\src/**/*
-2020-04-11T08:22:24.100Z - normal: Start building assets
-2020-04-11T08:22:24.100Z - normal: Start spawn build-worker
-2020-04-11T08:22:25.049Z - normal: Finish spawn build-worker
-2020-04-11T08:22:25.049Z - normal: Start init build-worker
-2020-04-11T08:22:27.681Z - normal: Finish init build-worker
-2020-04-11T08:22:27.681Z - normal: Start build-assets in worker
-2020-04-11T08:22:27.773Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
-2020-04-11T08:22:29.106Z - normal: Finish build-assets in worker
-2020-04-11T08:22:29.213Z - normal: Finish building assets
-2020-04-11T08:22:29.258Z - normal: Start building plugin scripts
-2020-04-11T08:22:29.309Z - normal: Generating main.js from E:\CocosCreator_2.2.2\resources\static\build-templates\shares\main.js
-2020-04-11T08:22:33.256Z - normal: Built to "C:\Users\EDZ\Desktop\MRFit\build\jsb-link" successfully
-2020-04-11T08:22:36.907Z - normal: Start to compile native project. Please wait...
-2020-04-11T08:22:36.907Z - normal: The log file path [ C:\Users\EDZ\.CocosCreator\logs\native.log ]
-2020-04-11T08:24:07.286Z - failed: Error: Compile failed. The log file path [ C:\Users\EDZ\.CocosCreator\logs\native.log ]
-    at ChildProcess.<anonymous> (E:\CocosCreator_2.2.2\resources\app.asar\editor\core\native-utils.js:1:18784)
-    at ChildProcess.<anonymous> (E:\CocosCreator_2.2.2\resources\app.asar\editor\core\native-utils.js:1:6424)
-    at ChildProcess.emit (events.js:194:13)
-    at ChildProcess.EventEmitter.emit (domain.js:469:20)
-    at maybeClose (internal/child_process.js:998:16)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:265:5)
-2020-04-11T08:25:03.106Z - normal: Start to compile native project. Please wait...
-2020-04-11T08:25:03.106Z - normal: The log file path [ C:\Users\EDZ\.CocosCreator\logs\native.log ]
-2020-04-11T08:27:22.448Z - normal: Compile native project successfully.
-2020-04-11T09:15:01.622Z - normal: Start building with options : {
-  "actualPlatform": "android",
+2020-04-15T06:31:22.815Z - normal: Building C:\Users\EDZ\Desktop\MRFit
+2020-04-15T06:31:22.815Z - normal: Destination C:\Users\EDZ\Desktop\MRFit\build\web-mobile
+2020-04-15T06:31:22.816Z - normal: Delete C:\Users\EDZ\Desktop\MRFit\build\web-mobile\subpackages/**/*,C:\Users\EDZ\Desktop\MRFit\build\web-mobile\**\*
+2020-04-15T06:31:25.312Z - normal: Start building assets
+2020-04-15T06:31:25.313Z - normal: Start spawn build-worker
+2020-04-15T06:31:25.847Z - normal: Finish spawn build-worker
+2020-04-15T06:31:25.847Z - normal: Start init build-worker
+2020-04-15T06:31:27.586Z - normal: Finish init build-worker
+2020-04-15T06:31:27.586Z - normal: Start build-assets in worker
+2020-04-15T06:31:28.435Z - normal: Finish build-assets in worker
+2020-04-15T06:31:28.442Z - normal: Finish building assets
+2020-04-15T06:31:28.493Z - normal: Start building plugin scripts
+2020-04-15T06:31:28.498Z - normal: Generating main.js from E:\CocosCreator_2.2.2\resources\static\build-templates\shares\main.js
+2020-04-15T06:31:28.502Z - normal: Generating html from E:\CocosCreator_2.2.2\resources\static\build-templates\web-mobile\template\index.html
+2020-04-15T06:31:28.538Z - normal: Built to "C:\Users\EDZ\Desktop\MRFit\build\web-mobile" successfully
+2020-04-15T06:36:19.082Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
   "android": {
-    "packageName": ""
+    "packageName": "com.fat"
   },
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -534,8 +433,8 @@
   "appBundle": false,
   "buildPath": "C:\\Users\\EDZ\\Desktop\\MRFit\\build",
   "debug": false,
-  "dest": "C:\\Users\\EDZ\\Desktop\\MRFit\\build\\jsb-link",
-  "embedWebDebugger": false,
+  "dest": "C:\\Users\\EDZ\\Desktop\\MRFit\\build\\web-mobile",
+  "embedWebDebugger": true,
   "encryptJs": true,
   "excludeScenes": [],
   "excludedModules": [],
@@ -559,13 +458,14 @@
     "upsideDown": false
   },
   "packageName": "",
-  "platform": "android",
+  "platform": "web-mobile",
   "previewHeight": "720",
   "previewWidth": "1280",
   "scenes": [
     "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9",
     "eec48f04-63f0-4220-82d5-07202ee11a4f",
     "6644e59d-b389-4b17-bdf5-9bfd77c6e37c",
+    "f0c44718-b4b4-49b7-a666-fdc84c3313c1",
     "88972f1a-18a4-48d0-8522-4beb499b435a"
   ],
   "sourceMaps": false,
@@ -582,21 +482,276 @@
   "projectName": "MrFit",
   "debugBuildWorker": false
 }
-2020-04-11T09:15:01.622Z - normal: Building C:\Users\EDZ\Desktop\MRFit
-2020-04-11T09:15:01.622Z - normal: Destination C:\Users\EDZ\Desktop\MRFit\build\jsb-link
-2020-04-11T09:15:01.623Z - normal: Delete C:\Users\EDZ\Desktop\MRFit\build\jsb-link\subpackages/**/*,C:\Users\EDZ\Desktop\MRFit\build\jsb-link\res/**/*,C:\Users\EDZ\Desktop\MRFit\build\jsb-link\src/**/*
-2020-04-11T09:15:08.322Z - normal: Start building assets
-2020-04-11T09:15:08.322Z - normal: Start spawn build-worker
-2020-04-11T09:15:08.862Z - normal: Finish spawn build-worker
-2020-04-11T09:15:08.863Z - normal: Start init build-worker
-2020-04-11T09:15:16.056Z - normal: Finish init build-worker
-2020-04-11T09:15:16.056Z - normal: Start build-assets in worker
-2020-04-11T09:15:16.884Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
-2020-04-11T09:15:17.493Z - normal: Finish build-assets in worker
-2020-04-11T09:15:17.498Z - normal: Finish building assets
-2020-04-11T09:15:17.527Z - normal: Start building plugin scripts
-2020-04-11T09:15:17.557Z - normal: Generating main.js from E:\CocosCreator_2.2.2\resources\static\build-templates\shares\main.js
-2020-04-11T09:15:18.853Z - normal: Built to "C:\Users\EDZ\Desktop\MRFit\build\jsb-link" successfully
-2020-04-11T09:15:24.441Z - normal: Start to compile native project. Please wait...
-2020-04-11T09:15:24.441Z - normal: The log file path [ C:\Users\EDZ\.CocosCreator\logs\native.log ]
-2020-04-11T09:19:02.706Z - normal: Compile native project successfully.
+2020-04-15T06:36:19.082Z - normal: Building C:\Users\EDZ\Desktop\MRFit
+2020-04-15T06:36:19.082Z - normal: Destination C:\Users\EDZ\Desktop\MRFit\build\web-mobile
+2020-04-15T06:36:19.083Z - normal: Delete C:\Users\EDZ\Desktop\MRFit\build\web-mobile\subpackages/**/*,C:\Users\EDZ\Desktop\MRFit\build\web-mobile\**\*
+2020-04-15T06:36:21.540Z - normal: Start building assets
+2020-04-15T06:36:21.540Z - normal: Start spawn build-worker
+2020-04-15T06:36:22.102Z - normal: Finish spawn build-worker
+2020-04-15T06:36:22.102Z - normal: Start init build-worker
+2020-04-15T06:36:23.769Z - normal: Finish init build-worker
+2020-04-15T06:36:23.769Z - normal: Start build-assets in worker
+2020-04-15T06:36:24.606Z - normal: Finish build-assets in worker
+2020-04-15T06:36:24.612Z - normal: Finish building assets
+2020-04-15T06:36:24.656Z - normal: Start building plugin scripts
+2020-04-15T06:36:24.661Z - normal: Generating main.js from E:\CocosCreator_2.2.2\resources\static\build-templates\shares\main.js
+2020-04-15T06:36:24.665Z - normal: Generating html from E:\CocosCreator_2.2.2\resources\static\build-templates\web-mobile\template\index.html
+2020-04-15T06:36:24.703Z - normal: Built to "C:\Users\EDZ\Desktop\MRFit\build\web-mobile" successfully
+2020-04-15T06:39:38.902Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android": {
+    "packageName": "com.fat"
+  },
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "packageName": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "android-29",
+  "appABIs": [
+    "x86",
+    "armeabi-v7a"
+  ],
+  "appBundle": false,
+  "buildPath": "C:\\Users\\EDZ\\Desktop\\MRFit\\build",
+  "debug": false,
+  "dest": "C:\\Users\\EDZ\\Desktop\\MRFit\\build\\web-mobile",
+  "embedWebDebugger": true,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "ios": {
+    "packageName": ""
+  },
+  "mac": {
+    "packageName": ""
+  },
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": false,
+    "landscapeRight": false,
+    "portrait": true,
+    "upsideDown": false
+  },
+  "packageName": "",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "scenes": [
+    "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9",
+    "eec48f04-63f0-4220-82d5-07202ee11a4f",
+    "6644e59d-b389-4b17-bdf5-9bfd77c6e37c",
+    "f0c44718-b4b4-49b7-a666-fdc84c3313c1",
+    "88972f1a-18a4-48d0-8522-4beb499b435a"
+  ],
+  "sourceMaps": false,
+  "startScene": "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9",
+  "template": "link",
+  "title": "MrFit",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "win32": {},
+  "xxteaKey": "c0c33e4e-f9c8-49",
+  "zipCompressJs": true,
+  "project": "C:\\Users\\EDZ\\Desktop\\MRFit",
+  "projectName": "MrFit",
+  "debugBuildWorker": false
+}
+2020-04-15T06:39:38.903Z - normal: Building C:\Users\EDZ\Desktop\MRFit
+2020-04-15T06:39:38.903Z - normal: Destination C:\Users\EDZ\Desktop\MRFit\build\web-mobile
+2020-04-15T06:39:38.903Z - normal: Delete C:\Users\EDZ\Desktop\MRFit\build\web-mobile\subpackages/**/*,C:\Users\EDZ\Desktop\MRFit\build\web-mobile\**\*
+2020-04-15T06:39:41.414Z - normal: Start building assets
+2020-04-15T06:39:41.414Z - normal: Start spawn build-worker
+2020-04-15T06:39:41.944Z - normal: Finish spawn build-worker
+2020-04-15T06:39:41.944Z - normal: Start init build-worker
+2020-04-15T06:39:43.600Z - normal: Finish init build-worker
+2020-04-15T06:39:43.600Z - normal: Start build-assets in worker
+2020-04-15T06:39:44.518Z - normal: Finish build-assets in worker
+2020-04-15T06:39:44.526Z - normal: Finish building assets
+2020-04-15T06:39:44.569Z - normal: Start building plugin scripts
+2020-04-15T06:39:44.575Z - normal: Generating main.js from E:\CocosCreator_2.2.2\resources\static\build-templates\shares\main.js
+2020-04-15T06:39:44.580Z - normal: Generating html from E:\CocosCreator_2.2.2\resources\static\build-templates\web-mobile\template\index.html
+2020-04-15T06:39:44.615Z - normal: Built to "C:\Users\EDZ\Desktop\MRFit\build\web-mobile" successfully
+2020-04-15T06:42:51.983Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android": {
+    "packageName": "com.fat"
+  },
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "packageName": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "android-29",
+  "appABIs": [
+    "x86",
+    "armeabi-v7a"
+  ],
+  "appBundle": false,
+  "buildPath": "C:\\Users\\EDZ\\Desktop\\MRFit\\build",
+  "debug": false,
+  "dest": "C:\\Users\\EDZ\\Desktop\\MRFit\\build\\web-mobile",
+  "embedWebDebugger": true,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "ios": {
+    "packageName": ""
+  },
+  "mac": {
+    "packageName": ""
+  },
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": false,
+    "landscapeRight": false,
+    "portrait": true,
+    "upsideDown": false
+  },
+  "packageName": "",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "scenes": [
+    "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9",
+    "eec48f04-63f0-4220-82d5-07202ee11a4f",
+    "6644e59d-b389-4b17-bdf5-9bfd77c6e37c",
+    "f0c44718-b4b4-49b7-a666-fdc84c3313c1",
+    "88972f1a-18a4-48d0-8522-4beb499b435a"
+  ],
+  "sourceMaps": false,
+  "startScene": "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9",
+  "template": "link",
+  "title": "MrFit",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "win32": {},
+  "xxteaKey": "c0c33e4e-f9c8-49",
+  "zipCompressJs": true,
+  "project": "C:\\Users\\EDZ\\Desktop\\MRFit",
+  "projectName": "MrFit",
+  "debugBuildWorker": false
+}
+2020-04-15T06:42:51.983Z - normal: Building C:\Users\EDZ\Desktop\MRFit
+2020-04-15T06:42:51.983Z - normal: Destination C:\Users\EDZ\Desktop\MRFit\build\web-mobile
+2020-04-15T06:42:51.984Z - normal: Delete C:\Users\EDZ\Desktop\MRFit\build\web-mobile\subpackages/**/*,C:\Users\EDZ\Desktop\MRFit\build\web-mobile\**\*
+2020-04-15T06:42:54.629Z - normal: Start building assets
+2020-04-15T06:42:54.629Z - normal: Start spawn build-worker
+2020-04-15T06:42:55.158Z - normal: Finish spawn build-worker
+2020-04-15T06:42:55.158Z - normal: Start init build-worker
+2020-04-15T06:42:57.069Z - normal: Finish init build-worker
+2020-04-15T06:42:57.069Z - normal: Start build-assets in worker
+2020-04-15T06:42:57.920Z - normal: Finish build-assets in worker
+2020-04-15T06:42:57.939Z - normal: Finish building assets
+2020-04-15T06:42:57.982Z - normal: Start building plugin scripts
+2020-04-15T06:42:57.987Z - normal: Generating main.js from E:\CocosCreator_2.2.2\resources\static\build-templates\shares\main.js
+2020-04-15T06:42:57.995Z - normal: Generating html from E:\CocosCreator_2.2.2\resources\static\build-templates\web-mobile\template\index.html
+2020-04-15T06:42:58.039Z - normal: Built to "C:\Users\EDZ\Desktop\MRFit\build\web-mobile" successfully
+2020-04-15T06:43:28.448Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android": {
+    "packageName": "com.fat"
+  },
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "packageName": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "android-29",
+  "appABIs": [
+    "x86",
+    "armeabi-v7a"
+  ],
+  "appBundle": false,
+  "buildPath": "C:\\Users\\EDZ\\Desktop\\MRFit\\build",
+  "debug": false,
+  "dest": "C:\\Users\\EDZ\\Desktop\\MRFit\\build\\web-mobile",
+  "embedWebDebugger": true,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "ios": {
+    "packageName": ""
+  },
+  "mac": {
+    "packageName": ""
+  },
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": false,
+    "landscapeRight": false,
+    "portrait": true,
+    "upsideDown": false
+  },
+  "packageName": "",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "scenes": [
+    "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9",
+    "eec48f04-63f0-4220-82d5-07202ee11a4f",
+    "6644e59d-b389-4b17-bdf5-9bfd77c6e37c",
+    "f0c44718-b4b4-49b7-a666-fdc84c3313c1",
+    "88972f1a-18a4-48d0-8522-4beb499b435a"
+  ],
+  "sourceMaps": false,
+  "startScene": "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9",
+  "template": "link",
+  "title": "MrFit",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "win32": {},
+  "xxteaKey": "c0c33e4e-f9c8-49",
+  "zipCompressJs": true,
+  "project": "C:\\Users\\EDZ\\Desktop\\MRFit",
+  "projectName": "MrFit",
+  "debugBuildWorker": false
+}
+2020-04-15T06:43:28.448Z - normal: Building C:\Users\EDZ\Desktop\MRFit
+2020-04-15T06:43:28.448Z - normal: Destination C:\Users\EDZ\Desktop\MRFit\build\web-mobile
+2020-04-15T06:43:28.448Z - normal: Delete C:\Users\EDZ\Desktop\MRFit\build\web-mobile\subpackages/**/*,C:\Users\EDZ\Desktop\MRFit\build\web-mobile\**\*
+2020-04-15T06:43:30.984Z - normal: Start building assets
+2020-04-15T06:43:30.984Z - normal: Start spawn build-worker
+2020-04-15T06:43:31.519Z - normal: Finish spawn build-worker
+2020-04-15T06:43:31.519Z - normal: Start init build-worker
+2020-04-15T06:43:33.341Z - normal: Finish init build-worker
+2020-04-15T06:43:33.341Z - normal: Start build-assets in worker
+2020-04-15T06:43:34.149Z - normal: Finish build-assets in worker
+2020-04-15T06:43:34.156Z - normal: Finish building assets
+2020-04-15T06:43:34.197Z - normal: Start building plugin scripts
+2020-04-15T06:43:34.201Z - normal: Generating main.js from E:\CocosCreator_2.2.2\resources\static\build-templates\shares\main.js
+2020-04-15T06:43:34.204Z - normal: Generating html from E:\CocosCreator_2.2.2\resources\static\build-templates\web-mobile\template\index.html
+2020-04-15T06:43:34.235Z - normal: Built to "C:\Users\EDZ\Desktop\MRFit\build\web-mobile" successfully

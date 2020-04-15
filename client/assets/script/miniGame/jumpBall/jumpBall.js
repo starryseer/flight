@@ -97,7 +97,6 @@ cc.Class({
         {
             this.score.string = parseInt(this.score.string)+1;
             this.blockSpeed+=5;
-            this.gameStart = 2;
         }
 
     },
@@ -113,7 +112,7 @@ cc.Class({
     },
 
     update (dt) {
-        if(this.gameStart >1)
+        if(this.gameStart)
         {
             for(var block of this.blockList)
             {
@@ -140,7 +139,10 @@ cc.Class({
                     {
                         global.clientAttrData.initClientAttrData(rsp.data.clientAttr);
                         global.miniGameData.playData(rsp.data.miniGame);
-                        this.tipFrame.emit('show',{now:this.score.string,max:global.miniGameData.miniGame[1]['point']});
+                        cc.director.preloadScene("miniMain",()=>{
+                            this.tipFrame.emit('show',{now:this.score.string,max:global.miniGameData.miniGame[1]['point']});
+                        });
+   
                     }
                     else
                     {

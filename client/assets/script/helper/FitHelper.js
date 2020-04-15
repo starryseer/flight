@@ -11,6 +11,22 @@ const FitHelper = function(){
         target.scale = ratio;
         return ratio;
     };
+    that.onEnable= function (target) {
+        target.on('touchstart',  (event)=> {
+            event.stopPropagation();
+        });
+        target.on('touchend', (event)=> {
+            event.stopPropagation();
+        });
+    };
+    that.onDisable= function () {
+        this.node.off('touchstart',  (event) =>{
+            event.stopPropagation();
+        });
+        this.node.off('touchend', (event) => {
+            event.stopPropagation();
+        });
+    };
 
     return that;
 };

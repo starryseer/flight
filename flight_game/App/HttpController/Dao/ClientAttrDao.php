@@ -25,13 +25,13 @@ class ClientAttrDao
                 'diamond' => 0,
                 'fatigue' =>0,
                 'mood' =>0,
-                'nickname'=>null,
-                'signature'=>null
+                'signature'=>NULL,
+                'avatar'=>0,
             ];
             return DbManager::getInstance()->invoke(function ($client)use($info){
-
                 $clientAttrModel = ClientAttrModel::invoke($client,$info);
                 $clientAttrModel->save();
+                $info['nickname'] = NULL;
                 return $info;
             });
         }
@@ -88,6 +88,24 @@ class ClientAttrDao
                 $clientAttrModel = ClientAttrModel::invoke($client);
                 $clientAttrModel->where('client_id',$userId);
                 return $clientAttrModel->update($arr);
+            });
+        }
+        catch(\Exception $e)
+        {
+            return false;
+        }
+    }
+
+    public function getMulti($ids)
+    {
+        try
+        {
+            return DbManager::getInstance()->invoke(function ($client)use($ids){
+
+                $clientAttrModel = ClientAttrModel::invoke($client);
+                $clientAttrModel->where('client_id',$ids,'in');
+                $clientAttr = $clientAttrModel->all();
+                return $clientAttr;
             });
         }
         catch(\Exception $e)

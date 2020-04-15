@@ -7,6 +7,7 @@ const clientAttrData = function(){
     that.mood = null;
     that.nickname = null;
     that.signature = null;
+    that.avatar = null;
 
 
     that.initClientAttrData = function(clientAttr)
@@ -18,6 +19,7 @@ const clientAttrData = function(){
         that.mood = clientAttr.mood;
         that.nickname = clientAttr.nickname;
         that.signature = clientAttr.signature;
+        that.avatar = clientAttr.avatar;
     };
 
     

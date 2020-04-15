@@ -18,10 +18,18 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        this.node.on('init',(data)=>{
-            this.goldLab.string = global.clientAttrData.gold;
-            this.moodLab.string = Math.floor((global.clientAttrData.mood + 200) / 400 * 100) + "%";
-        });
+        //this.init();
+        this.node.on('update',this.update,this);
+    },
+
+    init(){
+        this.goldLab.string = global.clientAttrData.gold;
+        this.moodLab.string = Math.floor((global.clientAttrData.mood + 200) / 400 * 100) + "%";
+    },
+
+    update(){
+        this.goldLab.string = global.clientAttrData.gold;
+        this.moodLab.string = Math.floor((global.clientAttrData.mood + 200) / 400 * 100) + "%";
     },
 
     onBackClick(target,data){

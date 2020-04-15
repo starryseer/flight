@@ -75,6 +75,7 @@ cc.Class({
                 global.clientData.initClientData(rsp.data.client);
                 global.clientAttrData.initClientAttrData(rsp.data.clientAttr);
                 global.itemData.initItemData(rsp.data.item);
+                global.miniGameData.initMiniGameData(rsp.data.miniGame);
                 cc.director.loadScene('home');
             }
             else

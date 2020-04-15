@@ -51,7 +51,8 @@ class ClientAttr extends Base
             $userId = isset($data['userId'])?trim($data['userId']):'';
             $token    = isset($data['token'])?trim($data['token']):'';
             $signature = isset($data['signature'])?trim($data['signature']):'';
-            if(empty($userId) or empty($token) or empty($signature))
+            $avatar = isset($data['avatar'])?trim($data['avatar']):'';
+            if(empty($userId) or empty($token) or empty($signature) or !in_array($avatar,[0,1,2,3,4,5,6,7,8]))
                 return $this->json_return(49999,'','缺少参数');
 
             if(!ClientOlService::getInstance()->accessToken($userId,$token))
@@ -59,10 +60,11 @@ class ClientAttr extends Base
 
             $clientAttr = ClientAttrService::getInstance()->get($userId);
 
-            if(!ClientAttrService::getInstance()->set($userId,'signature',$signature))
+            if(!ClientAttrService::getInstance()->setMulti($userId,['signature'=>$signature,'avatar'=>$avatar]))
                 return $this->json_return(50002,'','设置签名失败');
 
             $clientAttr['signature'] = $signature;
+            $clientAttr['avatar'] = $avatar;
 
             return $this->json_return(200,['clientAttr'=>$clientAttr]);
         }
