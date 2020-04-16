@@ -231,3 +231,7 @@ string(60) "SQLSTATE[23000] [1062] Duplicate entry '' for key 'nickname'"
 [2020-04-15 13:50:40 #10952.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
 [2020-04-15 13:50:40 *10955.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
 [2020-04-15 15:03:47 #10952.1]	INFO	Server is shutdown now
+[43m[2020-04-15 15:40:07][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-16 11:32:12][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[41m[2020-04-16 16:33:26][DEBUG][ERROR] : [Too few arguments to function App\HttpController\Dao\ClientAttrDao::get(), 0 passed in /data/flight/flight/flight_game/App/HttpController/Service/DrawService.php on line 27 and exactly 1 expected at file:/data/flight/flight/flight_game/App/HttpController/Dao/ClientAttrDao.php line:45][0m
+[2020-04-16 16:33:59 #20901.1]	INFO	Server is shutdown now

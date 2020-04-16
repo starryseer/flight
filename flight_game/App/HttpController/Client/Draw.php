@@ -21,7 +21,7 @@ class Draw extends Base
             $token = isset($data['token'])?trim($data['token']):'';
             $type = isset($data['type'])?trim($data['type']):'';
             $pool = isset($data['pool'])?trim($data['pool']):'';
-            if(empty($userId) or empty($token) or empty($type) or empty($pool) or !in_array($pool,array_keys(__CONF__['drawBanner'])) or !in_array($type,[1,10]))
+            if(empty($userId) or empty($token) or empty($type) or empty($pool) or !in_array($pool,array_keys(__CONF__['drawBanner'])) or !in_array($type,[1,2,3,4,5,6,7,8,9,10]))
                 return $this->json_return(49999,'','缺少参数');
 
             if(!ClientOlService::getInstance()->accessToken($userId,$token))
@@ -33,8 +33,12 @@ class Draw extends Base
                 switch($res['code'])
                 {
                     case 1:
-                        return $this->json_return(50001,'','道具不足');
+                        return $this->json_return(50001,'','金币不足');
                     case 2:
+                        return $this->json_return(50003,'','钻石失败');
+                    case 3:
+                        return $this->json_return(50001,'','道具不足');
+                    case 4:
                         return $this->json_return(50003,'','添加失败');
                 }
             }

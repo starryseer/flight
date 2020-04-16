@@ -8,10 +8,10 @@
 
 namespace App\HttpController\Service;
 
-
 use App\HttpController\Common\DrawHelper;
 use App\HttpController\Dao\ItemDao;
 use App\HttpController\Dao\DrawBottomDao;
+use App\HttpController\Dao\ClientAttrDao;
 
 class DrawService
 {
@@ -21,16 +21,43 @@ class DrawService
     {
         $res = ['code'=>0,'consume'=>[],'get'=>[],'show'=>[]];
         $drawBannerConf = __CONF__['drawBanner'][$pool];
-        $consumeItem = ItemService::getInstance()->getByItemIds($userId,[$drawBannerConf['costItemId']]);
-        if(count($consumeItem) == 0 or $consumeItem[0]['num'] < $consumeNum )
+        $costItemId = $drawBannerConf['costItemId'];
+        $costItem = [];
+        $consumeItem = [];
+        $clientAttr = ClientAttrDao::getInstance()->get($userId);
+        if($costItemId == 1)
         {
-            $res['code'] = 1;
-            return $res;
+            if($clientAttr['gold'] < $drawBannerConf['costNum'] * $consumeNum)
+            {
+                $res['code'] = 1;
+                return $res;
+            }
+            $clientAttr['gold']-=$drawBannerConf['costNum'] * $consumeNum;
         }
-        $consumeItem[0]['num']-=$consumeNum;
-        $costItem = ['id'=>$consumeItem[0]['id'],'num'=>$consumeItem[0]['num']];
+        elseif($costItemId == 2)
+        {
+            if($clientAttr['diamond'] < $drawBannerConf['costNum'] * $consumeNum)
+            {
+                $res['code'] = 2;
+                return $res;
+            }
+            $clientAttr['diamond']-=$drawBannerConf['costNum'] * $consumeNum;
+        }
+        else
+        {
+            $consumeItem = ItemService::getInstance()->getByItemIds($userId,[$costItemId]);
+            if(count($consumeItem) == 0 or $consumeItem[0]['num'] < $consumeNum )
+            {
+                $res['code'] = 3;
+                return $res;
+            }
+            $consumeItem[0]['num']-=$consumeNum;
+            $consumeItem = $consumeItem[0];
+            $costItem = ['id'=>$consumeItem[0]['id'],'num'=>$consumeItem[0]['num']];
+        }
 
-        $getNum = $consumeNum===10?11:$consumeNum;
+
+        $getNum = $consumeNum==10?11:$consumeNum;
 
         $drawItemIds = DrawHelper::rand($pool,$getNum);
         $bottomItemId = $this->bottom($userId,$pool,$consumeNum);
@@ -59,13 +86,23 @@ class DrawService
         $ids = ItemDao::getInstance()->consume($userId,$costItem,$getItem);
         if(false === $ids)
         {
-            $res['code'] = 2;
+            $res['code'] = 4;
             return $res;
+        }
+
+        if($costItemId == 1)
+        {
+            ClientAttrDao::getInstance()->set($userId,'gold',$clientAttr['gold']);
+        }
+        elseif($costItemId == 2)
+        {
+            ClientAttrDao::getInstance()->set($userId,'diamond',$clientAttr['diamond']);
         }
 
         $res['get'] = empty($ids)?$ids:ItemDao::getInstance()->getMulti($userId,$ids);
         $res['show'] = $drawItemIds;
-        $res['consume'] = $consumeItem[0];
+        $res['consume'] = $consumeItem;
+        $res['clientAttr'] = $clientAttr;
         return $res;
     }
 

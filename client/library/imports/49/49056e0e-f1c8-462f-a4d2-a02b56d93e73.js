@@ -41,23 +41,43 @@ cc.Class({
     onLoad: function onLoad() {
         var _this = this;
 
-        //this.init();
         var avatarUrl = _global2.default.imageConf.avatar[_global2.default.clientAttrData.avatar];
         cc.loader.load({ url: avatarUrl, type: 'png' }, function (error, purl) {
+            if (error) {
+                console.log(error);
+                return;
+            }
             var oldSize = _this.avatar.node.width;
             _this.avatar.spriteFrame = new cc.SpriteFrame(purl);
             var newSize = _this.avatar.node.width;
             _this.avatar.node.scale = oldSize / newSize / 2;
         });
         this.node.on('update', this.init, this);
-        cc.systemEvent.on('updateUserInfo', this.init, this);
+        cc.systemEvent.on('updateUserInfo', this.updateUserInfo, this);
     },
     onDestroy: function onDestroy() {
-        cc.systemEvent.off('updateUserInfo', this.init, this);
+        cc.systemEvent.off('updateUserInfo', this.updateUserInfo, this);
     },
     init: function init() {
         this.nicknameLab.string = _global2.default.clientAttrData.nickname ? _global2.default.clientAttrData.nickname : "";
         this.signatureLab.string = _global2.default.clientAttrData.signature ? _global2.default.clientAttrData.signature : "";
+    },
+    updateUserInfo: function updateUserInfo() {
+        var _this2 = this;
+
+        this.nicknameLab.string = _global2.default.clientAttrData.nickname ? _global2.default.clientAttrData.nickname : "";
+        this.signatureLab.string = _global2.default.clientAttrData.signature ? _global2.default.clientAttrData.signature : "";
+        var avatarUrl = _global2.default.imageConf.avatar[_global2.default.clientAttrData.avatar];
+        cc.loader.load({ url: avatarUrl, type: 'png' }, function (error, purl) {
+            if (error) {
+                console.log(error);
+                return;
+            }
+            var oldSize = _this2.avatar.node.width;
+            _this2.avatar.spriteFrame = new cc.SpriteFrame(purl);
+            var newSize = _this2.avatar.node.width;
+            _this2.avatar.node.scale = oldSize / newSize / 2;
+        });
     },
     onModifyClick: function onModifyClick(target, data) {
         this.editFrame.emit('show', {});

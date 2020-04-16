@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "gameboy",
+    "texture": "cd52f481-215e-45cd-8471-deb11039f8cc",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      557,
+      891
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      557,
+      891
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

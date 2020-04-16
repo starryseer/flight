@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "blackIcon",
+    "texture": "94e1e738-faab-4c2a-bf34-38d054f095fa",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      123,
+      91
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      123,
+      91
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

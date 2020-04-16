@@ -49,6 +49,10 @@ cc.Class({
         this.isChosen();
         var avatarUrl = _global2.default.imageConf.avatar[tag];
         cc.loader.load({ url: avatarUrl, type: 'png' }, function (error, purl) {
+            if (error) {
+                console.log(error);
+                return;
+            }
             var oldSize = _this.avatar.node.width;
             _this.avatar.spriteFrame = new cc.SpriteFrame(purl);
             var newSize = _this.avatar.node.width;

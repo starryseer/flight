@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "buyTen",
+    "texture": "a7b0f319-267d-41db-982f-7b6f847a300a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      329,
+      108
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      329,
+      108
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

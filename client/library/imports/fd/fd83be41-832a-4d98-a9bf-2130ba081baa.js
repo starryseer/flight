@@ -53,8 +53,7 @@ cc.Class({
             cc.director.loadScene('miniInit');
             return;
         }
-
-        var ratio = _global2.default.FitHelper.fitFun(this.bg);
+        _global2.default.FitHelper.fitFun(this.bg);
     },
     start: function start() {
         var _this = this;

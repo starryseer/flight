@@ -1,0 +1,22 @@
+{
+ "0": {
+  "id": 0, 
+  "name": "redSlim"
+ }, 
+ "1": {
+  "id": 1, 
+  "name": "greenSlim"
+ }, 
+ "2": {
+  "id": 2, 
+  "name": "princessSlim"
+ }, 
+ "3": {
+  "id": 3, 
+  "name": "princessSlimSon"
+ }, 
+ "4": {
+  "id": 4, 
+  "name": "boxSlim"
+ }
+}

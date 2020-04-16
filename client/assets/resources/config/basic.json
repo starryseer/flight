@@ -1,0 +1,22 @@
+{
+ "fatigue_rate": {
+  "id": "fatigue_rate", 
+  "value": "1.0"
+ }, 
+ "fatigue_max": {
+  "id": "fatigue_max", 
+  "value": "200.0"
+ }, 
+ "login_url": {
+  "id": "login_url", 
+  "value": "http://127.0.0.1:9502/checkToken"
+ }, 
+ "fatigue_interval": {
+  "id": "fatigue_interval", 
+  "value": "60.0"
+ }, 
+ "extra": {
+  "id": "extra", 
+  "value": "1000.0"
+ }
+}

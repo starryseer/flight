@@ -32,6 +32,10 @@ var _itemData = require('./../data/itemData');
 
 var _itemData2 = _interopRequireDefault(_itemData);
 
+var _configConf = require('./../config/configConf');
+
+var _configConf2 = _interopRequireDefault(_configConf);
+
 var _imageConf = require('./../config/imageConf');
 
 var _imageConf2 = _interopRequireDefault(_imageConf);
@@ -62,6 +66,7 @@ global.clientData = (0, _clientData2.default)();
 global.clientAttrData = (0, _clientAttrData2.default)();
 global.itemData = (0, _itemData2.default)();
 global.miniGameData = (0, _miniGameData2.default)();
+global.configConf = (0, _configConf2.default)();
 global.imageConf = (0, _imageConf2.default)();
 global.urlConf = (0, _urlConf2.default)();
 global.triggerConf = (0, _triggerConf2.default)();

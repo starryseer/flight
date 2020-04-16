@@ -18,6 +18,7 @@ class Router extends AbstractRouter
     function initialize(RouteCollector $routeCollector)
     {
         $routeCollector->post('/client_login', '/client/client/login');
+        $routeCollector->post('/clientAttr', '/client/clientAttr/clientAttr');
         $routeCollector->post('/clientAttr_nickname', '/client/clientAttr/setNickname');
         $routeCollector->post('/clientAttr_signature', '/client/clientAttr/setSignature');
         $routeCollector->post('/fatigue_natureUp', '/client/fatigue/natureUp');
@@ -25,7 +26,7 @@ class Router extends AbstractRouter
         $routeCollector->post('/item_consume', '/client/item/consume');
         $routeCollector->post('/item_sale', '/client/item/sale');
         $routeCollector->post('/bag_up', '/client/bag/upBag');
-        $routeCollector->post('/draw_draw', '/client/draw/draw');
+        $routeCollector->post('/shop_draw', '/client/draw/draw');
         $routeCollector->post('/cook_cook', '/client/cook/cook');
         $routeCollector->post('/mini_index', '/client/miniGame/index');
         $routeCollector->post('/mini_play', '/client/miniGame/play');

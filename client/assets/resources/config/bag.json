@@ -1,0 +1,14 @@
+{
+ "increase": {
+  "id": "increase", 
+  "value": "50.0"
+ }, 
+ "init": {
+  "id": "init", 
+  "value": "600.0"
+ }, 
+ "cost": {
+  "id": "cost", 
+  "value": "100.0"
+ }
+}

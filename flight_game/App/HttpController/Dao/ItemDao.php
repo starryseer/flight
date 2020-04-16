@@ -138,21 +138,24 @@ class ItemDao
                     }
                 }
 
-                if($consumeItem['num'] == 0)
+                if(!empty($consumeItem))
                 {
-                    $itemModel = null;
-                    eval('$itemModel=\App\HttpController\Model\Item'.$fen.'Model::invoke($client);');
-                    $itemModel->destroy($consumeItem['id']);
-                }
-                else
-                {
-                    $itemModel = null;
-                    eval('$itemModel=\App\HttpController\Model\Item'.$fen.'Model::invoke($client);');
-                    $itemModel = $itemModel->where('id',$consumeItem['id']);
-                    if(isset($consumeItem['times']))
-                        $itemModel->update(['times'=>$consumeItem['times']]);
+                    if($consumeItem['num'] == 0)
+                    {
+                        $itemModel = null;
+                        eval('$itemModel=\App\HttpController\Model\Item'.$fen.'Model::invoke($client);');
+                        $itemModel->destroy($consumeItem['id']);
+                    }
                     else
-                        $itemModel->update(['num'=>$consumeItem['num']]);
+                    {
+                        $itemModel = null;
+                        eval('$itemModel=\App\HttpController\Model\Item'.$fen.'Model::invoke($client);');
+                        $itemModel = $itemModel->where('id',$consumeItem['id']);
+                        if(isset($consumeItem['times']))
+                            $itemModel->update(['times'=>$consumeItem['times']]);
+                        else
+                            $itemModel->update(['num'=>$consumeItem['num']]);
+                    }
                 }
 
                 \EasySwoole\ORM\DbManager::getInstance()->commit($client);

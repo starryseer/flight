@@ -306,4 +306,32 @@
     'endTime' => '',
     'lockTime' => '',
   ),
+  2000012 => 
+  array (
+    'id' => 2000012,
+    'image' => '',
+    'rare' => 4,
+    'type' => 'food',
+    'showType' => 'goods',
+    'consume' => '',
+    'sale' => 1000,
+    'award' => 
+    array (
+      0 => 0,
+    ),
+    'num' => 
+    array (
+      0 => '20',
+      1 => '10',
+      2 => '5',
+      3 => '0',
+      4 => '0',
+    ),
+    'rate' => '',
+    'times' => '',
+    'stack' => 1,
+    'expire' => 0,
+    'endTime' => '',
+    'lockTime' => '',
+  ),
 );

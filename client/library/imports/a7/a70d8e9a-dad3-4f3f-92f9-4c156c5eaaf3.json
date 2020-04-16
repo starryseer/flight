@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "submitIcon",
+    "texture": "cb01fa92-ef37-4775-ad12-797254665260",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1095,
+      1454
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1095,
+      1454
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

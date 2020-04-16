@@ -2,7 +2,7 @@
  "2000001": {
   "id": 2000001, 
   "name": "一次性使用道具（无限）", 
-  "image": "", 
+  "image": "item_2000001", 
   "rare": 2, 
   "type": "box", 
   "showType": "matter", 
@@ -33,7 +33,7 @@
  "2000002": {
   "id": 2000002, 
   "name": "一次性随机使用道具（无限）", 
-  "image": "", 
+  "image": "item_2000002", 
   "rare": 3, 
   "type": "randBox", 
   "showType": "food", 
@@ -64,7 +64,7 @@
  "2000003": {
   "id": 2000003, 
   "name": "一次性多选道具（无限）", 
-  "image": "", 
+  "image": "item_2000003", 
   "rare": 4, 
   "type": "selectBox", 
   "showType": "goods", 
@@ -89,7 +89,7 @@
  "2000004": {
   "id": 2000004, 
   "name": "合成道具（无限）", 
-  "image": "", 
+  "image": "item_2000004", 
   "rare": 3, 
   "type": "debris", 
   "showType": "matter", 
@@ -111,8 +111,8 @@
  }, 
  "2000005": {
   "id": 2000005, 
-  "name": "消耗品", 
-  "image": "", 
+  "name": "抽卡券", 
+  "image": "item_2000005", 
   "rare": 5, 
   "type": "other", 
   "showType": "food", 
@@ -131,7 +131,7 @@
  "2000006": {
   "id": 2000006, 
   "name": "每日循环道具", 
-  "image": "", 
+  "image": "item_2000006", 
   "rare": 2, 
   "type": "multiBox", 
   "showType": "goods", 
@@ -158,7 +158,7 @@
  "2000007": {
   "id": 2000007, 
   "name": "一次性随机使用道具（无限）", 
-  "image": "", 
+  "image": "item_2000007", 
   "rare": 3, 
   "type": "randBox", 
   "showType": "food", 
@@ -189,7 +189,7 @@
  "2000008": {
   "id": 2000008, 
   "name": "一次性多选道具（无限）", 
-  "image": "", 
+  "image": "item_2000008", 
   "rare": 4, 
   "type": "selectBox", 
   "showType": "goods", 
@@ -214,7 +214,7 @@
  "2000009": {
   "id": 2000009, 
   "name": "一次性使用道具（无限）", 
-  "image": "", 
+  "image": "item_2000009", 
   "rare": 2, 
   "type": "box", 
   "showType": "matter", 
@@ -241,7 +241,7 @@
  "2000010": {
   "id": 2000010, 
   "name": "一次性随机使用道具（无限）", 
-  "image": "", 
+  "image": "item_2000010", 
   "rare": 3, 
   "type": "randBox", 
   "showType": "food", 
@@ -272,7 +272,7 @@
  "2000011": {
   "id": 2000011, 
   "name": "一次性多选道具（无限）", 
-  "image": "", 
+  "image": "item_2000011", 
   "rare": 4, 
   "type": "selectBox", 
   "showType": "goods", 
@@ -286,6 +286,33 @@
   "num": [
    "100", 
    "100"
+  ], 
+  "rate": "", 
+  "times": "", 
+  "stack": 1, 
+  "expire": 0, 
+  "endTime": "", 
+  "lockTime": ""
+ }, 
+ "2000012": {
+  "id": 2000012, 
+  "name": "食物", 
+  "image": "item_2000012", 
+  "rare": 4, 
+  "type": "food", 
+  "showType": "goods", 
+  "info": "豆浆", 
+  "consume": "", 
+  "sale": 1000, 
+  "award": [
+   0
+  ], 
+  "num": [
+   "20", 
+   "10", 
+   "5", 
+   "0", 
+   "0"
   ], 
   "rate": "", 
   "times": "", 
