@@ -4,6 +4,12 @@ cc._RF.push(module, '1d6dddwmypC5aCzkNKMdbUl', 'getFrame');
 
 'use strict';
 
+var _global = require('./../global/global');
+
+var _global2 = _interopRequireDefault(_global);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 cc.Class({
     extends: cc.Component,
 
@@ -28,6 +34,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function onLoad() {
+        _global2.default.FitHelper.onEnable(this.bg);
         cc.systemEvent.on('getShow', this.show, this);
     },
     onDestroy: function onDestroy() {

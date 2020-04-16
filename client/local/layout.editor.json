@@ -18,32 +18,32 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 416,
+                "height": 408.875,
                 "type": "panel",
-                "width": 246
+                "width": 243.9375
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 519,
+                "height": 510.125,
                 "type": "panel",
-                "width": 246
+                "width": 243.9375
               }
             ],
-            "height": 938,
+            "height": 922,
             "type": "dock-v",
-            "width": 246
+            "width": 243.9375
           },
           {
             "active": 0,
             "children": [
               "inspector"
             ],
-            "height": 938,
+            "height": 922,
             "type": "panel",
-            "width": 365
+            "width": 361.953125
           },
           {
             "children": [
@@ -52,9 +52,9 @@
                 "children": [
                   "scene"
                 ],
-                "height": 635,
+                "height": 624.140625,
                 "type": "panel",
-                "width": 1303
+                "width": 1292.109375
               },
               {
                 "active": 0,
@@ -63,14 +63,14 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 300,
+                "height": 294.859375,
                 "type": "panel",
-                "width": 1303
+                "width": 1292.109375
               }
             ],
-            "height": 938,
+            "height": 922,
             "type": "dock-v",
-            "width": 1303
+            "width": 1292.109375
           }
         ],
         "type": "dock-h"
@@ -84,7 +84,9 @@
         "timeline",
         "game-window"
       ]
-    }
+    },
+    "worker": {},
+    "window-1587039477491": {}
   },
   "panels": {
     "project-settings": {

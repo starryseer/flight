@@ -35,6 +35,7 @@ cc.Class({
 
     onLoad: function onLoad() {
         _global2.default.FitHelper.fitFun(this.bg);
+        _global2.default.FitHelper.onEnable(this.bg);
         cc.systemEvent.on('submitShow', this.show, this);
     },
     onDestroy: function onDestroy() {

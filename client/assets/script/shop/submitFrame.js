@@ -24,6 +24,7 @@ cc.Class({
 
     onLoad () {
         global.FitHelper.fitFun(this.bg);
+        global.FitHelper.onEnable(this.bg);
         cc.systemEvent.on('submitShow',this.show,this);
     },
 

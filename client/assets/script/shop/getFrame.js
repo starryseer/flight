@@ -1,3 +1,4 @@
+import global from './../global/global';
 cc.Class({
     extends: cc.Component,
 
@@ -22,6 +23,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        global.FitHelper.onEnable(this.bg);
         cc.systemEvent.on('getShow',this.show,this);
     },
 
