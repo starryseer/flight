@@ -170,12 +170,12 @@
     "relativePath": "script"
   },
   "eec48f04-63f0-4220-82d5-07202ee11a4f": {
-    "asset": 1587087948774,
-    "meta": 1587087948797,
+    "asset": 1587118072683,
+    "meta": 1587118072706,
     "relativePath": "scene\\home.fire"
   },
   "8dcfa511-577c-47cd-a102-6f8ce4f3689e": {
-    "asset": 1586842376222,
+    "asset": 1587113601057,
     "meta": 1586326948078,
     "relativePath": "script\\home"
   },
@@ -245,7 +245,7 @@
     "relativePath": "script\\home\\trigger"
   },
   "5c0ef696-2082-4f53-8ef7-c3ce17bd53ac": {
-    "asset": 1586416111008,
+    "asset": 1587108020267,
     "meta": 1586416104392,
     "relativePath": "script\\home\\player"
   },
@@ -460,7 +460,7 @@
     "relativePath": "scene\\miniGames\\miniInit.fire"
   },
   "2b7d5e81-fafb-4d7c-8656-a93b0e196e51": {
-    "asset": 1586943169446,
+    "asset": 1587106827317,
     "meta": 1586756048677,
     "relativePath": "resources\\plist\\home"
   },
@@ -1353,5 +1353,30 @@
     "asset": 1587104258473,
     "meta": 1587104260435,
     "relativePath": "script\\miniGame\\miniMain\\prefab\\rankInfo.js"
+  },
+  "9e719367-7d93-44d5-812e-6c19106458b7": {
+    "asset": 1587106802984,
+    "meta": 1587106827340,
+    "relativePath": "resources\\plist\\home\\mood.png"
+  },
+  "b538a6f9-47b3-48cd-9c8f-ea9b33846bb9": {
+    "asset": 1587106802981,
+    "meta": 1587106821542,
+    "relativePath": "resources\\plist\\home\\bag.png"
+  },
+  "93fe61c0-aa5e-4a5a-987b-dcd822fb61cf": {
+    "asset": 1587109959120,
+    "meta": 1587109965732,
+    "relativePath": "script\\home\\player\\infoBg.js"
+  },
+  "e2e12422-a2f5-484e-ad0a-cc05fd5f4604": {
+    "asset": 1587110682100,
+    "meta": 1587110739835,
+    "relativePath": "script\\home\\player\\playerClick.js"
+  },
+  "46efa1b0-df96-49f1-9661-3e442818e6b4": {
+    "asset": 1587113596334,
+    "meta": 1587113596340,
+    "relativePath": "script\\home\\bag"
   }
 }
