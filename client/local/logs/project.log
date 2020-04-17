@@ -1,249 +1,69 @@
-2020-04-16T11:53:59.509Z - normal: Load ~/.CocosCreator/settings.json
-2020-04-16T11:53:59.549Z - normal: Initializing Asset Database
-2020-04-16T11:53:59.551Z - normal: checking language setting...
-2020-04-16T11:53:59.552Z - normal: Language: zh
-2020-04-16T11:53:59.864Z - success: preview server running at http://localhost:7456
-2020-04-16T11:53:59.867Z - success: protocol editor-framework registered
-2020-04-16T11:53:59.867Z - success: protocol app registered
-2020-04-16T11:53:59.867Z - success: protocol theme registered
-2020-04-16T11:53:59.867Z - success: protocol packages registered
-2020-04-16T11:53:59.867Z - success: protocol uuid registerred
-2020-04-16T11:53:59.867Z - success: protocol db registerred
-2020-04-16T11:53:59.867Z - success: protocol thumbnail registerred
-2020-04-16T11:53:59.868Z - success: protocol unpack registerred
-2020-04-16T11:53:59.868Z - success: protocol disable-commonjs registerred
-2020-04-16T11:53:59.976Z - normal: connected!
-2020-04-16T11:53:59.977Z - normal: Check project C:\Users\EDZ\Desktop\MRFit
-2020-04-16T11:53:59.979Z - normal: Initializing project C:\Users\EDZ\Desktop\MRFit
-2020-04-16T11:54:00.015Z - success: adapters loaded
-2020-04-16T11:54:00.018Z - success: asset-db-debugger loaded
-2020-04-16T11:54:00.069Z - success: fb-audience-network loaded
-2020-04-16T11:54:00.091Z - success: fb-live-stream loaded
-2020-04-16T11:54:00.093Z - success: google-play-instant loaded
-2020-04-16T11:54:00.097Z - success: huawei-runtime loaded
-2020-04-16T11:54:00.097Z - success: jkw-adapter loaded
-2020-04-16T11:54:00.098Z - success: jsb-adapter loaded
-2020-04-16T11:54:00.101Z - success: oppo-runtime loaded
-2020-04-16T11:54:00.104Z - success: package-manager loaded
-2020-04-16T11:54:00.105Z - success: qtt-adapter loaded
-2020-04-16T11:54:00.107Z - success: runtime-dev-tools loaded
-2020-04-16T11:54:00.111Z - success: sdkbox loaded
-2020-04-16T11:54:00.113Z - success: ui-kit-preview-extra loaded
-2020-04-16T11:54:00.116Z - success: ui-kit-preview loaded
-2020-04-16T11:54:00.121Z - success: vivo-runtime loaded
-2020-04-16T11:54:00.123Z - success: alipay-minigame loaded
-2020-04-16T11:54:00.157Z - success: assets loaded
-2020-04-16T11:54:00.160Z - success: baidugame-opendata loaded
-2020-04-16T11:54:00.162Z - success: baidugame loaded
-2020-04-16T11:54:00.164Z - success: builder loaded
-2020-04-16T11:54:00.267Z - success: cocos-services loaded
-2020-04-16T11:54:00.270Z - success: console loaded
-2020-04-16T11:54:00.279Z - success: fb-instant-games loaded
-2020-04-16T11:54:00.281Z - success: game-window loaded
-2020-04-16T11:54:00.282Z - success: google-instant-games loaded
-2020-04-16T11:54:00.284Z - success: hierarchy loaded
-2020-04-16T11:54:00.286Z - success: inspector loaded
-2020-04-16T11:54:00.498Z - success: cpk-publish loaded
-2020-04-16T11:54:00.502Z - success: keystore loaded
-2020-04-16T11:54:00.511Z - success: node-library loaded
-2020-04-16T11:54:00.512Z - success: open-recent-items loaded
-2020-04-16T11:54:00.514Z - success: package-asset loaded
-2020-04-16T11:54:00.515Z - success: preferences loaded
-2020-04-16T11:54:00.517Z - success: project-exporter loaded
-2020-04-16T11:54:00.518Z - success: project-importer loaded
-2020-04-16T11:54:00.519Z - success: project-settings loaded
-2020-04-16T11:54:00.530Z - success: qtt-runtime loaded
-2020-04-16T11:54:00.532Z - success: scene loaded
-2020-04-16T11:54:00.533Z - success: simulator-debugger loaded
-2020-04-16T11:54:00.534Z - success: sprite-editor loaded
-2020-04-16T11:54:00.535Z - success: store loaded
-2020-04-16T11:54:00.537Z - success: timeline loaded
-2020-04-16T11:54:00.539Z - success: wechatgame-opendata loaded
-2020-04-16T11:54:00.542Z - success: wechatgame loaded
-2020-04-16T11:54:00.546Z - success: xiaomi-runtime loaded
-2020-04-16T11:54:01.211Z - normal: Initializing Cocos2d
-2020-04-16T11:54:01.556Z - normal: Initializing engine extends
-2020-04-16T11:54:02.356Z - info: Cocos Service load base data!
-2020-04-16T11:54:06.717Z - normal: Loading packages
-2020-04-16T11:54:06.723Z - normal: Watching packages
-2020-04-16T11:54:07.205Z - normal: Run Application
-2020-04-16T12:18:01.564Z - normal: Start building with options : {
-  "actualPlatform": "android",
-  "android": {
-    "packageName": "com.fat"
-  },
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "packageName": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "android-29",
-  "appABIs": [
-    "x86",
-    "armeabi-v7a"
-  ],
-  "appBundle": false,
-  "buildPath": "C:\\Users\\EDZ\\Desktop\\MRFit\\build",
-  "debug": false,
-  "dest": "C:\\Users\\EDZ\\Desktop\\MRFit\\build\\jsb-link",
-  "embedWebDebugger": false,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "fb-instant-games": {},
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "ios": {
-    "packageName": ""
-  },
-  "mac": {
-    "packageName": ""
-  },
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": false,
-    "landscapeRight": false,
-    "portrait": true,
-    "upsideDown": false
-  },
-  "packageName": "",
-  "platform": "android",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "scenes": [
-    "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9",
-    "eec48f04-63f0-4220-82d5-07202ee11a4f",
-    "6644e59d-b389-4b17-bdf5-9bfd77c6e37c",
-    "f0c44718-b4b4-49b7-a666-fdc84c3313c1",
-    "88972f1a-18a4-48d0-8522-4beb499b435a",
-    "1368b7e0-8508-41c7-8b26-6871f9d7494b"
-  ],
-  "sourceMaps": false,
-  "startScene": "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9",
-  "template": "link",
-  "title": "MrFit",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "portrait",
-  "win32": {},
-  "xxteaKey": "c0c33e4e-f9c8-49",
-  "zipCompressJs": true,
-  "project": "C:\\Users\\EDZ\\Desktop\\MRFit",
-  "projectName": "MrFit",
-  "debugBuildWorker": false
-}
-2020-04-16T12:18:01.565Z - normal: Building C:\Users\EDZ\Desktop\MRFit
-2020-04-16T12:18:01.565Z - normal: Destination C:\Users\EDZ\Desktop\MRFit\build\jsb-link
-2020-04-16T12:18:01.612Z - normal: Delete C:\Users\EDZ\Desktop\MRFit\build\jsb-link\subpackages/**/*,C:\Users\EDZ\Desktop\MRFit\build\jsb-link\res/**/*,C:\Users\EDZ\Desktop\MRFit\build\jsb-link\src/**/*
-2020-04-16T12:18:08.079Z - normal: Start building assets
-2020-04-16T12:18:08.079Z - normal: Start spawn build-worker
-2020-04-16T12:18:08.600Z - normal: Finish spawn build-worker
-2020-04-16T12:18:08.600Z - normal: Start init build-worker
-2020-04-16T12:18:10.201Z - normal: Finish init build-worker
-2020-04-16T12:18:10.201Z - normal: Start build-assets in worker
-2020-04-16T12:18:10.260Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
-2020-04-16T12:18:10.981Z - normal: Finish build-assets in worker
-2020-04-16T12:18:10.986Z - normal: Finish building assets
-2020-04-16T12:18:11.051Z - normal: Start building plugin scripts
-2020-04-16T12:18:11.057Z - normal: Generating main.js from E:\CocosCreator_2.2.2\resources\static\build-templates\shares\main.js
-2020-04-16T12:18:12.408Z - normal: Built to "C:\Users\EDZ\Desktop\MRFit\build\jsb-link" successfully
-2020-04-16T12:18:15.301Z - normal: Start to compile native project. Please wait...
-2020-04-16T12:18:15.301Z - normal: The log file path [ C:\Users\EDZ\.CocosCreator\logs\native.log ]
-2020-04-16T12:22:23.333Z - normal: Compile native project successfully.
-2020-04-16T12:26:31.302Z - normal: Start building with options : {
-  "actualPlatform": "android",
-  "android": {
-    "packageName": "com.fat"
-  },
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "packageName": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "android-29",
-  "appABIs": [
-    "x86",
-    "armeabi-v7a"
-  ],
-  "appBundle": false,
-  "buildPath": "C:\\Users\\EDZ\\Desktop\\MRFit\\build",
-  "debug": false,
-  "dest": "C:\\Users\\EDZ\\Desktop\\MRFit\\build\\jsb-link",
-  "embedWebDebugger": false,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "fb-instant-games": {},
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "ios": {
-    "packageName": ""
-  },
-  "mac": {
-    "packageName": ""
-  },
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": false,
-    "landscapeRight": false,
-    "portrait": true,
-    "upsideDown": false
-  },
-  "packageName": "",
-  "platform": "android",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "scenes": [
-    "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9",
-    "eec48f04-63f0-4220-82d5-07202ee11a4f",
-    "6644e59d-b389-4b17-bdf5-9bfd77c6e37c",
-    "f0c44718-b4b4-49b7-a666-fdc84c3313c1",
-    "88972f1a-18a4-48d0-8522-4beb499b435a",
-    "1368b7e0-8508-41c7-8b26-6871f9d7494b"
-  ],
-  "sourceMaps": false,
-  "startScene": "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9",
-  "template": "link",
-  "title": "MrFit",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "portrait",
-  "win32": {},
-  "xxteaKey": "c0c33e4e-f9c8-49",
-  "zipCompressJs": true,
-  "project": "C:\\Users\\EDZ\\Desktop\\MRFit",
-  "projectName": "MrFit",
-  "debugBuildWorker": false
-}
-2020-04-16T12:26:31.302Z - normal: Building C:\Users\EDZ\Desktop\MRFit
-2020-04-16T12:26:31.302Z - normal: Destination C:\Users\EDZ\Desktop\MRFit\build\jsb-link
-2020-04-16T12:26:31.303Z - normal: Delete C:\Users\EDZ\Desktop\MRFit\build\jsb-link\subpackages/**/*,C:\Users\EDZ\Desktop\MRFit\build\jsb-link\res/**/*,C:\Users\EDZ\Desktop\MRFit\build\jsb-link\src/**/*
-2020-04-16T12:26:36.511Z - normal: Start building assets
-2020-04-16T12:26:36.511Z - normal: Start spawn build-worker
-2020-04-16T12:26:37.059Z - normal: Finish spawn build-worker
-2020-04-16T12:26:37.059Z - normal: Start init build-worker
-2020-04-16T12:26:38.683Z - normal: Finish init build-worker
-2020-04-16T12:26:38.683Z - normal: Start build-assets in worker
-2020-04-16T12:26:38.744Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
-2020-04-16T12:26:39.476Z - normal: Finish build-assets in worker
-2020-04-16T12:26:39.481Z - normal: Finish building assets
-2020-04-16T12:26:39.551Z - normal: Start building plugin scripts
-2020-04-16T12:26:39.555Z - normal: Generating main.js from E:\CocosCreator_2.2.2\resources\static\build-templates\shares\main.js
-2020-04-16T12:26:40.883Z - normal: Built to "C:\Users\EDZ\Desktop\MRFit\build\jsb-link" successfully
-2020-04-16T12:26:43.407Z - normal: Start to compile native project. Please wait...
-2020-04-16T12:26:43.407Z - normal: The log file path [ C:\Users\EDZ\.CocosCreator\logs\native.log ]
-2020-04-16T12:30:31.690Z - normal: Compile native project successfully.
+2020-04-17T06:28:04.730Z - normal: Load ~/.CocosCreator/settings.json
+2020-04-17T06:28:04.769Z - normal: Initializing Asset Database
+2020-04-17T06:28:04.772Z - normal: checking language setting...
+2020-04-17T06:28:04.772Z - normal: Language: zh
+2020-04-17T06:28:05.085Z - success: preview server running at http://localhost:7456
+2020-04-17T06:28:05.089Z - success: protocol editor-framework registered
+2020-04-17T06:28:05.089Z - success: protocol app registered
+2020-04-17T06:28:05.089Z - success: protocol theme registered
+2020-04-17T06:28:05.089Z - success: protocol packages registered
+2020-04-17T06:28:05.089Z - success: protocol uuid registerred
+2020-04-17T06:28:05.089Z - success: protocol db registerred
+2020-04-17T06:28:05.089Z - success: protocol thumbnail registerred
+2020-04-17T06:28:05.089Z - success: protocol unpack registerred
+2020-04-17T06:28:05.089Z - success: protocol disable-commonjs registerred
+2020-04-17T06:28:05.178Z - normal: connected!
+2020-04-17T06:28:05.179Z - normal: Check project C:\Users\EDZ\Desktop\MRFit
+2020-04-17T06:28:05.181Z - normal: Initializing project C:\Users\EDZ\Desktop\MRFit
+2020-04-17T06:28:05.216Z - success: adapters loaded
+2020-04-17T06:28:05.219Z - success: asset-db-debugger loaded
+2020-04-17T06:28:05.269Z - success: fb-audience-network loaded
+2020-04-17T06:28:05.291Z - success: fb-live-stream loaded
+2020-04-17T06:28:05.293Z - success: google-play-instant loaded
+2020-04-17T06:28:05.298Z - success: huawei-runtime loaded
+2020-04-17T06:28:05.299Z - success: jkw-adapter loaded
+2020-04-17T06:28:05.300Z - success: jsb-adapter loaded
+2020-04-17T06:28:05.303Z - success: oppo-runtime loaded
+2020-04-17T06:28:05.306Z - success: package-manager loaded
+2020-04-17T06:28:05.307Z - success: qtt-adapter loaded
+2020-04-17T06:28:05.309Z - success: runtime-dev-tools loaded
+2020-04-17T06:28:05.314Z - success: sdkbox loaded
+2020-04-17T06:28:05.316Z - success: ui-kit-preview-extra loaded
+2020-04-17T06:28:05.318Z - success: ui-kit-preview loaded
+2020-04-17T06:28:05.323Z - success: vivo-runtime loaded
+2020-04-17T06:28:05.325Z - success: alipay-minigame loaded
+2020-04-17T06:28:05.359Z - success: assets loaded
+2020-04-17T06:28:05.362Z - success: baidugame-opendata loaded
+2020-04-17T06:28:05.364Z - success: baidugame loaded
+2020-04-17T06:28:05.366Z - success: builder loaded
+2020-04-17T06:28:05.472Z - success: cocos-services loaded
+2020-04-17T06:28:05.474Z - success: console loaded
+2020-04-17T06:28:05.483Z - success: fb-instant-games loaded
+2020-04-17T06:28:05.484Z - success: game-window loaded
+2020-04-17T06:28:05.485Z - success: google-instant-games loaded
+2020-04-17T06:28:05.487Z - success: hierarchy loaded
+2020-04-17T06:28:05.488Z - success: inspector loaded
+2020-04-17T06:28:05.702Z - success: cpk-publish loaded
+2020-04-17T06:28:05.716Z - success: keystore loaded
+2020-04-17T06:28:05.719Z - success: node-library loaded
+2020-04-17T06:28:05.720Z - success: open-recent-items loaded
+2020-04-17T06:28:05.721Z - success: package-asset loaded
+2020-04-17T06:28:05.722Z - success: preferences loaded
+2020-04-17T06:28:05.723Z - success: project-exporter loaded
+2020-04-17T06:28:05.724Z - success: project-importer loaded
+2020-04-17T06:28:05.725Z - success: project-settings loaded
+2020-04-17T06:28:05.735Z - success: qtt-runtime loaded
+2020-04-17T06:28:05.738Z - success: scene loaded
+2020-04-17T06:28:05.739Z - success: simulator-debugger loaded
+2020-04-17T06:28:05.740Z - success: sprite-editor loaded
+2020-04-17T06:28:05.741Z - success: store loaded
+2020-04-17T06:28:05.743Z - success: timeline loaded
+2020-04-17T06:28:05.745Z - success: wechatgame-opendata loaded
+2020-04-17T06:28:05.748Z - success: wechatgame loaded
+2020-04-17T06:28:05.751Z - success: xiaomi-runtime loaded
+2020-04-17T06:28:06.415Z - normal: Initializing Cocos2d
+2020-04-17T06:28:06.791Z - normal: Initializing engine extends
+2020-04-17T06:28:07.690Z - info: Cocos Service load base data!
+2020-04-17T06:28:08.783Z - normal: Loading packages
+2020-04-17T06:28:08.789Z - normal: Watching packages
+2020-04-17T06:28:09.252Z - normal: Run Application

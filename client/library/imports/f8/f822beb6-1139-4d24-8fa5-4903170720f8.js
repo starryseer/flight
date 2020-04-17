@@ -33,6 +33,11 @@ cc.Class({
             default: null,
             type: cc.Sprite,
             tooltip: '头像'
+        },
+        headAtlas: {
+            default: null,
+            type: cc.SpriteAtlas,
+            tooltip: '头像plist'
         }
     },
 
@@ -42,18 +47,16 @@ cc.Class({
         this.node.on('init', this.init, this);
     },
     init: function init(data) {
-        var _this = this;
-
-        var avatarUrl = _global2.default.imageConf.avatar[_global2.default.clientAttrData.avatar];
-        cc.loader.load({ url: avatarUrl, type: 'png' }, function (error, purl) {
-            var oldSize = _this.avatar.node.width;
-            _this.avatar.spriteFrame = new cc.SpriteFrame(purl);
-            var newSize = _this.avatar.node.width;
-            _this.avatar.node.scale = oldSize / newSize / 2;
-        });
+        this.loadAvatar();
         this.rankLab.string = data.rank;
         this.pointLab.string = data.point;
         this.nicknameLab.string = data.nickname;
+    },
+    loadAvatar: function loadAvatar() {
+        var oldSize = this.avatar.node.width;
+        this.avatar.spriteFrame = this.headAtlas.getSpriteFrame(_global2.default.imageConf.avatar[_global2.default.clientAttrData.avatar]);
+        var newSize = this.avatar.node.width;
+        this.avatar.node.scale = oldSize / newSize / 2;
     }
 }
 

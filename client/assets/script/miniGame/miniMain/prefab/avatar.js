@@ -13,13 +13,16 @@ cc.Class({
             type: cc.Node,
             tooltip: '被选中'
         },
+        headAtlas:{
+            default: null,
+            type: cc.SpriteAtlas,
+            tooltip: '头像plist'
+        },
         tag:{
             default: -1,
             type: cc.Integer,
             tooltip: '标签'
         },
-
-
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -40,17 +43,15 @@ cc.Class({
     init(tag){
         this.tag = tag;
         this.isChosen();
-        var avatarUrl = global.imageConf.avatar[tag];
-        cc.loader.load({ url:avatarUrl, type: 'png' }, (error, purl) => {
-            if(error){
-                console.log(error);
-                return;
-            }
-            let oldSize = this.avatar.node.width;
-            this.avatar.spriteFrame = new cc.SpriteFrame(purl)
-            let newSize = this.avatar.node.width;
-            this.avatar.node.scale = oldSize/newSize/2;
-        });
+        this.loadAvatar(tag);  
+    },
+
+    loadAvatar(tag)
+    {
+        let oldSize = this.avatar.node.width;
+        this.avatar.spriteFrame = this.headAtlas.getSpriteFrame(global.imageConf.avatar[tag]);
+        let newSize = this.avatar.node.width;
+        this.avatar.node.scale = oldSize/newSize/2;
     },
 
     isChosen()

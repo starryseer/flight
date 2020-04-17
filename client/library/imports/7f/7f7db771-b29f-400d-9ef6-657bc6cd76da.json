@@ -1,0 +1,11 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "head.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "head_0": {
+      "__uuid__": "7ca34066-765b-4c5f-a2fa-5156f2cd65d8"
+    }
+  }
+}

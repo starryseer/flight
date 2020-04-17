@@ -5243,3 +5243,7 @@ Stack trace:
 [2020-04-16 16:33:26][DEBUG][ERROR] : [Too few arguments to function App\HttpController\Dao\ClientAttrDao::get(), 0 passed in /data/flight/flight/flight_game/App/HttpController/Service/DrawService.php on line 27 and exactly 1 expected at file:/data/flight/flight/flight_game/App/HttpController/Dao/ClientAttrDao.php line:45]
 [2020-04-16 16:34:09][DEBUG][ERROR] : [Too few arguments to function App\HttpController\Dao\ClientAttrDao::get(), 0 passed in /data/flight/flight/flight_game/App/HttpController/Service/DrawService.php on line 27 and exactly 1 expected at file:/data/flight/flight/flight_game/App/HttpController/Dao/ClientAttrDao.php line:45]
 [2020-04-16 19:22:08][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24]
+[2020-04-16 21:44:40][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24]
+[2020-04-17 08:55:46][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24]
+[2020-04-17 10:18:46][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24]
+[2020-04-17 14:09:58][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24]

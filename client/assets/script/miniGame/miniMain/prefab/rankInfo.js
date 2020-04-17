@@ -23,6 +23,11 @@ cc.Class({
             type: cc.Sprite,
             tooltip: '头像'
         },
+        headAtlas:{
+            default: null,
+            type: cc.SpriteAtlas,
+            tooltip: '头像plist'
+        },
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -33,16 +38,18 @@ cc.Class({
 
     init(data)
     {
-        var avatarUrl = global.imageConf.avatar[global.clientAttrData.avatar];
-        cc.loader.load({ url:avatarUrl, type: 'png' }, (error, purl) => {
-            let oldSize = this.avatar.node.width;
-            this.avatar.spriteFrame = new cc.SpriteFrame(purl)
-            let newSize = this.avatar.node.width;
-            this.avatar.node.scale = oldSize/newSize/2;
-        });
+        this.loadAvatar();
         this.rankLab.string     = data.rank;
         this.pointLab.string    = data.point;
         this.nicknameLab.string = data.nickname;
+    },
+
+    loadAvatar()
+    {
+        let oldSize = this.avatar.node.width;
+        this.avatar.spriteFrame = this.headAtlas.getSpriteFrame(global.imageConf.avatar[global.clientAttrData.avatar]);
+        let newSize = this.avatar.node.width;
+        this.avatar.node.scale = oldSize/newSize/2;
     },
 
     // update (dt) {},

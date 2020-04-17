@@ -236,3 +236,8 @@ string(60) "SQLSTATE[23000] [1062] Duplicate entry '' for key 'nickname'"
 [41m[2020-04-16 16:33:26][DEBUG][ERROR] : [Too few arguments to function App\HttpController\Dao\ClientAttrDao::get(), 0 passed in /data/flight/flight/flight_game/App/HttpController/Service/DrawService.php on line 27 and exactly 1 expected at file:/data/flight/flight/flight_game/App/HttpController/Dao/ClientAttrDao.php line:45][0m
 [2020-04-16 16:33:59 #20901.1]	INFO	Server is shutdown now
 [43m[2020-04-16 19:22:08][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[2020-04-16 20:40:15 *21412.0]	NOTICE	swFactoryProcess_finish (ERRNO 1005): connection[fd=22] does not exists
+[43m[2020-04-16 21:44:40][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-17 08:55:46][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-17 10:18:46][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-17 14:09:58][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m

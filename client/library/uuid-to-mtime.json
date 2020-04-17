@@ -160,8 +160,8 @@
     "relativePath": "scene"
   },
   "ecbc0c65-5306-4f8a-bc7a-54297f72fdd9": {
-    "asset": 1586765619064,
-    "meta": 1586765619095,
+    "asset": 1587088480902,
+    "meta": 1587088480921,
     "relativePath": "scene\\login.fire"
   },
   "e1945559-6f05-4563-a78b-ed49bfaa487d": {
@@ -170,8 +170,8 @@
     "relativePath": "script"
   },
   "eec48f04-63f0-4220-82d5-07202ee11a4f": {
-    "asset": 1586948535366,
-    "meta": 1586948535385,
+    "asset": 1587087948774,
+    "meta": 1587087948797,
     "relativePath": "scene\\home.fire"
   },
   "8dcfa511-577c-47cd-a102-6f8ce4f3689e": {
@@ -280,8 +280,8 @@
     "relativePath": "scene\\miniGames"
   },
   "88972f1a-18a4-48d0-8522-4beb499b435a": {
-    "asset": 1586935794506,
-    "meta": 1586935794530,
+    "asset": 1587092716890,
+    "meta": 1587092716938,
     "relativePath": "scene\\miniGames\\miniMain.fire"
   },
   "da8aaa86-6d53-4016-8e99-2ad85c22d144": {
@@ -313,11 +313,6 @@
     "asset": 1586485224276,
     "meta": 1586485224429,
     "relativePath": "resources\\plist\\miniGames\\miniMain\\modify.png"
-  },
-  "b3000286-4ff5-435c-9303-af22542fd789": {
-    "asset": 1586485224274,
-    "meta": 1586485224443,
-    "relativePath": "resources\\plist\\miniGames\\miniMain\\head.png"
   },
   "6de88cea-2035-4ba8-8bd3-7e5d9bd203a9": {
     "asset": 1586485224276,
@@ -405,7 +400,7 @@
     "relativePath": "resources\\plist\\miniGames\\jumpBall\\jumpBallBg.png"
   },
   "2caa2687-243b-4e29-abe8-9da5b4d06bec": {
-    "asset": 1586941572906,
+    "asset": 1587087666161,
     "meta": 1586584852260,
     "relativePath": "resources\\plist\\miniGames\\miniMain"
   },
@@ -580,8 +575,8 @@
     "relativePath": "script\\miniGame\\miniMain\\prefab"
   },
   "bc44c699-43ab-4bda-83ba-cbe9c361de02": {
-    "asset": 1586852421146,
-    "meta": 1586852421174,
+    "asset": 1587104661272,
+    "meta": 1587104661293,
     "relativePath": "prefab\\miniGame\\miniMain\\rankInfo.prefab"
   },
   "2f8d7594-90e2-4693-aacb-5921f6eb53e2": {
@@ -614,14 +609,9 @@
     "meta": 1586844148786,
     "relativePath": "script\\data\\clientAttrData.js"
   },
-  "f822beb6-1139-4d24-8fa5-4903170720f8": {
-    "asset": 1586845889004,
-    "meta": 1586845889877,
-    "relativePath": "script\\miniGame\\miniMain\\prefab\\rankInfo.js"
-  },
   "e053ec9f-d3c1-4792-b0a9-b81011c2ba00": {
-    "asset": 1586917975226,
-    "meta": 1586917975251,
+    "asset": 1587088122040,
+    "meta": 1587088122065,
     "relativePath": "prefab\\miniGame\\miniMain\\avatar.prefab"
   },
   "81d18f9a-0981-4551-b460-38a098dfcce0": {
@@ -634,20 +624,10 @@
     "meta": 1586915526343,
     "relativePath": "script\\helper\\FitHelper.js"
   },
-  "6e3fb15a-7b1a-4e87-90bb-f6f9efb25c1d": {
-    "asset": 1586918257767,
-    "meta": 1586919641392,
-    "relativePath": "script\\config\\imageConf.js"
-  },
   "18a42a13-3e05-403a-8909-20072a51ca9d": {
     "asset": 1586921902950,
     "meta": 1586921903832,
     "relativePath": "script\\miniGame\\jumpBall\\jumpBall.js"
-  },
-  "a615a6cc-746b-4654-8b25-559029275fd4": {
-    "asset": 1586923490038,
-    "meta": 1586923497822,
-    "relativePath": "script\\home\\home.js"
   },
   "c2e719a4-a74a-465c-9469-736506bd369f": {
     "asset": 1586923787296,
@@ -663,26 +643,6 @@
     "asset": 1586935565141,
     "meta": 1586935576708,
     "relativePath": "script\\home\\trigger\\computer2.js"
-  },
-  "7ff53c1f-43f4-4bd5-b41d-ad788aa2e8cf": {
-    "asset": 1586935675511,
-    "meta": 1586935678758,
-    "relativePath": "script\\miniGame\\miniMain\\rankList.js"
-  },
-  "7dd055b3-fb1a-4641-9644-f05179b83e87": {
-    "asset": 1586935754699,
-    "meta": 1586935791954,
-    "relativePath": "script\\miniGame\\miniMain\\title.js"
-  },
-  "5c1c41e5-4421-43fa-a925-1fad11a0a178": {
-    "asset": 1586938944216,
-    "meta": 1586938945308,
-    "relativePath": "script\\miniGame\\miniMain\\prefab\\avatar.js"
-  },
-  "49056e0e-f1c8-462f-a4d2-a02b56d93e73": {
-    "asset": 1586941331469,
-    "meta": 1586941338550,
-    "relativePath": "script\\miniGame\\miniMain\\userInfo.js"
   },
   "4c4af77c-05ce-4652-b268-11f310b676f1": {
     "asset": 1586941375495,
@@ -705,8 +665,8 @@
     "relativePath": "resources\\plist\\home\\homeBg.jpg"
   },
   "1368b7e0-8508-41c7-8b26-6871f9d7494b": {
-    "asset": 1587039988586,
-    "meta": 1587039988647,
+    "asset": 1587091220534,
+    "meta": 1587091220554,
     "relativePath": "scene\\shop.fire"
   },
   "231bae80-e27e-4d6f-9297-9267d078b9c4": {
@@ -834,11 +794,6 @@
     "meta": 1587018564351,
     "relativePath": "script\\shop"
   },
-  "fd83be41-832a-4d98-a9bf-2130ba081baa": {
-    "asset": 1587020599947,
-    "meta": 1587020613182,
-    "relativePath": "script\\miniGame\\miniMain\\miniMain.js"
-  },
   "cbba0a76-f723-4a92-bfbc-bcd321c35a0d": {
     "asset": 1587025918391,
     "meta": 1587026024438,
@@ -863,11 +818,6 @@
     "asset": 1587029224061,
     "meta": 1587029225281,
     "relativePath": "script\\shop\\main.js"
-  },
-  "bd221556-5c11-42f9-87ad-0256aa254758": {
-    "asset": 1587031654899,
-    "meta": 1587031664666,
-    "relativePath": "script\\login\\login.js"
   },
   "6c2a59b6-6ff1-4dfb-a351-59d862aabe53": {
     "asset": 1587031727505,
@@ -1339,14 +1289,69 @@
     "meta": 1587033219447,
     "relativePath": "script\\shop\\prefab\\item.js"
   },
-  "1d6dd770-9b2a-42e5-a0b3-90d28c75b525": {
-    "asset": 1587039929589,
-    "meta": 1587039937403,
-    "relativePath": "script\\shop\\getFrame.js"
-  },
   "e8d9d977-b87a-405e-81f2-642305ccfa7a": {
     "asset": 1587039942895,
     "meta": 1587039944547,
     "relativePath": "script\\shop\\submitFrame.js"
+  },
+  "bd221556-5c11-42f9-87ad-0256aa254758": {
+    "asset": 1587087105656,
+    "meta": 1587087128956,
+    "relativePath": "script\\login\\login.js"
+  },
+  "7f7db771-b29f-400d-9ef6-657bc6cd76da": {
+    "asset": 1587087666152,
+    "meta": 1587087666205,
+    "relativePath": "resources\\plist\\miniGames\\miniMain\\head.plist"
+  },
+  "b8513d13-40bf-417a-b4b4-8dd36ca6fa8f": {
+    "asset": 1587087666152,
+    "meta": 1587087666188,
+    "relativePath": "resources\\plist\\miniGames\\miniMain\\head.png"
+  },
+  "a615a6cc-746b-4654-8b25-559029275fd4": {
+    "asset": 1587087858663,
+    "meta": 1587087859879,
+    "relativePath": "script\\home\\home.js"
+  },
+  "5c1c41e5-4421-43fa-a925-1fad11a0a178": {
+    "asset": 1587088065667,
+    "meta": 1587088121688,
+    "relativePath": "script\\miniGame\\miniMain\\prefab\\avatar.js"
+  },
+  "6e3fb15a-7b1a-4e87-90bb-f6f9efb25c1d": {
+    "asset": 1587088309388,
+    "meta": 1587088321956,
+    "relativePath": "script\\config\\imageConf.js"
+  },
+  "7dd055b3-fb1a-4641-9644-f05179b83e87": {
+    "asset": 1587089587740,
+    "meta": 1587089591505,
+    "relativePath": "script\\miniGame\\miniMain\\title.js"
+  },
+  "49056e0e-f1c8-462f-a4d2-a02b56d93e73": {
+    "asset": 1587089575462,
+    "meta": 1587089591508,
+    "relativePath": "script\\miniGame\\miniMain\\userInfo.js"
+  },
+  "1d6dd770-9b2a-42e5-a0b3-90d28c75b525": {
+    "asset": 1587091951507,
+    "meta": 1587091953240,
+    "relativePath": "script\\shop\\getFrame.js"
+  },
+  "7ff53c1f-43f4-4bd5-b41d-ad788aa2e8cf": {
+    "asset": 1587095945285,
+    "meta": 1587103054551,
+    "relativePath": "script\\miniGame\\miniMain\\rankList.js"
+  },
+  "fd83be41-832a-4d98-a9bf-2130ba081baa": {
+    "asset": 1587092506247,
+    "meta": 1587092716581,
+    "relativePath": "script\\miniGame\\miniMain\\miniMain.js"
+  },
+  "f822beb6-1139-4d24-8fa5-4903170720f8": {
+    "asset": 1587104258473,
+    "meta": 1587104260435,
+    "relativePath": "script\\miniGame\\miniMain\\prefab\\rankInfo.js"
   }
 }

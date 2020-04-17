@@ -18,6 +18,11 @@ cc.Class({
             type: cc.Prefab,
             tooltip: '道具预制体'
         },
+        closeBtn:{
+            default: null,
+            type: cc.Node,
+            tooltip: '关闭按钮'
+        },
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -32,6 +37,7 @@ cc.Class({
     },
 
     show(data){
+        this.closeBtn.active = false;
         this.node.setPosition(cc.v2(0,0));
         this.layout.removeAllChildren();
         for(var index in data)
@@ -40,7 +46,12 @@ cc.Class({
             item.parent = this.layout;
             item.emit('init',data[index]);
             item.opacity = 0;
-            item.runAction(cc.sequence(cc.delayTime(index/10),cc.fadeIn(0.1)));
+            if(index == (data.length-1))
+                item.runAction(cc.sequence(cc.delayTime(index/10),cc.fadeIn(0.1),cc.callFunc(()=>{
+                    this.closeBtn.active = true;
+                })));
+            else
+                item.runAction(cc.sequence(cc.delayTime(index/10),cc.fadeIn(0.1)));
         }
         cc.systemEvent.emit('mainInit',{});
     },

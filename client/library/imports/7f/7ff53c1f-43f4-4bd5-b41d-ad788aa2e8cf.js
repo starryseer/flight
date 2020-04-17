@@ -29,7 +29,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function onLoad() {
-        //this.init();
+        this.init();
         this.node.on('update', this.init, this);
     },
     init: function init() {
