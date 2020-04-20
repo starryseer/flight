@@ -38,6 +38,17 @@ cc.Class({
 
     onLoad: function onLoad() {
         _global2.default.FitHelper.fitFun(this.bg);
+        this.loadConfig();
+    },
+    loadConfig: function loadConfig() {
+        cc.loader.loadResDir("config", function (err, dir) {
+            if (err) return;
+            for (var i = 0; i < dir.length; i++) {
+                cc.loader.loadRes('config/' + dir[i].name.trim() + '.json', function (error, json) {
+                    _global2.default.configConf[json.name] = json.json;
+                });
+            }
+        });
     },
     start: function start() {},
     startClick: function startClick() {

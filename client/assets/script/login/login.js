@@ -27,8 +27,23 @@ cc.Class({
 
     onLoad () {
         global.FitHelper.fitFun(this.bg);
+        this.loadConfig();
         
     },
+
+    loadConfig(){
+        cc.loader.loadResDir("config", (err, dir)=> {
+            if(err)
+                return;
+            for(let i=0;i<dir.length;i++)
+            {
+                cc.loader.loadRes('config/' + dir[i].name.trim() + '.json',(error,json)=>{
+                    global.configConf[json.name] = json.json;
+                });
+            } 
+        }); 
+    },
+
 
     start () {
 

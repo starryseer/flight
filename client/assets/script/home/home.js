@@ -10,22 +10,8 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        this.loadConfig();
         this.initCollision();
         this.initPhysics();
-    },
-
-    loadConfig(){
-        cc.loader.loadResDir("config", (err, dir)=> {
-            if(err)
-                return;
-            for(let i=0;i<dir.length;i++)
-            {
-                cc.loader.loadRes('config/' + dir[i].name.trim() + '.json',(error,json)=>{
-                    global.configConf[json.name] = json.json;
-                });
-            } 
-        }); 
     },
 
     initCollision(){

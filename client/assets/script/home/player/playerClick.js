@@ -1,3 +1,4 @@
+import global from './../../global/global';
 cc.Class({
     extends: cc.Component,
 
@@ -12,16 +13,28 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        
+
     },
 
     start () {
+        global.FitHelper.onEnable(this.infoBg);
         this.infoBg.active = false;
+        this.infoBg.on(cc.Node.EventType.TOUCH_START,this.fade,this);
     },
 
     onPlayerClick(target,data){
         this.infoBg.active = true;
         this.infoBg.emit('init',{});
+    },
+
+    fade()
+    {
+        this.infoBg.active = false;
+    },
+
+    onBagClick(target,data){
+        cc.systemEvent.emit('bagShow',{});
+        this.infoBg.active = false;
     },
 
     // update (dt) {},

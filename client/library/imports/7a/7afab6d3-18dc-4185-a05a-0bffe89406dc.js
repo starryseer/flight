@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, '7afabbTGNxBhaBaC//olAbc', 'item');
-// script/shop/prefab/item.js
+cc._RF.push(module, '7afabbTGNxBhaBaC//olAbc', 'shopItem');
+// script/shop/prefab/shopItem.js
 
 'use strict';
 
