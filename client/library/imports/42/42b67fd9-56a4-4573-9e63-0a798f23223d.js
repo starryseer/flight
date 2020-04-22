@@ -38,6 +38,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function onLoad() {
+        this.node.on('init', this.init, this);
         this.node.on('btnTouch', this.btnTouch, this);
         this.node.on('fade', this.fade, this);
     },
@@ -53,7 +54,14 @@ cc.Class({
         this.flag = true;
         this.head.active = true;
         this.node.active = this.flag;
-
+    },
+    fade: function fade() {
+        this.flag = false;
+        this.head.active = false;
+        this.node.active = this.flag;
+    },
+    init: function init() {
+        this.show();
         this.content.removeAllChildren();
         for (var index in _global2.default.itemData.items) {
             if (_global2.default.configConf['item'][_global2.default.itemData.items[index].item_id]['showType'] == 'food') {
@@ -68,12 +76,7 @@ cc.Class({
                 item.emit('init', param);
             }
         }
-    },
-    fade: function fade() {
-        this.flag = false;
-        this.head.active = false;
-        this.content.removeAllChildren();
-        this.node.active = this.flag;
+        this.fade();
     }
 }
 

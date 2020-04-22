@@ -35,6 +35,7 @@ cc.Class({
         this.bagFrame.emit('init',{});
     },
 
+
     fade(){
         this.node.active = false;
     },

@@ -12,6 +12,10 @@ var _JoystickEvent = require("./../../helper/Joystick/JoystickEvent");
 
 var _JoystickEvent2 = _interopRequireDefault(_JoystickEvent);
 
+var _global = require("../../global/global");
+
+var _global2 = _interopRequireDefault(_global);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 cc.Class({
@@ -56,6 +60,7 @@ cc.Class({
     },
 
     onLoad: function onLoad() {
+
         _JoystickEvent2.default.getInstance().on(_JoystickEnum2.default.JoystickEventType.TOUCH_START, this.onTouchStart, this);
         _JoystickEvent2.default.getInstance().on(_JoystickEnum2.default.JoystickEventType.TOUCH_MOVE, this.onTouchMove, this);
         _JoystickEvent2.default.getInstance().on(_JoystickEnum2.default.JoystickEventType.TOUCH_END, this.onTouchEnd, this);

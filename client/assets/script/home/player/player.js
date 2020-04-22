@@ -1,5 +1,6 @@
 import JoystickEnum from "./../../helper/Joystick/JoystickEnum";
 import JoystickEvent from "./../../helper/Joystick/JoystickEvent";
+import global from "../../global/global";
 cc.Class({
     extends: cc.Component,
     properties: {
@@ -42,6 +43,7 @@ cc.Class({
     },
 
     onLoad() {
+        
         JoystickEvent.getInstance().on(JoystickEnum.JoystickEventType.TOUCH_START, this.onTouchStart, this);
         JoystickEvent.getInstance().on(JoystickEnum.JoystickEventType.TOUCH_MOVE, this.onTouchMove, this);
         JoystickEvent.getInstance().on(JoystickEnum.JoystickEventType.TOUCH_END, this.onTouchEnd, this);

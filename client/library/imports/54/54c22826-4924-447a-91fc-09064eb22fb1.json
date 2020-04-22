@@ -1,0 +1,58 @@
+{
+  "__type__": "cc.JsonAsset",
+  "_name": "mood",
+  "_objFlags": 0,
+  "_native": "",
+  "json": {
+    "1": {
+      "id": 1,
+      "name": "抑郁",
+      "min": -200,
+      "max": -126,
+      "gameMood": 10,
+      "gameGold": 30,
+      "cookMood": -10,
+      "cookExtra": 0
+    },
+    "2": {
+      "id": 2,
+      "name": "焦虑",
+      "min": -125,
+      "max": -51,
+      "gameMood": 10,
+      "gameGold": 10,
+      "cookMood": -10,
+      "cookExtra": 10
+    },
+    "3": {
+      "id": 3,
+      "name": "平静",
+      "min": -50,
+      "max": 49,
+      "gameMood": 10,
+      "gameGold": 0,
+      "cookMood": -10,
+      "cookExtra": 20
+    },
+    "4": {
+      "id": 4,
+      "name": "兴奋",
+      "min": 50,
+      "max": 124,
+      "gameMood": 10,
+      "gameGold": -10,
+      "cookMood": -10,
+      "cookExtra": 50
+    },
+    "5": {
+      "id": 5,
+      "name": "躁狂",
+      "min": 125,
+      "max": 200,
+      "gameMood": 10,
+      "gameGold": -30,
+      "cookMood": -10,
+      "cookExtra": 90
+    }
+  }
+}

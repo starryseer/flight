@@ -28,6 +28,16 @@ cc.Class({
             default: null,
             type: cc.Label,
             tooltip: '道具数量'
+        },
+        itemId: {
+            default: 0,
+            type: cc.Integer,
+            tooltip: '道具id'
+        },
+        id: {
+            default: 0,
+            type: cc.Integer,
+            tooltip: 'id'
         }
     },
 
@@ -40,6 +50,18 @@ cc.Class({
     init: function init(data) {
         this.itemSprite.spriteFrame = this.itemAtlas.getSpriteFrame(_global2.default.configConf['item'][data['item_id']]['image']);
         this.itemLab.string = '✖' + data['num'];
+        this.itemId = data['item_id'];
+        this.id = parseInt(data['id']);
+    },
+    onButtonClick: function onButtonClick() {
+        cc.log(this.node.getPosition());
+        var data = {
+            'item_id': this.itemId,
+            'pos': this.node.convertToWorldSpaceAR(cc.v2(-320, -475)),
+            'num': parseInt(this.itemLab.string.substr(1)),
+            'id': this.id
+        };
+        cc.systemEvent.emit('showInfo', data);
     }
 }
 

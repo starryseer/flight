@@ -27,6 +27,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        this.node.on('init',this.init,this);
         this.node.on('btnTouch',this.btnTouch,this);
         this.node.on('fade',this.fade,this);
     },
@@ -50,8 +51,17 @@ cc.Class({
     show(){
         this.flag = true;
         this.head.active = true;
+        this.node.active = this.flag;       
+    },
+
+    fade(){
+        this.flag = false;
+        this.head.active = false;
         this.node.active = this.flag;
-        
+    },
+
+    init(){
+        this.show();
         this.content.removeAllChildren();
         for(var index in global.itemData.items)
         {
@@ -67,17 +77,9 @@ cc.Class({
                 };
                 item.emit('init',param);
             }
-
         }
+        this.fade();
     },
-
-    fade(){
-        this.flag = false;
-        this.head.active = false;
-        this.content.removeAllChildren();
-        this.node.active = this.flag;
-    },
-
 
 
     // update (dt) {},
