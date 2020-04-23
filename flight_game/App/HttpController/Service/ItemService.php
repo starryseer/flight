@@ -430,6 +430,7 @@ class ItemService
 
         $res['clientAttr'] = $clientAttr;
         $res['item'] = $item;
+        $res['gold'] = $itemConf[$item['item_id']]['sale']*$num;
         return $res;
     }
 

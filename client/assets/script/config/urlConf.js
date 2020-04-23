@@ -11,6 +11,7 @@ const urlConf = function(){
     that.mini_play = that.game_url + '/mini_play';
     that.mini_rank = that.game_url + '/mini_rank';
     that.shop_draw = that.game_url + '/shop_draw';
+    that.item_sale = that.game_url + '/item_sale';
     return that;
 };
 export default urlConf;

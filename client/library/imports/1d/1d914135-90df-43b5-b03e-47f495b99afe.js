@@ -62,7 +62,7 @@ cc.Class({
         event.stopPropagation();
     },
     init: function init(data) {
-        var btnPos = { 1: [cc.v2(103, -85)], 2: [cc.v2(60, -85), cc.v2(154, -85)] };
+        var btnPos = { 1: [cc.v2(162, -116)], 2: [cc.v2(81, -116), cc.v2(223, -116)] };
         var itemConf = _global2.default.configConf['item'][data['item_id']];
         this.nameLab.string = itemConf['name'];
         this.infoLab.string = itemConf['info'];

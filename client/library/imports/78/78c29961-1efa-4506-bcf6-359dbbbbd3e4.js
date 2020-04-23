@@ -45,6 +45,7 @@ cc.Class({
 
     onLoad: function onLoad() {
         this.node.on('init', this.init, this);
+        this.node.on('updateItem', this.updateItem, this);
     },
     start: function start() {},
     init: function init(data) {
@@ -53,8 +54,17 @@ cc.Class({
         this.itemId = data['item_id'];
         this.id = parseInt(data['id']);
     },
+    updateItem: function updateItem(item) {
+
+        if (item['id'] != this.id) return;
+
+        if (item['num'] == 0) {
+            var type = _global2.default.configConf['item'][this.itemId]['showType'];
+            cc.systemEvent.emit('minusBagLab', { 'type': type });
+            this.node.destroy();
+        } else this.itemLab.string = "✖" + item['num'];
+    },
     onButtonClick: function onButtonClick() {
-        cc.log(this.node.getPosition());
         var data = {
             'item_id': this.itemId,
             'pos': this.node.convertToWorldSpaceAR(cc.v2(-320, -475)),

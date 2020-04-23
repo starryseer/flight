@@ -2,12 +2,15 @@
   2000001 => 
   array (
     'id' => 2000001,
-    'image' => '',
+    'image' => 'item_2000001',
     'rare' => 2,
     'type' => 'box',
-    'showType' => 'matter',
+    'showType' => 'item',
     'consume' => '',
-    'sale' => 0,
+    'use' => 1,
+    'cook' => 0,
+    'eat' => 0,
+    'sale' => 1000,
     'award' => 
     array (
       0 => '0',
@@ -34,12 +37,15 @@
   2000002 => 
   array (
     'id' => 2000002,
-    'image' => '',
+    'image' => 'item_2000002',
     'rare' => 3,
     'type' => 'randBox',
-    'showType' => 'food',
+    'showType' => 'item',
     'consume' => '',
-    'sale' => 0,
+    'use' => 1,
+    'cook' => 0,
+    'eat' => 0,
+    'sale' => 1000,
     'award' => 
     array (
       0 => '2000003',
@@ -67,11 +73,14 @@
   2000003 => 
   array (
     'id' => 2000003,
-    'image' => '',
+    'image' => 'item_2000003',
     'rare' => 4,
     'type' => 'selectBox',
-    'showType' => 'goods',
+    'showType' => 'item',
     'consume' => '',
+    'use' => 1,
+    'cook' => 0,
+    'eat' => 0,
     'sale' => 1000,
     'award' => 
     array (
@@ -93,11 +102,14 @@
   2000004 => 
   array (
     'id' => 2000004,
-    'image' => '',
+    'image' => 'item_2000004',
     'rare' => 3,
     'type' => 'debris',
-    'showType' => 'matter',
+    'showType' => 'item',
     'consume' => 99,
+    'use' => 1,
+    'cook' => 0,
+    'eat' => 0,
     'sale' => 1000,
     'award' => 
     array (
@@ -117,12 +129,15 @@
   2000005 => 
   array (
     'id' => 2000005,
-    'image' => '',
+    'image' => 'item_2000005',
     'rare' => 5,
     'type' => 'other',
-    'showType' => 'food',
+    'showType' => 'matter',
     'consume' => '',
-    'sale' => 0,
+    'use' => 0,
+    'cook' => 1,
+    'eat' => 0,
+    'sale' => 1000,
     'award' => '',
     'num' => '',
     'rate' => '',
@@ -135,12 +150,15 @@
   2000006 => 
   array (
     'id' => 2000006,
-    'image' => '',
+    'image' => 'item_2000006',
     'rare' => 2,
     'type' => 'multiBox',
-    'showType' => 'goods',
+    'showType' => 'item',
     'consume' => '',
-    'sale' => 0,
+    'use' => 1,
+    'cook' => 0,
+    'eat' => 0,
+    'sale' => 1000,
     'award' => 
     array (
       0 => '2000001',
@@ -163,12 +181,15 @@
   2000007 => 
   array (
     'id' => 2000007,
-    'image' => '',
+    'image' => 'item_2000007',
     'rare' => 3,
     'type' => 'randBox',
-    'showType' => 'food',
+    'showType' => 'item',
     'consume' => '',
-    'sale' => 0,
+    'use' => 1,
+    'cook' => 0,
+    'eat' => 0,
+    'sale' => 1000,
     'award' => 
     array (
       0 => '0',
@@ -196,11 +217,14 @@
   2000008 => 
   array (
     'id' => 2000008,
-    'image' => '',
+    'image' => 'item_2000008',
     'rare' => 4,
     'type' => 'selectBox',
-    'showType' => 'goods',
+    'showType' => 'item',
     'consume' => '',
+    'use' => 1,
+    'cook' => 0,
+    'eat' => 0,
     'sale' => 1000,
     'award' => 
     array (
@@ -222,12 +246,15 @@
   2000009 => 
   array (
     'id' => 2000009,
-    'image' => '',
+    'image' => 'item_2000009',
     'rare' => 2,
     'type' => 'box',
-    'showType' => 'matter',
+    'showType' => 'item',
     'consume' => '',
-    'sale' => 0,
+    'use' => 1,
+    'cook' => 0,
+    'eat' => 0,
+    'sale' => 1000,
     'award' => 
     array (
       0 => '0',
@@ -250,12 +277,15 @@
   2000010 => 
   array (
     'id' => 2000010,
-    'image' => '',
+    'image' => 'item_2000010',
     'rare' => 3,
     'type' => 'randBox',
-    'showType' => 'food',
+    'showType' => 'item',
     'consume' => '',
-    'sale' => 0,
+    'use' => 1,
+    'cook' => 0,
+    'eat' => 0,
+    'sale' => 1000,
     'award' => 
     array (
       0 => '0',
@@ -283,11 +313,14 @@
   2000011 => 
   array (
     'id' => 2000011,
-    'image' => '',
+    'image' => 'item_2000011',
     'rare' => 4,
     'type' => 'selectBox',
-    'showType' => 'goods',
+    'showType' => 'item',
     'consume' => '',
+    'use' => 1,
+    'cook' => 0,
+    'eat' => 0,
     'sale' => 1000,
     'award' => 
     array (
@@ -309,11 +342,14 @@
   2000012 => 
   array (
     'id' => 2000012,
-    'image' => '',
+    'image' => 'item_2000012',
     'rare' => 4,
     'type' => 'food',
-    'showType' => 'goods',
+    'showType' => 'food',
     'consume' => '',
+    'use' => 0,
+    'cook' => 0,
+    'eat' => 1,
     'sale' => 1000,
     'award' => 
     array (

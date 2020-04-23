@@ -1,69 +1,69 @@
-2020-04-22T11:54:42.025Z - normal: Load ~/.CocosCreator/settings.json
-2020-04-22T11:54:42.067Z - normal: Initializing Asset Database
-2020-04-22T11:54:42.070Z - normal: checking language setting...
-2020-04-22T11:54:42.070Z - normal: Language: zh
-2020-04-22T11:54:42.412Z - success: preview server running at http://localhost:7456
-2020-04-22T11:54:42.446Z - success: protocol editor-framework registered
-2020-04-22T11:54:42.446Z - success: protocol app registered
-2020-04-22T11:54:42.447Z - success: protocol theme registered
-2020-04-22T11:54:42.448Z - success: protocol packages registered
-2020-04-22T11:54:42.450Z - success: protocol uuid registerred
-2020-04-22T11:54:42.450Z - success: protocol db registerred
-2020-04-22T11:54:42.450Z - success: protocol thumbnail registerred
-2020-04-22T11:54:42.450Z - success: protocol unpack registerred
-2020-04-22T11:54:42.450Z - success: protocol disable-commonjs registerred
-2020-04-22T11:54:42.584Z - normal: connected!
-2020-04-22T11:54:42.585Z - normal: Check project C:\Users\EDZ\Desktop\MRFit
-2020-04-22T11:54:42.587Z - normal: Initializing project C:\Users\EDZ\Desktop\MRFit
-2020-04-22T11:54:42.618Z - success: adapters loaded
-2020-04-22T11:54:42.623Z - success: asset-db-debugger loaded
-2020-04-22T11:54:42.679Z - success: fb-audience-network loaded
-2020-04-22T11:54:42.704Z - success: fb-live-stream loaded
-2020-04-22T11:54:42.710Z - success: google-play-instant loaded
-2020-04-22T11:54:42.717Z - success: huawei-runtime loaded
-2020-04-22T11:54:42.719Z - success: jkw-adapter loaded
-2020-04-22T11:54:42.722Z - success: jsb-adapter loaded
-2020-04-22T11:54:42.727Z - success: oppo-runtime loaded
-2020-04-22T11:54:42.733Z - success: package-manager loaded
-2020-04-22T11:54:42.737Z - success: qtt-adapter loaded
-2020-04-22T11:54:42.741Z - success: runtime-dev-tools loaded
-2020-04-22T11:54:42.749Z - success: sdkbox loaded
-2020-04-22T11:54:42.754Z - success: ui-kit-preview-extra loaded
-2020-04-22T11:54:42.759Z - success: ui-kit-preview loaded
-2020-04-22T11:54:42.767Z - success: vivo-runtime loaded
-2020-04-22T11:54:42.771Z - success: alipay-minigame loaded
-2020-04-22T11:54:42.809Z - success: assets loaded
-2020-04-22T11:54:42.813Z - success: baidugame-opendata loaded
-2020-04-22T11:54:42.818Z - success: baidugame loaded
-2020-04-22T11:54:42.823Z - success: builder loaded
-2020-04-22T11:54:42.934Z - success: cocos-services loaded
-2020-04-22T11:54:42.939Z - success: console loaded
-2020-04-22T11:54:42.949Z - success: fb-instant-games loaded
-2020-04-22T11:54:42.953Z - success: game-window loaded
-2020-04-22T11:54:42.957Z - success: google-instant-games loaded
-2020-04-22T11:54:42.962Z - success: hierarchy loaded
-2020-04-22T11:54:42.966Z - success: inspector loaded
-2020-04-22T11:54:43.275Z - success: cpk-publish loaded
-2020-04-22T11:54:43.281Z - success: keystore loaded
-2020-04-22T11:54:43.285Z - success: node-library loaded
-2020-04-22T11:54:43.286Z - success: open-recent-items loaded
-2020-04-22T11:54:43.287Z - success: package-asset loaded
-2020-04-22T11:54:43.288Z - success: preferences loaded
-2020-04-22T11:54:43.289Z - success: project-exporter loaded
-2020-04-22T11:54:43.290Z - success: project-importer loaded
-2020-04-22T11:54:43.291Z - success: project-settings loaded
-2020-04-22T11:54:43.303Z - success: qtt-runtime loaded
-2020-04-22T11:54:43.306Z - success: scene loaded
-2020-04-22T11:54:43.306Z - success: simulator-debugger loaded
-2020-04-22T11:54:43.307Z - success: sprite-editor loaded
-2020-04-22T11:54:43.308Z - success: store loaded
-2020-04-22T11:54:43.310Z - success: timeline loaded
-2020-04-22T11:54:43.313Z - success: wechatgame-opendata loaded
-2020-04-22T11:54:43.315Z - success: wechatgame loaded
-2020-04-22T11:54:43.318Z - success: xiaomi-runtime loaded
-2020-04-22T11:54:44.042Z - normal: Initializing Cocos2d
-2020-04-22T11:54:44.430Z - normal: Initializing engine extends
-2020-04-22T11:54:45.072Z - info: Cocos Service load base data!
-2020-04-22T11:54:46.459Z - normal: Loading packages
-2020-04-22T11:54:46.466Z - normal: Watching packages
-2020-04-22T11:54:46.944Z - normal: Run Application
+2020-04-23T10:45:01.946Z - normal: Load ~/.CocosCreator/settings.json
+2020-04-23T10:45:01.993Z - normal: Initializing Asset Database
+2020-04-23T10:45:01.996Z - normal: checking language setting...
+2020-04-23T10:45:01.996Z - normal: Language: zh
+2020-04-23T10:45:02.314Z - success: preview server running at http://localhost:7456
+2020-04-23T10:45:02.317Z - success: protocol editor-framework registered
+2020-04-23T10:45:02.317Z - success: protocol app registered
+2020-04-23T10:45:02.317Z - success: protocol theme registered
+2020-04-23T10:45:02.317Z - success: protocol packages registered
+2020-04-23T10:45:02.317Z - success: protocol uuid registerred
+2020-04-23T10:45:02.317Z - success: protocol db registerred
+2020-04-23T10:45:02.317Z - success: protocol thumbnail registerred
+2020-04-23T10:45:02.318Z - success: protocol unpack registerred
+2020-04-23T10:45:02.318Z - success: protocol disable-commonjs registerred
+2020-04-23T10:45:02.436Z - normal: connected!
+2020-04-23T10:45:02.437Z - normal: Check project C:\Users\EDZ\Desktop\MRFit
+2020-04-23T10:45:02.439Z - normal: Initializing project C:\Users\EDZ\Desktop\MRFit
+2020-04-23T10:45:02.475Z - success: adapters loaded
+2020-04-23T10:45:02.478Z - success: asset-db-debugger loaded
+2020-04-23T10:45:02.528Z - success: fb-audience-network loaded
+2020-04-23T10:45:02.550Z - success: fb-live-stream loaded
+2020-04-23T10:45:02.552Z - success: google-play-instant loaded
+2020-04-23T10:45:02.557Z - success: huawei-runtime loaded
+2020-04-23T10:45:02.557Z - success: jkw-adapter loaded
+2020-04-23T10:45:02.558Z - success: jsb-adapter loaded
+2020-04-23T10:45:02.562Z - success: oppo-runtime loaded
+2020-04-23T10:45:02.564Z - success: package-manager loaded
+2020-04-23T10:45:02.565Z - success: qtt-adapter loaded
+2020-04-23T10:45:02.567Z - success: runtime-dev-tools loaded
+2020-04-23T10:45:02.570Z - success: sdkbox loaded
+2020-04-23T10:45:02.573Z - success: ui-kit-preview-extra loaded
+2020-04-23T10:45:02.575Z - success: ui-kit-preview loaded
+2020-04-23T10:45:02.579Z - success: vivo-runtime loaded
+2020-04-23T10:45:02.581Z - success: alipay-minigame loaded
+2020-04-23T10:45:02.622Z - success: assets loaded
+2020-04-23T10:45:02.625Z - success: baidugame-opendata loaded
+2020-04-23T10:45:02.627Z - success: baidugame loaded
+2020-04-23T10:45:02.629Z - success: builder loaded
+2020-04-23T10:45:02.734Z - success: cocos-services loaded
+2020-04-23T10:45:02.736Z - success: console loaded
+2020-04-23T10:45:02.745Z - success: fb-instant-games loaded
+2020-04-23T10:45:02.746Z - success: game-window loaded
+2020-04-23T10:45:02.747Z - success: google-instant-games loaded
+2020-04-23T10:45:02.749Z - success: hierarchy loaded
+2020-04-23T10:45:02.751Z - success: inspector loaded
+2020-04-23T10:45:02.965Z - success: cpk-publish loaded
+2020-04-23T10:45:02.969Z - success: keystore loaded
+2020-04-23T10:45:02.977Z - success: node-library loaded
+2020-04-23T10:45:02.978Z - success: open-recent-items loaded
+2020-04-23T10:45:02.980Z - success: package-asset loaded
+2020-04-23T10:45:02.980Z - success: preferences loaded
+2020-04-23T10:45:02.982Z - success: project-exporter loaded
+2020-04-23T10:45:02.983Z - success: project-importer loaded
+2020-04-23T10:45:02.984Z - success: project-settings loaded
+2020-04-23T10:45:02.995Z - success: qtt-runtime loaded
+2020-04-23T10:45:02.998Z - success: scene loaded
+2020-04-23T10:45:02.999Z - success: simulator-debugger loaded
+2020-04-23T10:45:03.000Z - success: sprite-editor loaded
+2020-04-23T10:45:03.002Z - success: store loaded
+2020-04-23T10:45:03.004Z - success: timeline loaded
+2020-04-23T10:45:03.006Z - success: wechatgame-opendata loaded
+2020-04-23T10:45:03.009Z - success: wechatgame loaded
+2020-04-23T10:45:03.012Z - success: xiaomi-runtime loaded
+2020-04-23T10:45:03.690Z - normal: Initializing Cocos2d
+2020-04-23T10:45:04.050Z - normal: Initializing engine extends
+2020-04-23T10:45:05.077Z - info: Cocos Service load base data!
+2020-04-23T10:45:06.480Z - normal: Loading packages
+2020-04-23T10:45:06.488Z - normal: Watching packages
+2020-04-23T10:45:06.955Z - normal: Run Application

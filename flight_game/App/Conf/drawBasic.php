@@ -34,11 +34,4 @@
     'sizeMin' => 1,
     'weigh' => 1,
   ),
-  6 => 
-  array (
-    'id' => 6,
-    'value' => 2000006,
-    'sizeMin' => 1,
-    'weigh' => 1,
-  ),
 );
