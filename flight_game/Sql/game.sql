@@ -7,13 +7,11 @@ CREATE TABLE `client` (
   `last_time` datetime DEFAULT CURRENT_TIMESTAMP  COMMENT '最后登录时间',
   `last_ip` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '最后登录IP',
   `count_login` int(11) NOT NULL DEFAULT '0' COMMENT '登录次数',
-  `nickname` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '游戏昵称',
   `status` tinyint(3) unsigned NOT NULL DEFAULT '100' COMMENT '登录状态 100=可登 10=禁用',
   PRIMARY KEY (`user_id`),
   KEY `create_time` (`create_time`),
   KEY `last_time` (`last_time`),
   KEY `status` (`status`) USING BTREE,
-  KEY `nickname` (`nickname`)
 ) ENGINE=INNODB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='用户表';
 
 CREATE TABLE `client_ol` (
@@ -27,6 +25,8 @@ CREATE TABLE `client_ol` (
 
 CREATE TABLE `client_attr` (
   `client_id` bigint(20) unsigned NOT NULL COMMENT '玩家ID',
+  `nickname` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '昵称',
+  `signature` text DEFAULT NULL COMMENT '签名',
   `gold` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '金币',
   `diamond` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '钻石',
   `fatigue` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '疲劳',
@@ -34,7 +34,8 @@ CREATE TABLE `client_attr` (
   `last_time` datetime DEFAULT CURRENT_TIMESTAMP  NOT NULL,
   `create_time` datetime DEFAULT CURRENT_TIMESTAMP  NOT NULL,
   PRIMARY KEY (`client_id`),
-  KEY `last_time` (`last_time`)
+  KEY `last_time` (`last_time`),
+  UNIQUE KEY `nickname` (`nickname`)
 ) ENGINE=INNODB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='玩家属性表';
 
 CREATE TABLE `fatigue` (
@@ -239,3 +240,36 @@ CREATE TABLE `world_info` (
   PRIMARY KEY (`date_str`)
 ) ENGINE=INNODB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='世界信息';
 
+CREATE TABLE `g_jump_ball` (
+  `client_id` bigint(10) unsigned NOT NULL,
+  `point` int(8) NOT NULL DEFAULT '0',
+  `last_time` bigint(16) unsigned NOT NULL DEFAULT '0',
+  `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`client_id`),
+  KEY `point_t` (`point`,`last_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `kitchen` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `client_id` bigint(20) unsigned NOT NULL COMMENT '玩家ID',
+  `kitchen_id` int(10) unsigned NOT NULL COMMENT '灶台ID',
+  `menu_id` int(10) unsigned NOT NULL COMMENT '菜单ID',
+  `start_time` datetime DEFAULT CURRENT_TIMESTAMP  NOT NULL COMMENT '开始烹饪时间',
+  `acc_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '加速时间',
+  `status` tinyint(4) unsigned NOT NULL DEFAULT '0' COMMENT '状态 0空闲 1使用',
+  `create_time` datetime DEFAULT CURRENT_TIMESTAMP  NOT NULL COMMENT '创建时间',
+  `last_time` datetime DEFAULT CURRENT_TIMESTAMP  NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (`id`),
+  KEY `client_kitchen` (`client_id`,`kitchen_id`) USING BTREE,
+  KEY `create_time` (`create_time`) USING BTREE
+) ENGINE=INNODB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='烹饪表';
+
+CREATE TABLE `month_card` (
+  `_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `client_id` bigint(20) unsigned NOT NULL COMMENT '玩家ID',
+  `num` int(10) unsigned NOT NULL COMMENT '天数',
+  `create_time` datetime DEFAULT CURRENT_TIMESTAMP  NOT NULL COMMENT '创建时间',
+  `last_time` datetime DEFAULT CURRENT_TIMESTAMP  NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `client_id` (`client_id`) USING BTREE
+) ENGINE=INNODB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='月卡表';

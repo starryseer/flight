@@ -1,0 +1,360 @@
+{
+ "2000001": {
+  "id": 2000001, 
+  "name": "一次性使用道具（无限）", 
+  "image": "item_2000001", 
+  "rare": 2, 
+  "type": "box", 
+  "showType": "item", 
+  "info": "虎子", 
+  "consume": "", 
+  "use": 1, 
+  "cook": 0, 
+  "eat": 0, 
+  "sale": 1000, 
+  "award": [
+   "0", 
+   "1", 
+   "2", 
+   "2000002", 
+   "2000003"
+  ], 
+  "num": [
+   "100", 
+   "100", 
+   "100", 
+   "2", 
+   "2"
+  ], 
+  "rate": "", 
+  "times": "", 
+  "stack": 1, 
+  "expire": 0, 
+  "endTime": "", 
+  "lockTime": ""
+ }, 
+ "2000002": {
+  "id": 2000002, 
+  "name": "一次性随机使用道具（无限）", 
+  "image": "item_2000002", 
+  "rare": 3, 
+  "type": "randBox", 
+  "showType": "item", 
+  "info": "九阳豆浆机", 
+  "consume": "", 
+  "use": 1, 
+  "cook": 0, 
+  "eat": 0, 
+  "sale": 1000, 
+  "award": [
+   "2000003", 
+   "2000004", 
+   "2000005"
+  ], 
+  "num": [
+   "1", 
+   "1", 
+   "1"
+  ], 
+  "rate": [
+   "10", 
+   "20", 
+   "40"
+  ], 
+  "times": "", 
+  "stack": 0, 
+  "expire": 0, 
+  "endTime": "", 
+  "lockTime": ""
+ }, 
+ "2000003": {
+  "id": 2000003, 
+  "name": "一次性多选道具（无限）", 
+  "image": "item_2000003", 
+  "rare": 4, 
+  "type": "selectBox", 
+  "showType": "item", 
+  "info": "豆浆", 
+  "consume": "", 
+  "use": 1, 
+  "cook": 0, 
+  "eat": 0, 
+  "sale": 1000, 
+  "award": [
+   "2000005", 
+   "2000006"
+  ], 
+  "num": [
+   "100", 
+   "100"
+  ], 
+  "rate": "", 
+  "times": "", 
+  "stack": 1, 
+  "expire": 0, 
+  "endTime": "", 
+  "lockTime": ""
+ }, 
+ "2000004": {
+  "id": 2000004, 
+  "name": "合成道具（无限）", 
+  "image": "item_2000004", 
+  "rare": 3, 
+  "type": "debris", 
+  "showType": "item", 
+  "info": "机", 
+  "consume": 99, 
+  "use": 1, 
+  "cook": 0, 
+  "eat": 0, 
+  "sale": 1000, 
+  "award": [
+   2000005
+  ], 
+  "num": [
+   1
+  ], 
+  "rate": "", 
+  "times": "", 
+  "stack": 1, 
+  "expire": 0, 
+  "endTime": "", 
+  "lockTime": ""
+ }, 
+ "2000005": {
+  "id": 2000005, 
+  "name": "抽卡券", 
+  "image": "item_2000005", 
+  "rare": 5, 
+  "type": "other", 
+  "showType": "matter", 
+  "info": "九阳", 
+  "consume": "", 
+  "use": 0, 
+  "cook": 1, 
+  "eat": 0, 
+  "sale": 1000, 
+  "award": "", 
+  "num": "", 
+  "rate": "", 
+  "times": "", 
+  "stack": 1, 
+  "expire": 0, 
+  "endTime": "", 
+  "lockTime": ""
+ }, 
+ "2000006": {
+  "id": 2000006, 
+  "name": "每日循环道具", 
+  "image": "item_2000006", 
+  "rare": 2, 
+  "type": "multiBox", 
+  "showType": "item", 
+  "info": "牌", 
+  "consume": "", 
+  "use": 1, 
+  "cook": 0, 
+  "eat": 0, 
+  "sale": 1000, 
+  "award": [
+   "2000001", 
+   "2000002", 
+   "0"
+  ], 
+  "num": [
+   "1", 
+   "1", 
+   "100"
+  ], 
+  "rate": "", 
+  "times": 3, 
+  "stack": 0, 
+  "expire": 1, 
+  "endTime": 1583317975, 
+  "lockTime": 86400
+ }, 
+ "2000007": {
+  "id": 2000007, 
+  "name": "一次性随机使用道具（无限）", 
+  "image": "item_2000007", 
+  "rare": 3, 
+  "type": "randBox", 
+  "showType": "item", 
+  "info": "叽叽叽", 
+  "consume": "", 
+  "use": 1, 
+  "cook": 0, 
+  "eat": 0, 
+  "sale": 1000, 
+  "award": [
+   "0", 
+   "1", 
+   "2"
+  ], 
+  "num": [
+   "100", 
+   "100", 
+   "100"
+  ], 
+  "rate": [
+   "10", 
+   "20", 
+   "40"
+  ], 
+  "times": "", 
+  "stack": 0, 
+  "expire": 1, 
+  "endTime": 1583317975, 
+  "lockTime": ""
+ }, 
+ "2000008": {
+  "id": 2000008, 
+  "name": "一次性多选道具（无限）", 
+  "image": "item_2000008", 
+  "rare": 4, 
+  "type": "selectBox", 
+  "showType": "item", 
+  "info": "2333", 
+  "consume": "", 
+  "use": 1, 
+  "cook": 0, 
+  "eat": 0, 
+  "sale": 1000, 
+  "award": [
+   "2000005", 
+   "2000006"
+  ], 
+  "num": [
+   "100", 
+   "100"
+  ], 
+  "rate": "", 
+  "times": "", 
+  "stack": 0, 
+  "expire": 1, 
+  "endTime": 1583317975, 
+  "lockTime": ""
+ }, 
+ "2000009": {
+  "id": 2000009, 
+  "name": "一次性使用道具（无限）", 
+  "image": "item_2000009", 
+  "rare": 2, 
+  "type": "box", 
+  "showType": "item", 
+  "info": "虎子", 
+  "consume": "", 
+  "use": 1, 
+  "cook": 0, 
+  "eat": 0, 
+  "sale": 1000, 
+  "award": [
+   "0", 
+   "1", 
+   "2"
+  ], 
+  "num": [
+   "100", 
+   "100", 
+   "100"
+  ], 
+  "rate": "", 
+  "times": "", 
+  "stack": 1, 
+  "expire": 0, 
+  "endTime": "", 
+  "lockTime": ""
+ }, 
+ "2000010": {
+  "id": 2000010, 
+  "name": "一次性随机使用道具（无限）", 
+  "image": "item_2000010", 
+  "rare": 3, 
+  "type": "randBox", 
+  "showType": "item", 
+  "info": "九阳豆浆机", 
+  "consume": "", 
+  "use": 1, 
+  "cook": 0, 
+  "eat": 0, 
+  "sale": 1000, 
+  "award": [
+   "0", 
+   "1", 
+   "2"
+  ], 
+  "num": [
+   "100", 
+   "100", 
+   "100"
+  ], 
+  "rate": [
+   "10", 
+   "20", 
+   "40"
+  ], 
+  "times": "", 
+  "stack": 1, 
+  "expire": 0, 
+  "endTime": "", 
+  "lockTime": ""
+ }, 
+ "2000011": {
+  "id": 2000011, 
+  "name": "一次性多选道具（无限）", 
+  "image": "item_2000011", 
+  "rare": 4, 
+  "type": "selectBox", 
+  "showType": "item", 
+  "info": "豆浆", 
+  "consume": "", 
+  "use": 1, 
+  "cook": 0, 
+  "eat": 0, 
+  "sale": 1000, 
+  "award": [
+   "2000005", 
+   "2000006"
+  ], 
+  "num": [
+   "100", 
+   "100"
+  ], 
+  "rate": "", 
+  "times": "", 
+  "stack": 1, 
+  "expire": 0, 
+  "endTime": "", 
+  "lockTime": ""
+ }, 
+ "2000012": {
+  "id": 2000012, 
+  "name": "食物", 
+  "image": "item_2000012", 
+  "rare": 4, 
+  "type": "food", 
+  "showType": "food", 
+  "info": "豆浆", 
+  "consume": "", 
+  "use": 0, 
+  "cook": 0, 
+  "eat": 1, 
+  "sale": 1000, 
+  "award": [
+   0
+  ], 
+  "num": [
+   "20", 
+   "10", 
+   "5", 
+   "0", 
+   "0"
+  ], 
+  "rate": "", 
+  "times": "", 
+  "stack": 1, 
+  "expire": 0, 
+  "endTime": "", 
+  "lockTime": ""
+ }
+}

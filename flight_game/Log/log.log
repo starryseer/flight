@@ -5254,3 +5254,7 @@ Stack trace:
 [2020-04-22 11:56:25][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24]
 [2020-04-23 07:54:58][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24]
 [2020-04-23 16:53:10][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24]
+[2020-04-24 09:08:22][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24]
+[2020-04-25 07:05:04][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24]
+[2020-04-26 06:51:03][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24]
+[2020-04-27 09:26:00][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24]

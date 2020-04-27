@@ -222,9 +222,9 @@ class ItemDao
         });
     }
 
-    public function cook($userId,$items,$cookItem)
+    public function updateMulti($userId,$items)
     {
-        return DbManager::getInstance()->invoke(function ($client)use($userId,$items,$cookItem){
+        return DbManager::getInstance()->invoke(function ($client)use($userId,$items){
             \EasySwoole\ORM\DbManager::getInstance()->startTransaction($client);
             try{
                 $id = null;
@@ -238,30 +238,8 @@ class ItemDao
                     else
                         $itemModel->where('id',$item['id'])->update(['num'=>$item['num']]);
                 }
-
-                $itemModel = null;
-                eval('$itemModel=\App\HttpController\Model\Item'.$fen.'Model::invoke($client);');
-                if($cookItem['control'] == 'insert')
-                {
-                    $insert = [
-                        'client_id'=>$userId,
-                        'item_id'=>$cookItem['item_id'],
-                        'item_type'=>$cookItem['type'],
-                        'num'=>$cookItem['num'],
-                        'stack'=>$cookItem['stack'],
-                        'expire'=>$cookItem['expire'],
-                    ];
-                    $id = $itemModel->data($insert)->save();
-                }
-                else
-                {
-                    $res = $itemModel->where('id',$cookItem['id'])->update(['num'=>QueryBuilder::inc(1)]);
-                    if($res)
-                        $id = $cookItem['id'];
-                }
-
                 \EasySwoole\ORM\DbManager::getInstance()->commit($client);
-                return $id;
+                return true;
             }catch (\Exception $e)
             {
                 \EasySwoole\ORM\DbManager::getInstance()->rollback($client);

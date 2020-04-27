@@ -9,74 +9,227 @@
 namespace App\HttpController\Service;
 
 
+use App\HttpController\Dao\ClientAttrDao;
 use App\HttpController\Dao\ItemDao;
+use App\HttpController\Dao\KitchenDao;
+use App\HttpController\Dao\MonthCardDao;
 use App\HttpController\Common\MoodHelper;
 
 class CookService
 {
     use \EasySwoole\Component\CoroutineSingleTon;
 
-    public function cook($userId,$ids)
+    public function get($userId)
+    {
+        $res = ['code'=>0,'kitchens'=>[]];
+        $kitchens = KitchenDao::getInstance()->get('',$userId);
+        if(count($kitchens) ==0)
+        {
+            $ids = KitchenDao::getInstance()->init($userId);
+            $kitchens = KitchenDao::getInstance()->get($userId,$ids);
+        }
+
+        $unset = [];
+        $monthCard = MonthCardDao::getInstance()->get($userId);
+        foreach($kitchens as $key => $kitchen)
+        {
+            $config = __CONF__['kitchen'][$kitchen['kitchen_id']];
+            if($config['type'] == 'month' and !$this->hasMonthCard($monthCard))
+                $unset[] = $key;
+        }
+
+        if(count($unset) >0)
+        {
+            foreach($unset as $unKey)
+            {
+                unset($kitchens[$unKey]);
+            }
+        }
+
+        $res['kitchens'] = $kitchens;
+        return $res;
+    }
+
+    public function unlock($userId,$kitchenId)
+    {
+        $res = ['code'=>0,'kitchens'=>[],'clientAttr'=>[]];
+        $kitchens = KitchenDao::getInstance()->get('',$userId);
+        foreach($kitchens as $kitchen)
+        {
+            if($kitchen['kitchen_id'] == $kitchenId)
+            {
+                $res['code'] = 1;
+                return $res;
+            }
+        }
+
+        $clientAttr = ClientAttrDao::getInstance()->get($userId);
+        $conf = __CONF__['kitchen'][$kitchenId];
+        switch($conf['type'])
+        {
+            case "init":
+                $id = KitchenDao::getInstance()->add($userId,$kitchenId);
+                if(!$id)
+                {
+                    $res['code'] = 3;
+                    return $res;
+                }
+                break;
+            case 'gold':
+                if($clientAttr['gold'] < $conf['cost'])
+                {
+                    $res['code'] = 2;
+                    return $res;
+                }
+                $id = KitchenDao::getInstance()->add($userId,$kitchenId);
+                if(!$id)
+                {
+                    $res['code'] = 3;
+                    return $res;
+                }
+                $clientAttr['gold']-=$conf['cost'];
+                ClientAttrDao::getInstance()->set($userId,'gold',$clientAttr['gold']);
+                break;
+            case 'month':
+                $montCard = MonthCardDao::getInstance()->get($userId);
+                if(!$this->hasMonthCard($montCard))
+                {
+                    $res['code'] = 4;
+                    return $res;
+                }
+                $id = KitchenDao::getInstance()->add($userId,$kitchenId);
+                if(!$id)
+                {
+                    $res['code'] = 3;
+                    return $res;
+                }
+                break;
+        }
+
+        $res['kitchens'] = $kitchens;
+        $res['clientAttr'] = $clientAttr;
+        return $res;
+    }
+
+    public function start($userId,$menuId,$kitchenId,$itemIds)
     {
         $res = ['code'=>0,'consume'=>[],'get'=>[],'clientAttr'=>[]];
-        $items = ItemDao::getInstance()->getMulti($userId,$ids);
-        if(count($items) != count($ids))
+        $items = ItemDao::getInstance()->getMulti($userId,$itemIds);
+        if(count($items) != count($itemIds))
         {
             $res['code'] = 1;
             return $res;
         }
 
-        $itemIds = [];
+        $itemConfIds = [];
         foreach($items as $i)
         {
-            $itemIds[] = $i['item_id'];
+            $itemConfIds[] = $i['item_id'];
         }
-        sort($itemIds);
-        $idsStr = implode(',',$itemIds);
-        $cookConf = __CONF__['cook'];
-        if(!isset($cookConf[$idsStr]))
+        sort($itemConfIds);
+        $idsStr = implode(',',$itemConfIds);
+        $menuConf = __CONF__['menu'][$menuId];
+        if($menuConf['itemIds'] != $idsStr)
         {
             $res['code'] = 2;
             return $res;
         }
 
-        $cookItemId = $cookConf[$idsStr]['merge'];
-
         foreach($items as &$item)
         {
             if($item['num'] <= 0)
             {
-                $res['code'] = 3;
+                $res['code'] = 1;
                 return $res;
             }
             $item['num']-=1;
         }
 
-        $cookId = ItemDao::getInstance()->getByItemIds($userId,[$cookItemId]);
-        $clientAttr = ClientAttrService::getInstance()->get($userId);
-        $num = MoodHelper::cookExtra($clientAttr['mood']);
-        if(empty($cookId) or !__CONF__['item'][$cookItemId]['stack'])
-            $cookItem = ['control'=>'insert','item_id'=>$cookItemId,'num'=>$num,'stack'=>__CONF__['item'][$cookItemId]['stack'],'expire'=>__CONF__['item'][$cookItemId]['expire'],'type'=>__CONF__['item'][$cookItemId]['type']];
-        else
-            $cookItem = ['control'=>'update','item_id'=>$cookItemId,'num'=>$num,'id'=>$cookId[0]['id']];
+        $kitchen = KitchenDao::getInstance()->get($kitchenId);
+        $monthCard = MonthCardDao::getInstance()->get($userId);
+        if(empty($kitchen) or $kitchen['status'] == 0 or $kitchen['client_id'] != $userId or (__CONF__['kitchen'][$kitchen['kitchen_id']]['type'] == 'month' and !$this->hasMonthCard($monthCard)))
+        {
+            $res['code'] = 4;
+            return $res;
+        }
 
-        $id = ItemDao::getInstance()->cook($userId,$items,$cookItem);
-        if(!$id)
+        $clientAttr = ClientAttrService::getInstance()->get($userId);
+        if(ItemDao::getInstance()->updateMulti($userId,$items))
         {
             $res['code'] = 3;
             return $res;
         }
 
+        $kitchen['status'] = 1;
+        $kitchen['menu_id'] = $menuId;
+        $kitchen['start_time'] = date('Y-m-d H:i:s');
+        $kitchen['acc_time'] = 0;
+        KitchenDao::getInstance()->update($kitchenId,['status'=>1,'menu_id'=>$menuId,'start_time'=>$kitchen['start_time'],'acc_time'=>0]);
+
         $updateMood = MoodHelper::cookMood($clientAttr['mood']);
         $clientAttr['mood'] = $updateMood;
         ClientAttrService::getInstance()->set($userId,'mood',$updateMood);
 
-        $cookItem = ItemDao::getInstance()->getOne($userId,$id);
         $res['consume'] = $items;
-        $res['get'] = $cookItem;
         $res['clientAttr'] = $clientAttr;
+        $res['kitchen'] = $kitchen;
         return $res;
 
     }
 
+    public function end($userId,$kitchenId)
+    {
+        $res = ['code'=>0,'kitchen'=>[],'get'=>[]];
+        $kitchen = KitchenDao::getInstance()->get($kitchenId);
+        if($kitchen['status'] == 0 or $kitchen['client_id'] != $userId)
+        {
+            $res['code'] = 1;
+            return $res;
+        }
+
+        $menuId = $kitchen['menu_id'];
+        $menuConf = __CONF__['menu'][$menuId];
+        if(time() > ($kitchen['start_time'] + $kitchen['acc_time'] + $menuConf['costTime']))
+        {
+            $res['code'] = 2;
+            return $res;
+        }
+
+        $itemId = $menuConf['merge'];
+        $item = ItemDao::getInstance()->getByItemIds($userId,[$itemId]);
+        $itemConf = __CONF__['item'][$itemId];
+        if(count($item) == 0)
+        {
+            $getItem = ['control'=>'insert','stack'=>$itemConf['stack'],'item_id'=>$itemId,'type'=>$itemConf['type'],'num'=>1,'expire'=>$itemConf['expire']];
+        }
+        else if($itemConf['stack'])
+        {
+            $getItem = ['control'=>'update','stack'=>$itemConf['stack'],'id'=>$item[0]->id,'num'=>$item[0]->num+1];
+        }
+        else
+        {
+            $getItem = ['control'=>'insert','stack'=>$itemConf['stack'],'item_id'=>$itemId,'type'=>$itemConf['type'],'num'=>1,'expire'=>$itemConf['expire']];
+        }
+        $ids = ItemDao::getInstance()->consume($userId,[],[$getItem]);
+        if(false === $ids)
+        {
+            $res['code'] = 3;
+            return $res;
+        }
+
+        $kitchen['status'] = 0;
+        $kitchen['menu_id'] = 0;
+        $kitchen['start_time'] = 0;
+        $kitchen['acc_time'] = 0;
+        KitchenDao::getInstance()->update($kitchenId,['status'=>0,'menu_id'=>0,'start_time'=>0,'acc_time'=>0]);
+
+        $res['get'] = ItemDao::getInstance()->getMulti($userId,$ids);
+        $res['kitchen'] = $kitchen;
+        return $res;
+    }
+
+    public function hasMonthCard($monthCard)
+    {
+        return !empty($monthCard) and ($monthCard['num'] >0 or (strtotime($monthCard['update_time']) > strtotime(date("Y-m-d"))));
+    }
 }

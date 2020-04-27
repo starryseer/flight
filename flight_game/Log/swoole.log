@@ -249,3 +249,7 @@ string(60) "SQLSTATE[23000] [1062] Duplicate entry '' for key 'nickname'"
 [43m[2020-04-23 07:54:58][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
 [2020-04-23 13:53:10 #21409.1]	INFO	Server is shutdown now
 [43m[2020-04-23 16:53:10][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-24 09:08:22][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-25 07:05:04][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-26 06:51:03][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m
+[43m[2020-04-27 09:26:00][DEBUG][NOTICE] : [Undefined index: mood at file:/data/flight/flight/flight_game/App/HttpController/Service/MoodService.php line:24][0m

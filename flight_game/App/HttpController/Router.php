@@ -27,10 +27,13 @@ class Router extends AbstractRouter
         $routeCollector->post('/item_sale', '/client/item/sale');
         $routeCollector->post('/bag_up', '/client/bag/upBag');
         $routeCollector->post('/shop_draw', '/client/draw/draw');
-        $routeCollector->post('/cook_cook', '/client/cook/cook');
         $routeCollector->post('/mini_index', '/client/miniGame/index');
         $routeCollector->post('/mini_play', '/client/miniGame/play');
         $routeCollector->post('/mini_rank', '/client/miniGame/rank');
+        $routeCollector->post('/cook_index', '/client/cook/index');
+        $routeCollector->post('/cook_unlock', '/client/cook/unlock');
+        $routeCollector->post('/cook_start', '/client/cook/start');
+        $routeCollector->post('/cook_end', '/client/cook/end');
 
     }
 }
