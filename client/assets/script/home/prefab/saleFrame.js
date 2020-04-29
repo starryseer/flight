@@ -124,7 +124,7 @@ cc.Class({
                 global.clientAttrData.initClientAttrData(rsp.data.clientAttr);
                 global.itemData.update([rsp.data.item]);
                 cc.systemEvent.emit('updateItems',rsp.data.item);
-                cc.systemEvent.emit('showConfirmFrame',rsp.data.gold);
+                cc.systemEvent.emit('saleConfirm',rsp.data.gold);
                 this.node.destroy();
             }
             else

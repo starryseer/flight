@@ -39,7 +39,7 @@ cc.Class({
             type: cc.Prefab,
             tooltip: '信息框'
         },
-        confirmFrame: {
+        saleConfirmFrame: {
             default: null,
             type: cc.Prefab,
             tooltip: '成功回调框'
@@ -48,6 +48,16 @@ cc.Class({
             default: null,
             type: cc.Prefab,
             tooltip: '出售物品框'
+        },
+        useFrame: {
+            default: null,
+            type: cc.Prefab,
+            tooltip: '使用物品框'
+        },
+        useConfirmFrame: {
+            default: null,
+            type: cc.Prefab,
+            tooltip: '使用物品框'
         }
     },
 
@@ -61,7 +71,8 @@ cc.Class({
         cc.systemEvent.on('showInfo', this.showInfo, this);
         cc.systemEvent.on('fadeInfo', this.fadeInfo, this);
         cc.systemEvent.on('showDealFrame', this.showDealFrame, this);
-        cc.systemEvent.on('showConfirmFrame', this.showConfirmFrame, this);
+        cc.systemEvent.on('saleConfirm', this.saleConfirm, this);
+        cc.systemEvent.on('useConfirm', this.useConfirm, this);
         this.init();
     },
     init: function init() {
@@ -75,7 +86,8 @@ cc.Class({
         cc.systemEvent.off('showInfo', this.showInfo, this);
         cc.systemEvent.off('fadeInfo', this.fadeInfo, this);
         cc.systemEvent.off('showDealFrame', this.showDealFrame, this);
-        cc.systemEvent.off('showConfirmFrame', this.showConfirmFrame, this);
+        cc.systemEvent.off('saleConfirm', this.saleConfirm, this);
+        cc.systemEvent.off('useConfirm', this.useConfirm, this);
     },
     animate: function animate() {
         this.node.setPosition(cc.v2(-650, 0));
@@ -102,12 +114,24 @@ cc.Class({
                 saleFrame.parent = this.itemParent;
                 saleFrame.emit('init', data);
                 break;
+            case 'use':
+                var useFrame = cc.instantiate(this.useFrame);
+                useFrame.parent = this.itemParent;
+                useFrame.emit('init', data);
+                break;
+            default:
+                cc.director.loadScene('cook');
         }
     },
-    showConfirmFrame: function showConfirmFrame(gold) {
-        var frame = cc.instantiate(this.confirmFrame);
+    saleConfirm: function saleConfirm(gold) {
+        var frame = cc.instantiate(this.saleConfirmFrame);
         frame.parent = this.itemParent;
         frame.emit('init', { 'gold': gold });
+    },
+    useConfirm: function useConfirm(data) {
+        var frame = cc.instantiate(this.useConfirmFrame);
+        frame.parent = this.itemParent;
+        frame.emit('init', data);
     },
     onButtonClick: function onButtonClick(target, data) {
         switch (parseInt(data)) {

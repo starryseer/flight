@@ -8,6 +8,7 @@
 
 namespace App\HttpController\Dao;
 
+use EasySwoole\ORM\DbManager;
 use App\HttpController\Model\MonthCardModel;
 
 class MonthCardDao

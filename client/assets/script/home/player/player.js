@@ -40,13 +40,32 @@ cc.Class({
             type: cc.Integer,
             tooltip: '最快速度'
         }, 
+        lock: {
+            default: 0,
+            type: cc.Integer,
+            tooltip: '上锁'
+        }, 
     },
 
     onLoad() {
-        
+        cc.systemEvent.on('playerLock',this.playerLock,this);
+        cc.systemEvent.on('playerUnLock',this.playerUnLock,this);
         JoystickEvent.getInstance().on(JoystickEnum.JoystickEventType.TOUCH_START, this.onTouchStart, this);
         JoystickEvent.getInstance().on(JoystickEnum.JoystickEventType.TOUCH_MOVE, this.onTouchMove, this);
         JoystickEvent.getInstance().on(JoystickEnum.JoystickEventType.TOUCH_END, this.onTouchEnd, this);
+    },
+
+    onDestroy(){
+        cc.systemEvent.off('playerLock',this.playerLock,this);
+        cc.systemEvent.off('playerUnLock',this.playerUnLock,this);
+    },
+
+    playerLock(){
+        this.lock = 1;
+    },
+
+    playerUnLock(){
+        this.lock = 0;
     },
  
     onTouchStart() {
@@ -80,20 +99,23 @@ cc.Class({
 
 
     update(dt) {
-        switch (this._speedType) {
-            case JoystickEnum.SpeedType.STOP:
-                this._moveSpeed = this.stopSpeed;
-                break;
-            case JoystickEnum.SpeedType.NORMAL:
-                this._moveSpeed = this.normalSpeed;
-                break;
-            case JoystickEnum.SpeedType.FAST:
-                this._moveSpeed = this.fastSpeed;
-                break;
-            default:
-                break;
+        if(!this.lock)
+        {
+            switch (this._speedType) {
+                case JoystickEnum.SpeedType.STOP:
+                    this._moveSpeed = this.stopSpeed;
+                    break;
+                case JoystickEnum.SpeedType.NORMAL:
+                    this._moveSpeed = this.normalSpeed;
+                    break;
+                case JoystickEnum.SpeedType.FAST:
+                    this._moveSpeed = this.fastSpeed;
+                    break;
+                default:
+                    break;
+            }
+            this.move();
         }
-        this.move();
     },
 });
  

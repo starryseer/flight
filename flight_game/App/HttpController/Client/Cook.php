@@ -49,6 +49,20 @@ class Cook extends Base
                 return $this->json_return(50000,'','用户验证失败');
 
             $res = CookService::getInstance()->unlock($userId,$kitchenId);
+            if($res['code'])
+            {
+                switch($res['code'])
+                {
+                    case 1:
+                        return $this->json_return(50001,'','已解锁');
+                    case 2:
+                        return $this->json_return(50002,'','金币不足');
+                    case 3:
+                        return $this->json_return(50003,'','解锁失败');
+                    case 4:
+                        return $this->json_return(50003,'','请购买月卡');
+                }
+            }
 
             return $this->json_return(200,$res);
         }

@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, 'b238cFwqb5OnLPlkIEEzZ7c', 'confirmFrame');
-// script/home/prefab/confirmFrame.js
+cc._RF.push(module, 'b238cFwqb5OnLPlkIEEzZ7c', 'saleConfirmFrame');
+// script/home/prefab/saleConfirmFrame.js
 
 'use strict';
 

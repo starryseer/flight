@@ -14,9 +14,24 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        infoLabel: {
+        cook: {
             default: null,
-            type: cc.Label,
+            type: cc.Node,
+            tooltip: '标签'
+        },
+        eat: {
+            default: null,
+            type: cc.Node,
+            tooltip: '标签'
+        },
+        sale: {
+            default: null,
+            type: cc.Node,
+            tooltip: '标签'
+        },
+        use: {
+            default: null,
+            type: cc.Node,
             tooltip: '标签'
         },
         id: {
@@ -40,19 +55,26 @@ cc.Class({
         var type = '';
         switch (data['type']) {
             case 'cook':
-                type = '烹饪';
+                this.eat.active = false;
+                this.sale.active = false;
+                this.use.active = false;
                 break;
             case 'use':
-                type = '使用';
+                this.cook.active = false;
+                this.eat.active = false;
+                this.sale.active = false;
                 break;
             case 'sale':
-                type = '转卖';
+                this.cook.active = false;
+                this.eat.active = false;
+                this.use.active = false;
                 break;
             case 'eat':
-                type = '食用';
+                this.cook.active = false;
+                this.sale.active = false;
+                this.use.active = false;
                 break;
         }
-        this.infoLabel.string = type;
         this.id = data['id'];
         this.btnType = data['type'];
     },

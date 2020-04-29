@@ -1,0 +1,14 @@
+{
+  "__type__": "cc.JsonAsset",
+  "_name": "miniGame",
+  "_objFlags": 0,
+  "_native": "",
+  "json": {
+    "1": {
+      "id": 1,
+      "name": "弹跳小球",
+      "table": "GJumpBall",
+      "image": "jumpBall"
+    }
+  }
+}

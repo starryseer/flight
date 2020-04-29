@@ -190,6 +190,7 @@ class ItemService
         $res['consume'] = $dbConsumeItem;
         $res['clientAttr'] = $clientAttr;
         $res['show'] = $getItems;
+        $res['showClient'] = $clientAdd;
         return $res;
     }
 

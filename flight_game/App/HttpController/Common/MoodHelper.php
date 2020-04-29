@@ -32,7 +32,7 @@ class MoodHelper
         return false;
     }
 
-    public function cookMood($mood)
+    public static function cookMood($mood)
     {
         $moodConf = static::getMoodConf($mood);
         $mood+=$moodConf['cookMood'];

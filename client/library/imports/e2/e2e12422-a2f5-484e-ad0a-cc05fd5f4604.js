@@ -37,11 +37,16 @@ cc.Class({
         this.infoBg.active = false;
         this.infoBg.on(cc.Node.EventType.TOUCH_START, this.fade, this);
         if (this.node._touchListener) {
-            this.node._touchListener.setSwallowTouches(this._isSwallow);
+            this.node._touchListener.setSwallowTouches(false);
         }
     },
     onTouchStart: function onTouchStart() {
         this.currentTime = Date.now();
+        //通过系统事件触发自定义锁，防止点击角色移动
+        cc.systemEvent.emit('playerLock', {});
+        this.scheduleOnce(function () {
+            cc.systemEvent.emit('playerUnLock', {});
+        }, 0.2);
     },
     onTouchEnd: function onTouchEnd() {
         if (Date.now() - this.currentTime < 200) {

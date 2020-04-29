@@ -23,6 +23,16 @@ cc.Class({
             type: cc.Label,
             tooltip: '信息'
         },
+        fatigue:{
+            default: null,
+            type: cc.Node,
+            tooltip: '疲劳'
+        },
+        fatigueLab:{
+            default: null,
+            type: cc.Label,
+            tooltip: '疲劳值'
+        },
         buttonPrefab:{
             default: null,
             type: cc.Prefab,
@@ -86,6 +96,16 @@ cc.Class({
             button['sale'] = itemConf['sale'];
             buttonLen++;
         }
+
+        if(itemConf['showType'] != 'food')
+        {
+            this.fatigue.active = false;
+        }
+        else
+        {
+            this.fatigueLab.string = "+"+itemConf['num'][0];
+        }
+        
 
         var num = 0;
         for(var key in button)

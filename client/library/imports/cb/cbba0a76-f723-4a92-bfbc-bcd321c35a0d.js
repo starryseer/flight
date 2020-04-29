@@ -21,6 +21,7 @@ var urlConf = function urlConf() {
     that.mini_rank = that.game_url + '/mini_rank';
     that.shop_draw = that.game_url + '/shop_draw';
     that.item_sale = that.game_url + '/item_sale';
+    that.item_consume = that.game_url + '/item_consume';
     return that;
 };
 exports.default = urlConf;

@@ -25,7 +25,6 @@ class KitchenDao
                 'start_time'=>date('Y-m-d H:i:s'),
                 'acc_time'=>0,
                 'status'=>0,
-                'status'=>0,
             ];
             $ids = [];
             foreach($kitchenConf as $conf)
@@ -41,7 +40,31 @@ class KitchenDao
         });
     }
 
-    public function get($id,$userId)
+    public function add($userId,$kitchenId)
+    {
+        return DbManager::getInstance()->invoke(function ($client)use($userId,$kitchenId){
+            $initData = [
+                'client_id'=>$userId,
+                'menu_id'=>0,
+                'kitchen_id'=>$kitchenId,
+                'start_time'=>date('Y-m-d H:i:s'),
+                'acc_time'=>0,
+                'status'=>0,
+            ];
+
+            $kitchenModel = KitchenModel::invoke($client,$initData);
+            $id = $kitchenModel->save();
+            if($id)
+            {
+                $initData['id'] = $id;
+                return $initData;
+            }
+
+            return [];
+        });
+    }
+
+    public function get($id,$userId='')
     {
         return DbManager::getInstance()->invoke(function ($client)use($id,$userId){
             $kitchenModel = KitchenModel::invoke($client);
@@ -56,6 +79,15 @@ class KitchenDao
                 $kitchenModel->where('client_id',$userId);
 
             return $kitchenModel->all();
+        });
+    }
+
+    public function update($id,$update)
+    {
+        return DbManager::getInstance()->invoke(function ($client)use($id,$update){
+            $kitchenModel = KitchenModel::invoke($client);
+            $kitchenModel->where('id',$id);
+            return $kitchenModel->update($update);
         });
     }
 }

@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.JsonAsset",
+  "_name": "drawBanner",
+  "_objFlags": 0,
+  "_native": "",
+  "json": {
+    "drawBasic": {
+      "id": "drawBasic",
+      "name": "基础抽卡",
+      "poolName": "drawBasic",
+      "info": "",
+      "bannerImg": "basicDraw",
+      "bannerTitleImg": "basicDrawTtile",
+      "costItemId": 1,
+      "costNum": 100,
+      "isBottom": 1,
+      "bottom": 60,
+      "bottomPool": "drawBasicUp"
+    }
+  }
+}

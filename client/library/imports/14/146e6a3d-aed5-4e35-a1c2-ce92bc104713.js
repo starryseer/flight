@@ -123,7 +123,7 @@ cc.Class({
                 _global2.default.clientAttrData.initClientAttrData(rsp.data.clientAttr);
                 _global2.default.itemData.update([rsp.data.item]);
                 cc.systemEvent.emit('updateItems', rsp.data.item);
-                cc.systemEvent.emit('showConfirmFrame', rsp.data.gold);
+                cc.systemEvent.emit('saleConfirm', rsp.data.gold);
                 _this.node.destroy();
             } else {
                 return;
